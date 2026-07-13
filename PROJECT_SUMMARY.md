@@ -7,7 +7,7 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 | File | What it is |
 |---|---|
 | `index.html` | Complete one-page site, first-person copy. Headshot lives at `img/headshot.jpg`, fonts load from Google Fonts CDN. No build step, no JS dependencies. |
-| `Smikle_Board_Resume_2026.pdf` | Two-page designed board resume matching the site (deep red #a6121f / charcoal #232326, Fraunces + Source Serif 4 + Archivo), first-person copy. This is the target of the site's "Download Board Resume" button. |
+| `Smikle_Board_Resume_2026.pdf` | Two-page designed board resume matching the site (deep red #f50603 / charcoal #232326, Fraunces + Source Serif 4 + Archivo), first-person copy. This is the target of the site's "Download Board Resume" button. |
 | `pdf-source/board-resume.html` | Source for the PDF above — a standalone print-styled HTML file. There's no InDesign/Figma source for this document; it's rendered to PDF via headless Chrome (`--print-to-pdf`). Edit this file and re-render rather than hand-editing the PDF. |
 
 ## Repo / hosting plan (GitHub Pages)
@@ -35,10 +35,13 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 - [x] Second revision round (July 13): swapped in a photo where her hand isn't cropped out (IMG_8480), rewrote all bio/body copy on the site and in the PDF from third person ("she"/"Dr. Smikle") to first person ("I"). Page `<title>`/meta description tags were deliberately left in third person — that's the standard convention for search-result and social-share snippets, not "page" copy a reader sees.
 - [ ] Optional: one-line **sector focus** statement (profile clusters: healthcare/post-acute care, higher ed, human-capital-heavy orgs)
 - [ ] Board tenure years — client is checking with Joanne; not present in the docx or either prior deliverable (no start years anywhere, only duration language like "three terms"). Add to the ledger rows once she confirms.
+- [x] Third revision round (July 13): accent color changed from `#a6121f` to `#f50603` (site + PDF) — see updated design tokens below. PDF: removed the cursive logo/name from the upper-left corner (redundant with the name next to the photo), name next to photo changed to "Joanne L. Smikle, PhD" (dropped "Dr."), added a new "Professional Experience" section (paragraph + 4-item list, verbatim client copy) above "Consulting Experience", added `smiklespeaks.com` to Board Inquiries alongside `joannelsmikle.com`. Site: removed Instagram/Spotify from contact links, added `smiklespeaks.com` link, replaced the 6-cell "What I Bring to the Boardroom" grid with the same new "Professional Experience" section as the PDF. Both: Saybrook tags now show she chairs both Institutional Advancement and Nominating & Governance; podcast stat reads "leaders and learners in 24 countries"; "30+ years" changed to "20+ years" (and "three decades" → "two decades" in PDF body copy) per client's ageism concern; published-articles line now reads "business publications that focus on...".
+- [ ] **smiklespeaks.com → joannelsmikle.com back-link** — client wants the link to go both ways. smiklespeaks.com is a separate WordPress site on Cloudways, not in this repo — someone with access to that site needs to add the reverse link.
+- [ ] **Email deliverability** — `joanne@joannelsmikle.com` is currently just a `mailto:` link; there are no MX records on the domain, so nothing actually receives mail there yet. Client wants replies to come from `joannelsmikle.com` specifically. Needs: MX records (or M365 domain alias if she wants to send-as from her existing smiklespeaks.com mailbox), plus SPF/DKIM/DMARC. Registrar + M365 admin access required — outside this repo.
 
 ## Design tokens (if edits are needed)
 
-- Ink `#232326` · Ink-soft `#4c4c52` · Paper `#faf9f6` · Paper-deep `#f1efe9` · Deep red `#a6121f` (derived from the red rule in her wordmark logo, darkened for contrast) · Line `#dcd8cf`
+- Ink `#232326` · Ink-soft `#4c4c52` · Paper `#faf9f6` · Paper-deep `#f1efe9` · Deep red `#f50603` (client-specified, July 13) · Line `#dcd8cf`
 - Display: **Fraunces** (500/600) · Body: **Source Serif 4** · Labels/UI: **Archivo** (600, tracked-out uppercase)
 - Signature element: the "board ledger" — each board as a row with an uppercase deep-red role label and pill tags for committee assignments. Keep this pattern if adding/editing boards.
 

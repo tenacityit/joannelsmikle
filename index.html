@@ -22,8 +22,8 @@
   --ink-soft:#4c4c52;
   --paper:#faf9f6;
   --paper-deep:#f1efe9;
-  --garnet:#a6121f;
-  --garnet-soft:#c41a28;
+  --garnet:#f50603;
+  --garnet-soft:#f73835;
   --line:#dcd8cf;
   --max:1080px;
 }
@@ -149,16 +149,13 @@ h2{
 
 /* ---------- expertise ---------- */
 .expertise{background:var(--paper-deep);}
-.exp-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-  background:var(--line);border:1px solid var(--line);
+.prof-list{list-style:none;max-width:44em;}
+.prof-list li{
+  font-size:1.02rem;color:var(--ink);padding:16px 0 16px 26px;
+  position:relative;border-bottom:1px solid var(--line);
 }
-.exp-cell{background:var(--paper-deep);padding:28px 26px;}
-.exp-cell h3{
-  font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;
-  margin-bottom:10px;
-}
-.exp-cell p{font-size:.94rem;color:var(--ink-soft);}
+.prof-list li:last-child{border-bottom:none;}
+.prof-list li::before{content:"—";color:var(--garnet);position:absolute;left:0;font-weight:600;}
 
 /* ---------- thought leadership strip ---------- */
 .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;}
@@ -195,7 +192,6 @@ footer .wrap{
 @media (max-width:860px){
   .hero-grid{grid-template-columns:1fr;gap:44px;}
   .portrait-frame{max-width:320px;}
-  .exp-grid{grid-template-columns:1fr;}
   .strip{grid-template-columns:1fr;gap:32px;}
   .ledger-row{grid-template-columns:1fr;gap:10px;}
 }
@@ -242,8 +238,8 @@ footer .wrap{
           <div class="ledger-role">Board of Trustees</div>
         </div>
         <div>
-          <p class="ledger-desc">Post-graduate institution in the humanistic tradition. I chair the board's Institutional Advancement Committee.</p>
-          <div class="tags"><span class="tag">Chair, Institutional Advancement</span><span class="tag">Nominating &amp; Governance</span></div>
+          <p class="ledger-desc">Post-graduate institution in the humanistic tradition. I chair the board's Institutional Advancement and Governance Committees.</p>
+          <div class="tags"><span class="tag">Chair, Institutional Advancement</span><span class="tag">Chair, Nominating &amp; Governance</span></div>
         </div>
       </div>
       <div class="ledger-row">
@@ -301,35 +297,15 @@ footer .wrap{
 <section class="expertise">
   <div class="wrap">
     <div class="section-head">
-      <h2>What I Bring to the Boardroom</h2>
-      <p>Three decades of consulting to private, public, and nonprofit organizations — combined with governance committee service on three boards.</p>
+      <h2>Professional Experience</h2>
+      <p>Brings significant and sustained experience providing consulting to executives in many industry sectors. Partners with leaders to implement sound initiatives that positively impact a range of business issues. Delivers advice and counsel focused on reaching the organization's most positive, powerful potential. Areas of expertise follow:</p>
     </div>
-    <div class="exp-grid">
-      <div class="exp-cell">
-        <h3>Strategy &amp; Enterprise Value</h3>
-        <p>Deep fluency in strategic planning, strategy implementation, and evaluation — including the discipline to weigh ESG objectives without ignoring profit and growth.</p>
-      </div>
-      <div class="exp-cell">
-        <h3>Human Capital &amp; Succession</h3>
-        <p>In-depth knowledge of talent management, succession planning, executive development, and employment best practices.</p>
-      </div>
-      <div class="exp-cell">
-        <h3>Governance Best Practices</h3>
-        <p>Governance committee service on three boards, with practical command of nominating, board development, and executive search.</p>
-      </div>
-      <div class="exp-cell">
-        <h3>Organizational Culture &amp; Change</h3>
-        <p>I lead organizations through transformational change, building healthy cultures aligned with strategy and operations.</p>
-      </div>
-      <div class="exp-cell">
-        <h3>Entrepreneurial Judgment</h3>
-        <p>Sustained success building my own consultancy grounds my perspective on viable innovation, scale, and emerging strategy.</p>
-      </div>
-      <div class="exp-cell">
-        <h3>Public Policy Fluency</h3>
-        <p>Four years as a lobbyist for the League of Women Voters, presenting nonpartisan positions to the U.S. Senate and House.</p>
-      </div>
-    </div>
+    <ul class="prof-list">
+      <li>Strategy Formulation, Implementation and Evaluation</li>
+      <li>Human Capital Utilization, Succession Planning, Workforce Best Practices</li>
+      <li>Executive &amp; Leadership Development</li>
+      <li>Organizational Effectiveness, Organizational Development, Organizational Change &amp; Organizational Culture</li>
+    </ul>
   </div>
 </section>
 
@@ -342,15 +318,15 @@ footer .wrap{
       <div class="strip-item">
         <div class="num">100+</div>
         <div class="label">Published Articles</div>
-        <p>Featured in business publications on leadership, strategy, and organizational effectiveness.</p>
+        <p>Featured in business publications that focus on leadership, strategy, and organizational effectiveness.</p>
       </div>
       <div class="strip-item">
         <div class="num">30,000</div>
         <div class="label">Podcast Listeners</div>
-        <p>The <em>SmikleSpeaks</em> podcast reaches leaders and learners across the globe.</p>
+        <p>The <em>SmikleSpeaks</em> podcast reaches leaders and learners in 24 countries across the globe.</p>
       </div>
       <div class="strip-item">
-        <div class="num">30+</div>
+        <div class="num">20+</div>
         <div class="label">Years Consulting</div>
         <p>Serving private and public sector organizations as well as nonprofits nationwide.</p>
       </div>
@@ -367,9 +343,8 @@ footer .wrap{
       <a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> &nbsp;·&nbsp;
       <a href="https://linkedin.smiklespeaks.com" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp;
       <a href="https://podcast.smiklespeaks.com" target="_blank" rel="noopener">Podcast</a> &nbsp;·&nbsp;
-      <a href="https://instagram.smiklespeaks.com" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp;
       <a href="https://youtube.smiklespeaks.com" target="_blank" rel="noopener">YouTube</a> &nbsp;·&nbsp;
-      <a href="https://spotify.smiklespeaks.com" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://smiklespeaks.com" target="_blank" rel="noopener">smiklespeaks.com</a>
     </p>
   </div>
 </section>
