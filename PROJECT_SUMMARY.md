@@ -6,8 +6,9 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 
 | File | What it is |
 |---|---|
-| `joannelsmikle-landing.html` | Complete one-page site. Fully self-contained — headshot is base64-embedded, fonts load from Google Fonts CDN. No build step, no JS dependencies. |
-| `Smikle_Board_Resume_2026.pdf` | Two-page designed board resume matching the site (garnet #7a1f2b / charcoal #232326, Fraunces + Source Serif 4 + Archivo). This is the target of the site's "Download Board Resume" button. |
+| `index.html` | Complete one-page site, first-person copy. Headshot lives at `img/headshot.jpg`, fonts load from Google Fonts CDN. No build step, no JS dependencies. |
+| `Smikle_Board_Resume_2026.pdf` | Two-page designed board resume matching the site (deep red #a6121f / charcoal #232326, Fraunces + Source Serif 4 + Archivo), first-person copy. This is the target of the site's "Download Board Resume" button. |
+| `pdf-source/board-resume.html` | Source for the PDF above — a standalone print-styled HTML file. There's no InDesign/Figma source for this document; it's rendered to PDF via headless Chrome (`--print-to-pdf`). Edit this file and re-render rather than hand-editing the PDF. |
 
 ## Repo / hosting plan (GitHub Pages)
 
@@ -25,13 +26,15 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 ## Placeholders to resolve before launch (waiting on client, back July 7)
 
 - [x] Contact **email** — confirmed as `joanne@joannelsmikle.com`, now live in both files. DNS side still to do: MX/forwarding so it delivers to her Office 365 smiklespeaks.com mailbox (domain alias in the M365 tenant preferred so she can also send-as), plus SPF/DKIM/DMARC on joannelsmikle.com.
-- [ ] **LinkedIn URL** — hero button + contact section + PDF
-- [ ] **Phone** (PDF only, optional)
+- [x] **LinkedIn URL** — confirmed as `linkedin.smiklespeaks.com`, live in hero button + contact section + PDF. Also added the rest of her live social pattern (`instagram`/`spotify`/`podcast`/`youtube`.smiklespeaks.com) to the site's contact section.
+- [x] **Phone** — confirmed as `410-730-4867`, live in PDF Board Inquiries line.
 - [ ] **Doctorate details** (field + institution) — should be added near credentials; board audiences expect it
 - [ ] **Board logos** (Saybrook, American Brain Foundation, Heritage Ministry, ElevateMeD) — optional logo strip, high impact for recruiters
 - [ ] Confirm podcast listener count — source doc said both 29,000 and 30,000; both deliverables currently standardized on **30,000**
 - [x] First revision round (July 13) applied: verbiage removed from top, deep red `#a6121f` replaces burgundy, new headshot (IMG_8516), "Independent Director" + "Governance · Strategy · Human Capital Utilization" under name, client's rewritten bio verbatim, "Three Terms" removed from Bridges entry — all in both HTML and PDF.
+- [x] Second revision round (July 13): swapped in a photo where her hand isn't cropped out (IMG_8480), rewrote all bio/body copy on the site and in the PDF from third person ("she"/"Dr. Smikle") to first person ("I"). Page `<title>`/meta description tags were deliberately left in third person — that's the standard convention for search-result and social-share snippets, not "page" copy a reader sees.
 - [ ] Optional: one-line **sector focus** statement (profile clusters: healthcare/post-acute care, higher ed, human-capital-heavy orgs)
+- [ ] Board tenure years — client is checking with Joanne; not present in the docx or either prior deliverable (no start years anywhere, only duration language like "three terms"). Add to the ledger rows once she confirms.
 
 ## Design tokens (if edits are needed)
 
