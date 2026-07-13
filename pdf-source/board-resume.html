@@ -13,180 +13,174 @@
   --paper:#faf9f6;
   --paper-deep:#f1efe9;
   --garnet:#a6121f;
+  --inquiry-label:#e5959e;
+  --footer-muted:#8a8781;
   --line:#dcd8cf;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-@page{ size: letter; margin: 0.62in 0.66in 0.7in; }
+@page{ size: letter; margin: 46.8pt 54pt 30pt 54pt; }
 body{
   font-family:'Source Serif 4', Georgia, serif;
   color:var(--ink);
   line-height:1.5;
-  font-size:9.7pt;
+  font-size:9.2pt;
   -webkit-font-smoothing:antialiased;
 }
-.page{ page-break-after: always; position:relative; height:9.5in; overflow:hidden; }
+a{ color:inherit; }
+.page{ page-break-after: always; position:relative; height:715pt; overflow:hidden; }
 .page:last-child{ page-break-after: auto; }
 
-.eyebrow{
-  font-family:'Archivo',sans-serif;font-size:8.5pt;font-weight:600;
+/* header (page 1 only) */
+.pdf-header{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  padding-bottom:8pt;margin-bottom:10pt;border-bottom:3pt solid var(--garnet);
+}
+.pdf-header img{ display:block; height:24pt; width:auto; }
+.eyebrow-top{
+  font-family:'Archivo',sans-serif;font-size:7.5pt;font-weight:600;
   letter-spacing:.16em;text-transform:uppercase;color:var(--garnet);
-  margin-bottom:14px;
 }
-.name-row{
-  display:flex;align-items:baseline;justify-content:space-between;
-  border-bottom:2px solid var(--garnet);padding-bottom:10px;margin-bottom:6px;
-}
-h1{
-  font-family:'Fraunces',serif;font-weight:500;font-size:22pt;letter-spacing:-.01em;
-}
+
+/* hero: photo + name block */
+.hero-pdf{ display:grid; grid-template-columns:104pt 1fr; gap:16pt; margin-bottom:12pt; }
+.hero-pdf img{ display:block; width:104pt; height:130pt; object-fit:cover; border-radius:1pt; }
+h1{ font-family:'Fraunces',serif; font-weight:500; font-size:20pt; letter-spacing:-.01em; margin-bottom:5pt; }
 .role{
-  font-family:'Archivo',sans-serif;font-size:9.5pt;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--garnet);text-align:right;
+  font-family:'Archivo',sans-serif;font-size:9pt;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--garnet);margin-bottom:5pt;
 }
 .domains{
   font-family:'Archivo',sans-serif;font-size:8pt;font-weight:500;
-  letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft);
-  margin-bottom:16px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:9pt;
 }
 .domains span{color:var(--garnet);padding:0 .5em;}
-.bio{color:var(--ink-soft);font-size:9.7pt;margin-bottom:22px;max-width:100%;}
+.bio{ font-size:9.1pt;color:var(--ink-soft); }
 
 h2{
-  font-family:'Fraunces',serif;font-weight:600;font-size:12.5pt;
-  color:var(--ink);margin-bottom:10px;
-  padding-bottom:6px;border-bottom:1px solid var(--line);
+  font-family:'Fraunces',serif;font-weight:600;font-size:12.5pt;color:var(--ink);
+  border-bottom:1pt solid var(--line);padding-bottom:5pt;margin-bottom:9pt;
 }
 
-.ledger-row{
-  display:grid;grid-template-columns:1fr 1.55fr;gap:20px;
-  padding:11px 0;border-bottom:1px solid var(--line);
-}
-.ledger-row:last-child{border-bottom:none;}
-.ledger-org{font-family:'Fraunces',serif;font-weight:600;font-size:10.3pt;line-height:1.3;}
+/* board ledger */
+.ledger-row{ padding:6.5pt 0;border-bottom:1pt solid var(--line); }
+.ledger-row:last-child{ border-bottom:none; }
+.ledger-head{ display:flex;justify-content:space-between;align-items:baseline;gap:12pt; }
+.ledger-org{ font-family:'Fraunces',serif;font-weight:600;font-size:10.3pt;line-height:1.3; }
 .ledger-role{
-  font-family:'Archivo',sans-serif;font-size:7.6pt;font-weight:600;
+  font-family:'Archivo',sans-serif;font-size:7pt;font-weight:600;
   letter-spacing:.08em;text-transform:uppercase;color:var(--garnet);
-  margin-top:4px;
+  white-space:nowrap;text-align:right;
 }
-.ledger-desc{color:var(--ink-soft);font-size:9pt;}
-.tags{margin-top:7px;display:flex;flex-wrap:wrap;gap:5px;}
+.ledger-desc{ font-size:9.2pt;color:var(--ink-soft);margin-top:3pt; }
+.tags{ margin-top:4pt;display:flex;flex-wrap:wrap;gap:5pt; }
 .tag{
-  font-family:'Archivo',sans-serif;font-size:6.6pt;font-weight:500;
-  letter-spacing:.03em;color:var(--ink-soft);
-  border:1px solid var(--line);background:var(--paper-deep);
-  padding:2.5px 8px;border-radius:16px;white-space:nowrap;
+  font-family:'Archivo',sans-serif;font-size:6.8pt;font-weight:500;color:var(--ink-soft);
+  border:1pt solid var(--line);background:var(--paper-deep);
+  padding:3pt 8pt;border-radius:14pt;white-space:nowrap;
 }
 
-.section{margin-bottom:22px;}
-.section p{color:var(--ink-soft);font-size:9.4pt;margin-bottom:10px;}
-.section p:last-child{margin-bottom:0;}
+/* page 2 sections */
+.section{ margin-bottom:18pt; }
+.section p{ font-size:9.2pt;color:var(--ink-soft); }
 
-.exp-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:2px;
-}
-.exp-cell h3{
-  font-family:'Fraunces',serif;font-weight:600;font-size:9.6pt;margin-bottom:4px;
-}
-.exp-cell p{font-size:8.7pt;color:var(--ink-soft);margin-bottom:0;}
+.exp-grid{ display:grid;grid-template-columns:1fr 1fr;gap:14pt 30pt;margin-top:2pt; }
+.exp-cell h3{ font-family:'Fraunces',serif;font-weight:600;font-size:9.8pt;margin-bottom:4pt; }
+.exp-cell p{ font-size:9pt;color:var(--ink-soft); }
 
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:2px;}
+.strip{ display:grid;grid-template-columns:repeat(3,1fr);gap:18pt;margin-top:2pt; }
 .strip-item .num{
-  font-family:'Fraunces',serif;font-weight:500;font-size:17pt;
-  color:var(--garnet);line-height:1;margin-bottom:4px;
+  font-family:'Fraunces',serif;font-weight:500;font-size:16pt;
+  color:var(--garnet);line-height:1;margin-bottom:4pt;
 }
 .strip-item .label{
-  font-family:'Archivo',sans-serif;font-size:7.2pt;font-weight:600;
+  font-family:'Archivo',sans-serif;font-size:7pt;font-weight:600;
   letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft);
 }
 
+/* board inquiries — dark box */
 .inquiries{
-  margin-top:26px;padding-top:16px;border-top:2px solid var(--garnet);
+  background:var(--ink);border-radius:6pt;padding:11.5pt 14pt;margin-top:14pt;
 }
 .inquiries .label{
-  font-family:'Archivo',sans-serif;font-size:8pt;font-weight:600;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--garnet);
-  margin-bottom:6px;
+  font-family:'Archivo',sans-serif;font-size:7.5pt;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--inquiry-label);margin-bottom:5pt;
 }
-.inquiries .line{font-family:'Archivo',sans-serif;font-size:8.8pt;color:var(--ink);}
+.inquiries .line{ font-family:'Archivo',sans-serif;font-size:9pt;color:var(--paper); }
+.inquiries .line a{ color:var(--paper);text-decoration:underline;text-decoration-color:rgba(250,249,246,.45); }
 
 .pagefoot{
   position:absolute;bottom:0;left:0;right:0;
   display:flex;justify-content:space-between;
   font-family:'Archivo',sans-serif;font-size:7pt;letter-spacing:.05em;
-  color:var(--ink-soft);border-top:1px solid var(--line);padding-top:6px;
+  color:var(--footer-muted);border-top:1pt solid var(--line);padding-top:6pt;
 }
 </style>
 </head>
 <body>
 
-<div class="page" style="position:relative;">
-  <div class="eyebrow">Board Resume · Independent Director</div>
-  <div class="name-row">
-    <h1>Dr. Joanne L. Smikle</h1>
-    <div class="role">Independent Director</div>
+<div class="page">
+  <div class="pdf-header">
+    <img src="assets/logo.png" alt="Joanne L. Smikle, Ph.D. — Consultant, Author, Speaker">
+    <div class="eyebrow-top">Board Resume · Independent Director</div>
   </div>
-  <div class="domains">Governance <span>·</span> Strategy <span>·</span> Human Capital Utilization</div>
-  <p class="bio">As a nationally recognized consultant and leadership educator, I bring keen analytical abilities and agile thinking to board service. I have in-depth knowledge of human capital utilization — employment best practices, organizational effectiveness, and strategy formulation and evaluation — and a clear understanding of the complexities organizations face. I bring the capacity to analyze challenges from the perspectives of varied stakeholders, and I'm comfortable posing the difficult questions that spark discussion and decisions among my board colleagues.</p>
+
+  <div class="hero-pdf">
+    <img src="assets/headshot.jpg" alt="Portrait of Dr. Joanne L. Smikle">
+    <div>
+      <h1>Dr. Joanne L. Smikle</h1>
+      <div class="role">Independent Director</div>
+      <div class="domains">Governance <span>·</span> Strategy <span>·</span> Human Capital Utilization</div>
+      <p class="bio">As a nationally recognized consultant and leadership educator, I bring keen analytical abilities and agile thinking to board service. I have in-depth knowledge of human capital utilization — employment best practices, organizational effectiveness, and strategy formulation and evaluation — and a clear understanding of the complexities organizations face. I bring the capacity to analyze challenges from the perspectives of varied stakeholders, and I'm comfortable posing the difficult questions that spark discussion and decisions among my board colleagues.</p>
+    </div>
+  </div>
 
   <h2>Board &amp; Governance Experience</h2>
   <div class="ledger">
     <div class="ledger-row">
-      <div>
+      <div class="ledger-head">
         <div class="ledger-org">Saybrook University</div>
         <div class="ledger-role">Board of Trustees</div>
       </div>
-      <div>
-        <p class="ledger-desc">Post-graduate institution providing education in the humanistic tradition. I chair the board's Institutional Advancement Committee.</p>
-        <div class="tags"><span class="tag">Chair, Institutional Advancement</span><span class="tag">Nominating &amp; Governance</span></div>
-      </div>
+      <p class="ledger-desc">Post-graduate institution providing education in the humanistic tradition. I chair the board's Institutional Advancement Committee.</p>
+      <div class="tags"><span class="tag">Chair, Institutional Advancement</span><span class="tag">Nominating &amp; Governance</span></div>
     </div>
     <div class="ledger-row">
-      <div>
+      <div class="ledger-head">
         <div class="ledger-org">American Brain Foundation</div>
         <div class="ledger-role">Board of Directors</div>
       </div>
-      <div>
-        <p class="ledger-desc">National foundation funding research into treatments and cures for brain diseases.</p>
-        <div class="tags"><span class="tag">Governance Committee</span></div>
-      </div>
+      <p class="ledger-desc">National foundation funding research into treatments and cures for brain diseases.</p>
+      <div class="tags"><span class="tag">Governance Committee</span></div>
     </div>
     <div class="ledger-row">
-      <div>
+      <div class="ledger-head">
         <div class="ledger-org">Heritage Ministry Charitable Care Network</div>
         <div class="ledger-role">Board of Directors</div>
       </div>
-      <div>
-        <p class="ledger-desc">Provider of post-acute care, rehabilitation, independent living, and memory care, owning and operating facilities in New York, Pennsylvania, Illinois, and Washington.</p>
-      </div>
+      <p class="ledger-desc">Provider of post-acute care, rehabilitation, independent living, and memory care, owning and operating facilities in New York, Pennsylvania, Illinois, and Washington.</p>
     </div>
     <div class="ledger-row">
-      <div>
+      <div class="ledger-head">
         <div class="ledger-org">State of Maryland — Oversight Committee on Quality of Care in Nursing Homes &amp; Assisted Living Facilities</div>
         <div class="ledger-role">Gubernatorial Appointment</div>
       </div>
-      <div>
-        <p class="ledger-desc">Evaluates progress in improving the quality of nursing home and assisted living facility care in the State of Maryland.</p>
-      </div>
+      <p class="ledger-desc">Evaluates progress in improving the quality of nursing home and assisted living facility care in the State of Maryland.</p>
     </div>
     <div class="ledger-row">
-      <div>
+      <div class="ledger-head">
         <div class="ledger-org">ElevateMeD</div>
         <div class="ledger-role">National Advisory Board</div>
       </div>
-      <div>
-        <p class="ledger-desc">Works to ensure that the nation's physician workforce racially and ethnically represents the population it serves.</p>
-        <div class="tags"><span class="tag">Scholar Mentoring</span></div>
-      </div>
+      <p class="ledger-desc">Works to ensure that the nation's physician workforce racially and ethnically represents the population it serves.</p>
+      <div class="tags"><span class="tag">Scholar Mentoring</span></div>
     </div>
     <div class="ledger-row">
-      <div>
+      <div class="ledger-head">
         <div class="ledger-org">Bridges to Housing Stability</div>
         <div class="ledger-role">Board of Directors</div>
       </div>
-      <div>
-        <p class="ledger-desc">Well-established Maryland nonprofit providing housing for low-wage workers and those at risk of homelessness, in partnership with developers, corporations, philanthropists, and community partners.</p>
-        <div class="tags"><span class="tag">Secretary of the Board</span><span class="tag">Nominating &amp; Governance</span><span class="tag">Strategic Planning</span><span class="tag">Resource Development</span><span class="tag">Executive Director Search</span></div>
-      </div>
+      <p class="ledger-desc">Well-established Maryland nonprofit providing housing for low-wage workers and those at risk of homelessness, in partnership with developers, corporations, philanthropists, and community partners.</p>
+      <div class="tags"><span class="tag">Secretary of the Board</span><span class="tag">Nominating &amp; Governance</span><span class="tag">Strategic Planning</span><span class="tag">Resource Development</span><span class="tag">Executive Director Search</span></div>
     </div>
   </div>
 
@@ -196,7 +190,7 @@ h2{
   </div>
 </div>
 
-<div class="page" style="position:relative;">
+<div class="page">
   <div class="section">
     <h2>Consulting Experience</h2>
     <p>I combine board service with three decades of consulting to private and public sector organizations as well as nonprofits, which makes me adept at addressing environmental, social, and governance issues. I ably participate in identifying the varied paths available to reach an enterprise's ESG objectives without ignoring profit and growth. Having served on the governance committee of three boards, I contribute knowledge of best practices in this arena. My sustained success as an entrepreneur provides the ability to deeply understand questions of viable innovation, scale, and emerging strategy. I lead organizations through transformational change, delivering results that positively impact alignment between strategy and operations, talent management, pipeline planning, and the creation of healthy organizational cultures.</p>
@@ -209,12 +203,12 @@ h2{
         <p>Comprehensive approaches to developing, executing, and evaluating enterprise strategy.</p>
       </div>
       <div class="exp-cell">
-        <h3>Human Capital Utilization</h3>
-        <p>Succession planning, talent management, and employment best practices.</p>
-      </div>
-      <div class="exp-cell">
         <h3>Executive &amp; Leadership Development</h3>
         <p>Executive coaching that equips leaders with individualized, substantive tools for business challenges.</p>
+      </div>
+      <div class="exp-cell">
+        <h3>Human Capital Utilization</h3>
+        <p>Succession planning, talent management, and employment best practices.</p>
       </div>
       <div class="exp-cell">
         <h3>Organizational Development &amp; Culture</h3>
@@ -248,7 +242,12 @@ h2{
 
   <div class="inquiries">
     <div class="label">Board Inquiries</div>
-    <div class="line">joanne@joannelsmikle.com &nbsp;·&nbsp; 410-730-4867 &nbsp;·&nbsp; linkedin.smiklespeaks.com &nbsp;·&nbsp; joannelsmikle.com</div>
+    <div class="line">
+      <a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> &nbsp;·&nbsp;
+      <a href="tel:+14107304867">410-730-4867</a> &nbsp;·&nbsp;
+      <a href="https://linkedin.smiklespeaks.com" target="_blank" rel="noopener">linkedin.smiklespeaks.com</a> &nbsp;·&nbsp;
+      <a href="https://joannelsmikle.com" target="_blank" rel="noopener">joannelsmikle.com</a>
+    </div>
   </div>
 
   <div class="pagefoot">
