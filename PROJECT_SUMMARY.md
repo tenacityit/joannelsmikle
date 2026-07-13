@@ -24,19 +24,20 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 
 ## Placeholders to resolve before launch (waiting on client, back July 7)
 
-- [ ] Contact **email** — appears in hero buttons is fine, and in the dark "Board Inquiries" section + PDF contact block (currently `placeholder@joannelsmikle.com` / `[Email placeholder]`)
+- [x] Contact **email** — confirmed as `joanne@joannelsmikle.com`, now live in both files. DNS side still to do: MX/forwarding so it delivers to her Office 365 smiklespeaks.com mailbox (domain alias in the M365 tenant preferred so she can also send-as), plus SPF/DKIM/DMARC on joannelsmikle.com.
 - [ ] **LinkedIn URL** — hero button + contact section + PDF
 - [ ] **Phone** (PDF only, optional)
 - [ ] **Doctorate details** (field + institution) — should be added near credentials; board audiences expect it
 - [ ] **Board logos** (Saybrook, American Brain Foundation, Heritage Ministry, ElevateMeD) — optional logo strip, high impact for recruiters
 - [ ] Confirm podcast listener count — source doc said both 29,000 and 30,000; both deliverables currently standardized on **30,000**
+- [x] First revision round (July 13) applied: verbiage removed from top, deep red `#a6121f` replaces burgundy, new headshot (IMG_8516), "Independent Director" + "Governance · Strategy · Human Capital Utilization" under name, client's rewritten bio verbatim, "Three Terms" removed from Bridges entry — all in both HTML and PDF.
 - [ ] Optional: one-line **sector focus** statement (profile clusters: healthcare/post-acute care, higher ed, human-capital-heavy orgs)
 
 ## Design tokens (if edits are needed)
 
-- Ink `#232326` · Ink-soft `#4c4c52` · Paper `#faf9f6` · Paper-deep `#f1efe9` · Garnet `#7a1f2b` · Line `#dcd8cf`
+- Ink `#232326` · Ink-soft `#4c4c52` · Paper `#faf9f6` · Paper-deep `#f1efe9` · Deep red `#a6121f` (derived from the red rule in her wordmark logo, darkened for contrast) · Line `#dcd8cf`
 - Display: **Fraunces** (500/600) · Body: **Source Serif 4** · Labels/UI: **Archivo** (600, tracked-out uppercase)
-- Signature element: the "board ledger" — each board as a row with an uppercase garnet role label and pill tags for committee assignments. Keep this pattern if adding/editing boards.
+- Signature element: the "board ledger" — each board as a row with an uppercase deep-red role label and pill tags for committee assignments. Keep this pattern if adding/editing boards.
 
 ## Content source
 
