@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joanne L. Smikle, PhD — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Archivo:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#232326;
+  --ink-soft:#4c4c52;
+  --paper:#faf9f6;
+  --paper-deep:#f1efe9;
+  --garnet:#f50603;
+  --inquiry-label:#e5959e;
+  --footer-muted:#8a8781;
+  --line:#dcd8cf;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+@page{ size: letter; margin: 42pt 54pt 30pt 54pt; }
+body{
+  font-family:'Source Serif 4', Georgia, serif;
+  color:var(--ink);
+  line-height:1.4;
+  font-size:8.8pt;
+  -webkit-font-smoothing:antialiased;
+}
+a{ color:inherit; }
+.page{ page-break-after: always; position:relative; height:719pt; overflow:hidden; }
+.page:last-child{ page-break-after: auto; }
+
+.pdf-header{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  padding-bottom:8pt;margin-bottom:10pt;border-bottom:3pt solid var(--garnet);
+}
+h1{ font-family:'Fraunces',serif; font-weight:500; font-size:19pt; letter-spacing:-.01em; }
+.role{
+  font-family:'Archivo',sans-serif;font-size:8.5pt;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--garnet);margin-top:3pt;
+}
+.contact-line{
+  font-family:'Archivo',sans-serif;font-size:7.6pt;color:var(--ink-soft);text-align:right;
+}
+.contact-line a{color:var(--ink-soft);}
+
+h2{
+  font-family:'Fraunces',serif;font-weight:600;font-size:11.5pt;color:var(--ink);
+  border-bottom:1pt solid var(--line);padding-bottom:3pt;margin-bottom:6pt;
+}
+.section{ margin-bottom:9pt; }
+.section p{ font-size:8.8pt;line-height:1.36;color:var(--ink-soft); }
+
+.prof-list{ list-style:none;margin-top:5pt; }
+.prof-list li{
+  font-size:8.8pt;color:var(--ink);padding:2.5pt 0 2.5pt 13pt;
+  position:relative;border-bottom:1pt solid var(--line);
+}
+.prof-list li:last-child{ border-bottom:none; }
+.prof-list li::before{ content:"—";color:var(--garnet);position:absolute;left:0; }
+
+.clients{
+  font-size:8.6pt;color:var(--ink-soft);line-height:1.7;
+}
+.clients strong{color:var(--ink);font-weight:600;}
+
+.role-row{
+  display:flex;justify-content:space-between;gap:12pt;
+  padding:5pt 0;border-bottom:1pt solid var(--line);
+}
+.role-row:last-child{border-bottom:none;}
+.role-main{font-family:'Fraunces',serif;font-weight:600;font-size:9pt;}
+.role-sub{font-size:8.4pt;color:var(--ink-soft);margin-top:1pt;}
+.role-years{
+  font-family:'Archivo',sans-serif;font-size:7.6pt;font-weight:600;
+  color:var(--ink-soft);white-space:nowrap;text-align:right;
+}
+
+.ledger-row{ padding:6pt 0;border-bottom:1pt solid var(--line); }
+.ledger-row:last-child{ border-bottom:none; }
+.ledger-head{ display:flex;justify-content:space-between;align-items:baseline;gap:12pt; }
+.ledger-org{ font-family:'Fraunces',serif;font-weight:600;font-size:9.6pt;line-height:1.3; }
+.ledger-role{
+  font-family:'Archivo',sans-serif;font-size:6.8pt;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--garnet);
+  white-space:nowrap;text-align:right;
+}
+.ledger-desc{ font-size:8.6pt;color:var(--ink-soft);margin-top:2pt; }
+
+.edu-row{padding:4pt 0;border-bottom:1pt solid var(--line);font-size:8.8pt;}
+.edu-row:last-child{border-bottom:none;}
+.edu-row strong{font-family:'Fraunces',serif;font-weight:600;}
+
+.pub-group{margin-bottom:6pt;}
+.pub-group:last-child{margin-bottom:0;}
+.pub-label{
+  font-family:'Archivo',sans-serif;font-size:7.2pt;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--garnet);margin-bottom:3pt;
+}
+.pub-list{list-style:none;}
+.pub-list li{font-size:8.3pt;color:var(--ink-soft);padding:2pt 0;line-height:1.35;}
+
+.pres-row{display:flex;gap:8pt;padding:3pt 0;border-bottom:1pt solid var(--line);}
+.pres-row:last-child{border-bottom:none;}
+.pres-year{
+  font-family:'Archivo',sans-serif;font-size:7.6pt;font-weight:600;color:var(--garnet);
+  width:34pt;flex-shrink:0;
+}
+.pres-body{font-size:8.4pt;color:var(--ink-soft);}
+.pres-body strong{color:var(--ink);font-weight:600;}
+
+.inquiries{
+  background:var(--ink);border-radius:6pt;padding:8pt 14pt;margin-top:8pt;
+}
+.inquiries .label{
+  font-family:'Archivo',sans-serif;font-size:7.5pt;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--inquiry-label);margin-bottom:5pt;
+}
+.inquiries .line{ font-family:'Archivo',sans-serif;font-size:8.6pt;color:var(--paper); }
+.inquiries .line a{ color:var(--paper);text-decoration:underline;text-decoration-color:rgba(250,249,246,.45); }
+
+.pagefoot{
+  position:absolute;bottom:0;left:0;right:0;
+  display:flex;justify-content:space-between;
+  font-family:'Archivo',sans-serif;font-size:7pt;letter-spacing:.05em;
+  color:var(--footer-muted);border-top:1pt solid var(--line);padding-top:6pt;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="pdf-header">
+    <div>
+      <h1>Joanne L. Smikle, PhD</h1>
+      <div class="role">Principal Consultant · Speaker · Faculty</div>
+    </div>
+    <div class="contact-line">
+      joanne@smiklespeaks.com<br>
+      410-730-4867<br>
+      linkedin.smiklespeaks.com · joannelsmikle.com
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Professional Experience</h2>
+    <p>I bring significant and sustained experience providing consulting to executives in many industry sectors. I partner with leaders to implement sound initiatives that positively impact a range of business issues. I deliver advice and counsel focused on reaching the organization's most positive, powerful potential. Areas of expertise follow:</p>
+    <ul class="prof-list">
+      <li>Strategy Formulation, Implementation and Evaluation</li>
+      <li>Human Capital Utilization, Succession Planning, Workforce Best Practices</li>
+      <li>Executive &amp; Leadership Development</li>
+      <li>Organizational Effectiveness, Organizational Development, Organizational Change &amp; Organizational Culture</li>
+    </ul>
+    <p style="margin-top:7pt;">I am instrumental in developing and implementing organizational change initiatives. I devise programmatic interventions to change corporate culture while enhancing performance and productivity. I help clients develop and refine the competencies required to meet current and anticipated business demands, with particular emphasis on strategically improving stakeholder relations.</p>
+    <p style="margin-top:7pt;">My consulting work spans strategic planning facilitation, leadership and management development, succession and pipeline planning, and organizational climate assessment using focus groups, surveys, and mixed-method measurement strategies. I extend this work through the <em>SmikleSpeaks</em> podcast and YouTube channel, reaching leaders and learners in 24 countries.</p>
+  </div>
+
+  <div class="section">
+    <h2>Representative Clients</h2>
+    <p class="clients"><strong>Public Sector:</strong> General Services Administration, Environmental Protection Agency, National Institutes of Health, National Science Foundation, Federal Aviation Administration, U.S. Marine Corps, Maryland Department of Transportation<br>
+    <strong>Corporate:</strong> Fannie Mae, Northrop Grumman, Baltimore Gas &amp; Electric, American Honda Motor Co., Sandy Spring Bank<br>
+    <strong>Associations &amp; Nonprofit:</strong> American Health Care Association, LeadingAge, American Academy of Neurology, American Psychiatric Association, Maryland Bankers Association, Association of Fundraising Professionals</p>
+  </div>
+
+  <div class="section">
+    <h2>Faculty Appointments</h2>
+    <div class="role-row">
+      <div><div class="role-main">Visiting Faculty</div><div class="role-sub">The Dr. Nancy Grasmick Leadership Institute, Professional Leadership Program for Women — Towson University</div></div>
+      <div class="role-years">2022</div>
+    </div>
+    <div class="role-row">
+      <div><div class="role-main">Core Faculty</div><div class="role-sub">Department of Leadership &amp; Management — Saybrook University</div></div>
+      <div class="role-years">2017–2019</div>
+    </div>
+    <div class="role-row">
+      <div><div class="role-main">Associate Professor</div><div class="role-sub">Department of Management &amp; Decision Sciences — Capitol Technology University</div></div>
+      <div class="role-years">2015–2016</div>
+    </div>
+    <div class="role-row">
+      <div><div class="role-main">Affiliate Instructor</div><div class="role-sub">Sellinger School of Business &amp; Management — Loyola University Maryland</div></div>
+      <div class="role-years">2015</div>
+    </div>
+    <div class="role-row">
+      <div><div class="role-main">Faculty</div><div class="role-sub">Institute for Organization Management — U.S. Chamber of Commerce</div></div>
+      <div class="role-years">2012–2016</div>
+    </div>
+    <div class="role-row">
+      <div><div class="role-main">Faculty</div><div class="role-sub">Banker's School — Maryland Bankers Association</div></div>
+      <div class="role-years">2002–2006</div>
+    </div>
+    <div class="role-row">
+      <div><div class="role-main">Lead Instructor</div><div class="role-sub">Leadership Institute — Maryland Police and Correctional Training Commission</div></div>
+      <div class="role-years">1995–2001</div>
+    </div>
+  </div>
+
+  <div class="pagefoot">
+    <span>JOANNE L. SMIKLE, PHD — RESUME</span>
+    <span>Page 1 of 3</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section">
+    <h2>Board &amp; Governance Experience</h2>
+    <div class="ledger">
+      <div class="ledger-row">
+        <div class="ledger-head"><div class="ledger-org">Saybrook University</div><div class="ledger-role">Board of Trustees</div></div>
+        <p class="ledger-desc">Chair, Institutional Advancement and Governance Committees.</p>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-head"><div class="ledger-org">American Brain Foundation</div><div class="ledger-role">Board of Directors</div></div>
+        <p class="ledger-desc">Governance Committee.</p>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-head"><div class="ledger-org">Heritage Ministry Charitable Care Network</div><div class="ledger-role">Board of Directors</div></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-head"><div class="ledger-org">ElevateMeD</div><div class="ledger-role">National Advisory Board</div></div>
+        <p class="ledger-desc">Scholar Mentoring.</p>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-head"><div class="ledger-org">State of Maryland — Oversight Committee on Quality of Care in Nursing Homes &amp; Assisted Living Facilities</div><div class="ledger-role">Gubernatorial Appointment</div></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-head"><div class="ledger-org">Bridges to Housing Stability</div><div class="ledger-role">Board of Directors</div></div>
+        <p class="ledger-desc">Secretary of the Board; Nominating &amp; Governance, Strategic Planning, Resource Development, Executive Director Search Committees.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Civic Engagement</h2>
+    <p>I am actively engaged in my community. I provide ad hoc resource development to organizations serving the poor and underserved, and coordinate national food drives feeding low-income senior citizens through Food on the 15th. Through Alpha Kappa Alpha Sorority, Inc., I participate in activities advancing scholarship, social justice, poverty amelioration, and economic empowerment. I bring in-depth public policy experience from four years as a lobbyist for the League of Women Voters, having served among a group of twenty lobbyists presenting the League's nonpartisan positions to elected officials in the U.S. Senate and House of Representatives. Through the Executive Alliance, a selective membership organization accelerating the success of accomplished women, I have mentored mid-career women preparing for advancement. I also volunteer with the Day Resource Center, serving the chronically homeless in Howard County, Maryland.</p>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <div class="edu-row"><strong>Doctor of Philosophy, Human and Organizational Systems</strong> — Fielding Graduate University</div>
+    <div class="edu-row"><strong>Master of Arts, Human and Organizational Systems</strong> — Fielding Graduate University</div>
+    <div class="edu-row"><strong>Bachelor of Arts, Political Science</strong> — University of Maryland, Baltimore County</div>
+  </div>
+
+  <div class="pagefoot">
+    <span>JOANNE L. SMIKLE, PHD — RESUME</span>
+    <span>Page 2 of 3</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section">
+    <h2>Selected Publications</h2>
+    <div class="pub-group">
+      <div class="pub-label">Peer-Reviewed</div>
+      <ul class="pub-list">
+        <li>Smikle, J.L. (2025). Why they stay: Retention in long-term care (working title). <em>Management and Organization Studies Journal.</em> (forthcoming)</li>
+        <li>Ovbiagele, B., Lewis, S., Correa, D., Thomas, R., Charleston, L. (Eds.) (2024). <em>Achieving Equity in Neurological Practice: Principles and Pathways.</em> Springer Publishing. (Contributing author)</li>
+        <li>Smikle, J.L. (2019). Connecting values to leader and leadership development. <em>Journal of Values-Based Leadership, 12</em>(1), 73–80.</li>
+        <li>Smikle, J.L. (2016). Strategic planning. In Grachek, M. (Ed.), <em>Essential Business Skills for the Nurse Leader</em> (Ch. 1). American Association of Directors Nursing Services.</li>
+        <li>Smikle, J.L. (1994). Practical guide to developing and implementing cultural awareness training for faculty and staff development. <em>The Journal of Staff, Program, &amp; Organization Development, 12</em>(2), 69–80.</li>
+      </ul>
+    </div>
+    <div class="pub-group">
+      <div class="pub-label">Practitioner Publications</div>
+      <p style="font-size:8.6pt;color:var(--ink-soft);line-height:1.4;">Author of 90+ articles in practitioner publications, 2001–2023, including <em>Provider Magazine, HR Florida Review, Kentucky SHRM Magazine, Office Technology Magazine, LeadingAge Magazine, Support World,</em> and <em>The Executive.</em> Selected titles:</p>
+      <ul class="pub-list">
+        <li>"Succession Planning: Investing in Your Organization's Future," Canadian Society of Nutrition Management News, 2023</li>
+        <li>"Stop with the Millennials: Create an Intergenerational Workforce that Eliminates Ageism," HR Florida Review, 2019</li>
+        <li>"Reimagine, Renew, Rebound: The Path Forward for Association Leadership," Association Adviser, 2020</li>
+        <li>"Why They Stay: Retention Strategies for Long Term Care," Provider Magazine, 2015</li>
+        <li><em>Value Driven Leadership: Emotional Intelligence in Practice</em> (monograph), Help Desk Institute, 2005</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Selected Presentations</h2>
+    <p style="margin-bottom:5pt;">Keynote, concurrent, and virtual sessions at national and regional conferences. Recent examples:</p>
+    <div class="pres-row"><div class="pres-year">2026</div><div class="pres-body"><strong>"Hassles to Hope"</strong> — NeuroNet Convention, Austin, TX</div></div>
+    <div class="pres-row"><div class="pres-year">2025</div><div class="pres-body"><strong>"Resilient Leadership"</strong> — American Health Care Association Convention, Las Vegas, NV</div></div>
+    <div class="pres-row"><div class="pres-year">2024</div><div class="pres-body"><strong>"The Journey to Leadership Excellence"</strong> — AAN Practice Management Conference, Denver, CO</div></div>
+    <div class="pres-row"><div class="pres-year">2024</div><div class="pres-body"><strong>"Practicing Mindfulness &amp; Empathy"</strong> — LeadingAge, Next Level Leadership Virtual Series</div></div>
+    <div class="pres-row"><div class="pres-year">2021</div><div class="pres-body"><strong>"Bridge Building: Intentional Strategies for Building an Inclusive Organization"</strong> — American Health Care Association Annual Conference, Washington, DC</div></div>
+    <div class="pres-row"><div class="pres-year">2019</div><div class="pres-body"><strong>"Stop with the Millennials! Create Truly Intergenerational Workplaces"</strong> — LeadingAge Annual Meeting, San Diego, CA</div></div>
+    <div class="pres-row"><div class="pres-year">2018</div><div class="pres-body"><strong>"Mentoring: Growing the Next Generation of Neurologists"</strong> — American Academy of Neurology Leadership University, Los Angeles, CA</div></div>
+    <div class="pres-row"><div class="pres-year">2017</div><div class="pres-body"><strong>"The Path to C-Suite Inclusion: Strategies to Promote Leadership Diversity"</strong> — LeadingAge Peak Leadership Summit, Washington, DC</div></div>
+  </div>
+
+  <div class="inquiries">
+    <div class="label">Contact</div>
+    <div class="line">
+      <a href="mailto:joanne@smiklespeaks.com">joanne@smiklespeaks.com</a> &nbsp;·&nbsp;
+      <a href="tel:+14107304867">410-730-4867</a> &nbsp;·&nbsp;
+      <a href="https://linkedin.smiklespeaks.com" target="_blank" rel="noopener">linkedin.smiklespeaks.com</a> &nbsp;·&nbsp;
+      <a href="https://joannelsmikle.com" target="_blank" rel="noopener">joannelsmikle.com</a>
+    </div>
+  </div>
+
+  <div class="pagefoot">
+    <span>JOANNE L. SMIKLE, PHD — RESUME</span>
+    <span>Page 3 of 3</span>
+  </div>
+</div>
+
+</body>
+</html>

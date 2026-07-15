@@ -9,6 +9,8 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 | `index.html` | Complete one-page site, first-person copy. Headshot lives at `img/headshot.jpg`, fonts load from Google Fonts CDN. No build step, no JS dependencies. |
 | `Smikle_Board_Resume_2026.pdf` | Two-page designed board resume matching the site (deep red #f50603 / charcoal #232326, Fraunces + Source Serif 4 + Archivo), first-person copy. This is the target of the site's "Download Board Resume" button. |
 | `pdf-source/board-resume.html` | Source for the PDF above — a standalone print-styled HTML file. There's no InDesign/Figma source for this document; it's rendered to PDF via headless Chrome (`--print-to-pdf`). Edit this file and re-render rather than hand-editing the PDF. |
+| `Smikle_Full_Resume_2026.pdf` | Three-page general-purpose resume (same design system as the board resume), target of the site's new "Download Full Resume" button. Condensed from her academic CV — see notes below. |
+| `pdf-source/full-resume.html` | Source for the full resume, same headless-Chrome print-to-pdf workflow as the board resume source. |
 
 ## Repo / hosting plan (GitHub Pages)
 
@@ -40,6 +42,14 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 - [x] Fifth revision round (July 13), client-approved and asked to go live: new consistent headshot (IMG_8512, gray dress) cropped to face/shoulders, used in both site and PDF, replacing the red-shirt hand photo. Site H1 changed "Dr. Joanne L. Smikle" → "Joanne L. Smikle, PhD" (matching the PDF). LinkedIn button on site changed from outline to solid red (`btn-primary`), matching Download Board Resume. Hero bio paragraph rewritten (client's exact wording) in both site and PDF. Added client's new closing paragraph ("Instrumental in developing and implementing organizational change initiatives...") to the bottom of the Professional Experience section in both site and PDF.
 - [ ] **smiklespeaks.com → joannelsmikle.com back-link** — client wants the link to go both ways. smiklespeaks.com is a separate WordPress site on Cloudways, not in this repo — someone with access to that site needs to add the reverse link.
 - [x] **Email deliverability** — resolved by switching the mailto: to `joanne@smiklespeaks.com` (see above) instead of standing up mail on the new domain.
+- [x] Sixth revision round (July 15): "full consistency" pass — the Professional Experience closing paragraph ("Instrumental in developing...") converted to first person in both site and PDF, matching the rest of the copy.
+- [x] Seventh revision round (July 15) — new **full resume** deliverable, added per client request ("my colleague suggested we create a button for my full resume... please do what you think is necessary to make it a 2, no more than 3 page resume"). Source: client's academic CV (`JLSmikle CV July 2026 BOARD.doc`, 7 pages as delivered — converted with macOS `textutil`, no LibreOffice on this machine). Condensed to 3 pages, same design system as the board resume, reusing the already-approved Professional Experience copy verbatim for consistency. Condensing decisions, for client review:
+  - **Kept in full:** Professional Experience summary + expertise list, Board & Governance ledger, Civic Engagement, Education, all 5 peer-reviewed publications.
+  - **Condensed:** ~60 consulting clients down to ~18 representative names across public sector/corporate/associations; ~90 practitioner articles down to a summary line + 5 representative titles; ~60 conference presentations down to 8 recent/notable ones; faculty appointments kept but course lists dropped.
+  - **Board tenure years:** left off the board ledger (matches the ageism decision above) — but faculty-appointment and publication years were kept, since a resume with zero dates anywhere would read as evasive rather than youthful. Flag if this distinction isn't what she wants.
+  - **Phone number discrepancy:** the CV lists `410-707-8512` (mobile) and `410-730-7867` (office) — different from the `410-730-4867` already confirmed by the client and live everywhere else. Used the already-confirmed number and did not add the CV's numbers; needs a quick client confirmation on which is correct.
+  - **LinkedIn URL:** CV lists the raw `linkedin.com/in/joannesmikle/` profile URL; used the established `linkedin.smiklespeaks.com` redirect instead for consistency with the rest of the site.
+  - No photo on this document (the source CV didn't have one either, and page budget was tight) — say the word if she wants it added.
 
 ## Design tokens (if edits are needed)
 
