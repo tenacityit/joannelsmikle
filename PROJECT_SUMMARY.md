@@ -7,8 +7,8 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 | File | What it is |
 |---|---|
 | `index.html` | Complete one-page site, first-person copy. Headshot lives at `img/headshot.jpg`, fonts load from Google Fonts CDN. No build step, no JS dependencies. |
-| `Smikle_Board_Resume_2026.pdf` | Two-page designed board resume matching the site (deep red #f50603 / charcoal #232326, Fraunces + Source Serif 4 + Archivo), first-person copy. This is the target of the site's "Download Board Resume" button. |
-| `pdf-source/board-resume.html` | Source for the PDF above — a standalone print-styled HTML file. There's no InDesign/Figma source for this document; it's rendered to PDF via headless Chrome (`--print-to-pdf`). Edit this file and re-render rather than hand-editing the PDF. |
+| `Smikle_Board_Resume_2026.pdf` | Two-page board resume, first-person copy. As of July 15, sans-serif throughout (Archivo, all weights) per client request — no longer matches the site's Fraunces/Source Serif 4 pairing, see note below. This is the target of the site's "Download Board Resume" button. |
+| `pdf-source/board-resume.html` | Source for the PDF above — a standalone print-styled HTML file. There's no InDesign/Figma source for this document; it's rendered to PDF via headless Chrome (`--print-to-pdf`). Edit this file and re-render rather than hand-editing the PDF. Fonts are self-hosted (`pdf-source/assets/fonts/`) — see font note below before assuming Google Fonts CDN links work here. |
 | `Smikle_Full_Resume_2026.pdf` | Three-page general-purpose resume (same design system as the board resume), target of the site's new "Download Full Resume" button. Condensed from her academic CV — see notes below. |
 | `pdf-source/full-resume.html` | Source for the full resume, same headless-Chrome print-to-pdf workflow as the board resume source. |
 
@@ -28,7 +28,7 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 ## Placeholders to resolve before launch (waiting on client, back July 7)
 
 - [x] Contact **email** — switched to `joanne@smiklespeaks.com` (her existing working mailbox) in both files, replacing `joanne@joannelsmikle.com`. Sidesteps the MX/deliverability setup that would've been needed on the new domain.
-- [x] **LinkedIn URL** — confirmed as `linkedin.smiklespeaks.com`, live in hero button + contact section + PDF. Also added the rest of her live social pattern (`instagram`/`spotify`/`podcast`/`youtube`.smiklespeaks.com) to the site's contact section.
+- [x] **LinkedIn URL** — as of July 15, `https://www.linkedin.com/in/joannesmikle/` (direct profile URL) everywhere — see revision round eight below for why it changed from the `linkedin.smiklespeaks.com` redirect. Also added the rest of her live social pattern (`instagram`/`spotify`/`podcast`/`youtube`.smiklespeaks.com) to the site's contact section.
 - [x] **Phone** — confirmed as `410-730-4867`, live in PDF Board Inquiries line.
 - [ ] **Doctorate details** (field + institution) — should be added near credentials; board audiences expect it
 - [ ] **Board logos** (Saybrook, American Brain Foundation, Heritage Ministry, ElevateMeD) — optional logo strip, high impact for recruiters
@@ -48,13 +48,26 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
   - **Condensed:** ~60 consulting clients down to ~18 representative names across public sector/corporate/associations; ~90 practitioner articles down to a summary line + 5 representative titles; ~60 conference presentations down to 8 recent/notable ones; faculty appointments kept but course lists dropped.
   - **Board tenure years:** left off the board ledger (matches the ageism decision above) — but faculty-appointment and publication years were kept, since a resume with zero dates anywhere would read as evasive rather than youthful. Flag if this distinction isn't what she wants.
   - **Phone number discrepancy:** the CV lists `410-707-8512` (mobile) and `410-730-7867` (office) — different from the `410-730-4867` already confirmed by the client and live everywhere else. Used the already-confirmed number and did not add the CV's numbers; needs a quick client confirmation on which is correct.
-  - **LinkedIn URL:** CV lists the raw `linkedin.com/in/joannesmikle/` profile URL; used the established `linkedin.smiklespeaks.com` redirect instead for consistency with the rest of the site.
+  - **LinkedIn URL:** CV lists the raw `linkedin.com/in/joannesmikle/` profile URL; used the established `linkedin.smiklespeaks.com` redirect instead for consistency with the rest of the site. *(Superseded July 15 — see below, now uses the direct URL everywhere.)*
   - No photo on this document (the source CV didn't have one either, and page budget was tight) — say the word if she wants it added.
+- [x] Eighth revision round (July 15) — client feedback on "the bio" (board resume PDF):
+  - **Board tenure years — reversed.** Client's colleague suggested adding them; client provided exact date ranges and said *"you only need to add this information to the bio"* — so years now show on each board row in `Smikle_Board_Resume_2026.pdf` only. Not added to the site or the full resume; ask before doing so.
+  - **Font bug found and fixed.** The Google Fonts CDN (`fonts.googleapis.com`) was not reliably loading during headless Chrome's `--print-to-pdf`, so both PDFs were silently falling back to system fonts (Georgia/Times/Helvetica) — this is almost certainly what the client meant by "looks so much like Times Roman" and the "crooked J" (Fraunces' capital J has a pronounced swash that reads oddly when it's actually rendering as a substituted Times-Bold). Root-caused by checking the PDF's embedded font list (`page.get_fonts()` in PyMuPDF) — it showed base-14 fallback fonts, not the intended webfonts. Fixed for both PDFs by downloading the actual font files and self-hosting them via local `@font-face` (`pdf-source/assets/fonts/*.ttf`, `file://`-relative `src: url(...)`), removing the network dependency entirely. Confirmed fix by re-checking the embedded font list after re-rendering — both PDFs now embed the real fonts.
+  - **Board resume switched to sans-serif** (Archivo only, all weights) per client's explicit request, on top of the font-embedding fix — this was a design change, not just a bug fix. The site and the full resume were **not** changed and still use Fraunces + Source Serif 4 + Archivo — flagging this inconsistency since "full consistency" has mattered to her before; say the word if the full resume or site should switch too.
+  - Removed the "BOARD RESUME · INDEPENDENT DIRECTOR" eyebrow line from the top of the PDF header entirely.
+  - PDF footer changed from "— BOARD RESUME" to "— INDEPENDENT DIRECTOR".
+  - **LinkedIn URL changed** from the `linkedin.smiklespeaks.com` redirect to the direct profile URL `https://www.linkedin.com/in/joannesmikle/`, everywhere it appears: the site (hero button + contact section), the board resume PDF, and the full resume PDF. Note: the redirect was actually working correctly (verified — it 301s to the right profile URL); what she's seeing when she clicks it is LinkedIn showing her its "self-view" edit mode because she's logged in as herself. Any visitor who isn't logged in as her sees the normal public profile. Switching to the direct URL doesn't change that behavior, but it's what she asked for.
+  - Thought Leadership section in the PDF now matches the site exactly: added the descriptive sentence under each stat, and matched the site's labels ("Published Articles" / "Podcast Listeners" / "Years Consulting" instead of the PDF's previous, more formal wording).
+  - **Not done — blocked:** client said "change the headshot to the new one I sent," but no new photo came through in this message and nothing matching in Downloads. Still using IMG_8516 (gray sweater) on both the board resume and the site. Need her to resend.
+  - Client also said she's sending fresh full-resume content "today" via her colleague's suggestion — worth flagging to her that `Smikle_Full_Resume_2026.pdf` already exists and is live (built July 15 from her academic CV, see revision round seven above), in case what she sends is meant to replace rather than duplicate it.
 
 ## Design tokens (if edits are needed)
 
 - Ink `#232326` · Ink-soft `#4c4c52` · Paper `#faf9f6` · Paper-deep `#f1efe9` · Deep red `#f50603` (client-specified, July 13) · Line `#dcd8cf`
-- Display: **Fraunces** (500/600) · Body: **Source Serif 4** · Labels/UI: **Archivo** (600, tracked-out uppercase)
+- Fonts differ by document as of July 15:
+  - **Site (`index.html`) and full resume (`pdf-source/full-resume.html`):** Display **Fraunces** (500/600) · Body **Source Serif 4** · Labels/UI **Archivo** (600, tracked-out uppercase)
+  - **Board resume (`pdf-source/board-resume.html`) only:** **Archivo** throughout (400/500/600/700), no serif — client's explicit request, see revision round eight
+- PDFs must self-host their fonts as local files under `pdf-source/assets/fonts/` and reference them with relative `@font-face` `src: url(...)` paths — the Google Fonts CDN link tag does not reliably load during headless Chrome's `--print-to-pdf`, causing silent fallback to system fonts. Always check `page.get_fonts()` (PyMuPDF) after rendering a new/changed PDF to confirm the intended fonts actually embedded, not base-14 fallbacks (Times/Georgia/Helvetica).
 - Signature element: the "board ledger" — each board as a row with an uppercase deep-red role label and pill tags for committee assignments. Keep this pattern if adding/editing boards.
 
 ## Content source
