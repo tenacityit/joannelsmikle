@@ -25,7 +25,7 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 
 ## Placeholders to resolve before launch (waiting on client, back July 7)
 
-- [x] Contact **email** — confirmed as `joanne@joannelsmikle.com`, now live in both files. DNS side still to do: MX/forwarding so it delivers to her Office 365 smiklespeaks.com mailbox (domain alias in the M365 tenant preferred so she can also send-as), plus SPF/DKIM/DMARC on joannelsmikle.com.
+- [x] Contact **email** — switched to `joanne@smiklespeaks.com` (her existing working mailbox) in both files, replacing `joanne@joannelsmikle.com`. Sidesteps the MX/deliverability setup that would've been needed on the new domain.
 - [x] **LinkedIn URL** — confirmed as `linkedin.smiklespeaks.com`, live in hero button + contact section + PDF. Also added the rest of her live social pattern (`instagram`/`spotify`/`podcast`/`youtube`.smiklespeaks.com) to the site's contact section.
 - [x] **Phone** — confirmed as `410-730-4867`, live in PDF Board Inquiries line.
 - [ ] **Doctorate details** (field + institution) — should be added near credentials; board audiences expect it
@@ -39,7 +39,7 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
 - [x] Fourth revision round (July 13): removed the site's top nav bar entirely ("Joanne L. Smikle, Ph.D." wordmark, upper-left) — client wants no name/branding above the hero photo, matching the PDF's cleaned-up header. Hero section now starts at the top of the page.
 - [x] Fifth revision round (July 13), client-approved and asked to go live: new consistent headshot (IMG_8512, gray dress) cropped to face/shoulders, used in both site and PDF, replacing the red-shirt hand photo. Site H1 changed "Dr. Joanne L. Smikle" → "Joanne L. Smikle, PhD" (matching the PDF). LinkedIn button on site changed from outline to solid red (`btn-primary`), matching Download Board Resume. Hero bio paragraph rewritten (client's exact wording) in both site and PDF. Added client's new closing paragraph ("Instrumental in developing and implementing organizational change initiatives...") to the bottom of the Professional Experience section in both site and PDF.
 - [ ] **smiklespeaks.com → joannelsmikle.com back-link** — client wants the link to go both ways. smiklespeaks.com is a separate WordPress site on Cloudways, not in this repo — someone with access to that site needs to add the reverse link.
-- [ ] **Email deliverability** — `joanne@joannelsmikle.com` is currently just a `mailto:` link; there are no MX records on the domain, so nothing actually receives mail there yet. Client wants replies to come from `joannelsmikle.com` specifically. Needs: MX records (or M365 domain alias if she wants to send-as from her existing smiklespeaks.com mailbox), plus SPF/DKIM/DMARC. Registrar + M365 admin access required — outside this repo.
+- [x] **Email deliverability** — resolved by switching the mailto: to `joanne@smiklespeaks.com` (see above) instead of standing up mail on the new domain.
 
 ## Design tokens (if edits are needed)
 
