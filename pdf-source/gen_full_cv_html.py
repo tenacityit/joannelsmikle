@@ -112,7 +112,7 @@ html.append(f'<style>{CSS}</style></head><body>')
 html.append('<div class="pdf-header">')
 html.append('<h1>Joanne L. Smikle, PhD</h1>')
 html.append('<div class="role">Principal Consultant &middot; Speaker &middot; Faculty</div>')
-html.append('<div class="contact-line">joanne@joannelsmikle.com &nbsp;&middot;&nbsp; 410-730-4867 &nbsp;&middot;&nbsp; linkedin.smiklespeaks.com &nbsp;&middot;&nbsp; joannelsmikle.com</div>')
+html.append('<div class="contact-line">joanne@joannelsmikle.com &nbsp;&middot;&nbsp; 410.707.8512 &nbsp;&middot;&nbsp; linkedin.smiklespeaks.com &nbsp;&middot;&nbsp; joannelsmikle.com</div>')
 html.append('</div>')
 
 # Professional experience
@@ -219,7 +219,7 @@ html.append(f'<div class="role-desc">{early_work["desc"]}</div></div>')
 # Contact
 html.append('<div class="inquiries"><div class="label">Contact</div><div class="line">')
 html.append('<a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> &nbsp;&middot;&nbsp; ')
-html.append('<a href="tel:+14107304867">410-730-4867</a> &nbsp;&middot;&nbsp; ')
+html.append('<a href="tel:+14107078512">410.707.8512</a> &nbsp;&middot;&nbsp; ')
 html.append('<a href="https://linkedin.smiklespeaks.com" target="_blank" rel="noopener">linkedin.smiklespeaks.com</a> &nbsp;&middot;&nbsp; ')
 html.append('<a href="https://joannelsmikle.com" target="_blank" rel="noopener">joannelsmikle.com</a>')
 html.append('</div></div>')
