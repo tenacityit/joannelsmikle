@@ -112,7 +112,7 @@ html.append(f'<style>{CSS}</style></head><body>')
 html.append('<div class="pdf-header">')
 html.append('<h1>Joanne L. Smikle, PhD</h1>')
 html.append('<div class="role">Principal Consultant &middot; Speaker &middot; Faculty</div>')
-html.append('<div class="contact-line">joanne@joannelsmikle.com &nbsp;&middot;&nbsp; 410.707.8512 &nbsp;&middot;&nbsp; linkedin.smiklespeaks.com &nbsp;&middot;&nbsp; joannelsmikle.com</div>')
+html.append('<div class="contact-line">joanne@smiklespeaks.com &nbsp;&middot;&nbsp; 410.707.8512 &nbsp;&middot;&nbsp; linkedin.com/in/joannesmikle &nbsp;&middot;&nbsp; joannelsmikle.com</div>')
 html.append('</div>')
 
 # Professional experience
@@ -134,7 +134,7 @@ detail_bullets = [
  "I assist leaders in analyzing innovations and ensuring that the range of viable options are well-aligned with organizational strategy.",
  "I create comprehensive approaches to succession planning and pipeline development so that key positions have available talent to advance the organization&rsquo;s strategic intentions.",
  "I partner with executives to design innovative, successful approaches for addressing human capital utilization issues that impact performance, productivity, and profit &mdash; partnerships that contribute to the long-term success of client organizations.",
- "I utilize the SmikleSpeaks podcast, with over 30,000 listeners globally, and the SmikleSpeaks YouTube channel to provide virtual leadership learning.",
+ "I utilize the SmikleSpeaks podcast, with over 33,000 listeners globally, and the SmikleSpeaks YouTube channel to provide virtual leadership learning.",
  "I facilitate strategic planning, retreats, seminars, workshops, and educational experiences for leaders. I conduct needs analyses to plot long-term courses for organizational development, providing systematic approaches to effectively position the organization for results aligned with strategic objectives.",
 ]
 html.append('<ul class="detail-list">')
@@ -218,9 +218,9 @@ html.append(f'<div class="role-desc">{early_work["desc"]}</div></div>')
 
 # Contact
 html.append('<div class="inquiries"><div class="label">Contact</div><div class="line">')
-html.append('<a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> &nbsp;&middot;&nbsp; ')
+html.append('<a href="mailto:joanne@smiklespeaks.com">joanne@smiklespeaks.com</a> &nbsp;&middot;&nbsp; ')
 html.append('<a href="tel:+14107078512">410.707.8512</a> &nbsp;&middot;&nbsp; ')
-html.append('<a href="https://linkedin.smiklespeaks.com" target="_blank" rel="noopener">linkedin.smiklespeaks.com</a> &nbsp;&middot;&nbsp; ')
+html.append('<a href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">linkedin.com/in/joannesmikle</a> &nbsp;&middot;&nbsp; ')
 html.append('<a href="https://joannelsmikle.com" target="_blank" rel="noopener">joannelsmikle.com</a>')
 html.append('</div></div>')
 
