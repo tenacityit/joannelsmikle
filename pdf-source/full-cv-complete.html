@@ -1,0 +1,641 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<title>Joanne L. Smikle, PhD — Full CV</title>
+<style>
+@font-face{font-family:'Archivo';font-weight:400;src:url('assets/fonts/archivo-400.ttf') format('truetype');}
+@font-face{font-family:'Archivo';font-weight:500;src:url('assets/fonts/archivo-500.ttf') format('truetype');}
+@font-face{font-family:'Archivo';font-weight:600;src:url('assets/fonts/archivo-600.ttf') format('truetype');}
+@font-face{font-family:'Archivo';font-weight:700;src:url('assets/fonts/archivo-700.ttf') format('truetype');}
+:root{
+  --ink:#232326; --ink-soft:#4c4c52; --paper:#faf9f6; --paper-deep:#f1efe9;
+  --garnet:#f50603; --inquiry-label:#e5959e; --footer-muted:#8a8781; --line:#dcd8cf;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+@page{ size: letter; margin: 46pt 54pt 44pt; }
+body{
+  font-family:'Archivo', Helvetica, Arial, sans-serif; font-weight:400;
+  color:var(--ink); line-height:1.5; font-size:9pt; -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+.pdf-header{ padding-bottom:8pt;margin-bottom:14pt;border-bottom:3pt solid var(--garnet); }
+h1{ font-family:'Archivo',sans-serif; font-weight:700; font-size:19pt; letter-spacing:-.005em; margin-bottom:5pt; }
+.role{ font-family:'Archivo',sans-serif;font-size:8.5pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--garnet); }
+.contact-line{ font-family:'Archivo',sans-serif;font-size:8pt;color:var(--ink-soft);margin-top:6pt; }
+.contact-line a{color:var(--ink-soft);}
+
+h2{
+  font-family:'Archivo',sans-serif;font-weight:700;font-size:12.5pt;color:var(--ink);
+  border-bottom:1pt solid var(--line);padding-bottom:4pt;margin:20pt 0 8pt;
+  break-after:avoid;
+}
+h2:first-of-type{margin-top:0;}
+.section-note{font-size:8.6pt;color:var(--ink-soft);margin-bottom:8pt;}
+
+.section p{ font-size:9pt;line-height:1.42;color:var(--ink-soft); }
+
+.prof-list{ list-style:none;margin-top:6pt; }
+.prof-list li{ font-size:9pt;color:var(--ink);padding:3pt 0 3pt 13pt;position:relative;border-bottom:1pt solid var(--line); }
+.prof-list li:last-child{border-bottom:none;}
+.prof-list li::before{content:"\2014";color:var(--garnet);position:absolute;left:0;}
+
+.detail-list{list-style:none;margin-top:8pt;}
+.detail-list li{font-size:8.8pt;color:var(--ink-soft);padding:3pt 0 3pt 13pt;position:relative;line-height:1.4;}
+.detail-list li::before{content:"\2022";color:var(--garnet);position:absolute;left:0;font-weight:700;}
+
+.client-grid{ column-count:3; column-gap:24pt; font-size:8.3pt;color:var(--ink-soft);margin-top:4pt; }
+.client-grid div{ break-inside:avoid; padding:2.5pt 0; border-bottom:1pt solid var(--line); }
+
+.role-block{ padding:9pt 0;border-bottom:1pt solid var(--line);break-inside:avoid; }
+.role-block:last-child{border-bottom:none;}
+.role-head{display:flex;justify-content:space-between;gap:12pt;align-items:baseline;}
+.role-main{font-family:'Archivo',sans-serif;font-weight:600;font-size:9.4pt;}
+.role-org{font-size:8.6pt;color:var(--ink-soft);margin-top:1pt;}
+.role-years{font-family:'Archivo',sans-serif;font-size:7.6pt;font-weight:600;color:var(--ink-soft);white-space:nowrap;text-align:right;}
+.role-desc{font-size:8.6pt;color:var(--ink-soft);margin-top:4pt;line-height:1.4;}
+.course-list{margin-top:5pt;font-size:8pt;color:var(--ink-soft);}
+.course-list .lbl{font-family:'Archivo',sans-serif;font-weight:600;font-size:7pt;letter-spacing:.06em;text-transform:uppercase;color:var(--garnet);margin-bottom:3pt;}
+.course-list span{display:inline;}
+
+.civic-row{padding:8pt 0;border-bottom:1pt solid var(--line);break-inside:avoid;}
+.civic-row:last-child{border-bottom:none;}
+.civic-head{display:flex;justify-content:space-between;gap:12pt;align-items:baseline;}
+.civic-role{font-family:'Archivo',sans-serif;font-weight:600;font-size:9pt;}
+.civic-years{font-family:'Archivo',sans-serif;font-size:7.6pt;font-weight:600;color:var(--garnet);white-space:nowrap;}
+.civic-desc{font-size:8.6pt;color:var(--ink-soft);margin-top:3pt;line-height:1.4;}
+
+.edu-row{padding:5pt 0;border-bottom:1pt solid var(--line);font-size:9pt;}
+.edu-row:last-child{border-bottom:none;}
+.edu-row strong{font-family:'Archivo',sans-serif;font-weight:600;}
+.edu-row .note{display:block;font-size:8.3pt;color:var(--ink-soft);margin-top:2pt;}
+
+.pub-list{list-style:none;}
+.pub-list li{font-size:8.4pt;color:var(--ink-soft);padding:3pt 0;line-height:1.4;border-bottom:1pt solid var(--line);}
+.pub-list li:last-child{border-bottom:none;}
+
+.pub-year-group{margin-top:9pt;break-inside:avoid;}
+.pub-year-group:first-child{margin-top:4pt;}
+.pub-year{font-family:'Archivo',sans-serif;font-weight:700;font-size:8.6pt;color:var(--garnet);margin-bottom:3pt;}
+.pub-year-items{list-style:none;}
+.pub-year-items li{font-size:8.4pt;color:var(--ink-soft);padding:2.5pt 0;line-height:1.4;}
+
+.pres-row{display:flex;gap:10pt;padding:4pt 0;border-bottom:1pt solid var(--line);break-inside:avoid;}
+.pres-row:last-child{border-bottom:none;}
+.pres-year{font-family:'Archivo',sans-serif;font-size:7.6pt;font-weight:700;color:var(--garnet);width:32pt;flex-shrink:0;padding-top:1pt;}
+.pres-body{font-size:8.4pt;color:var(--ink-soft);line-height:1.4;}
+.pres-body .venue{color:var(--ink);}
+.pres-body .titles em{font-style:italic;}
+
+.inquiries{ background:var(--ink);border-radius:6pt;padding:9pt 14pt;margin-top:16pt; }
+.inquiries .label{font-family:'Archivo',sans-serif;font-size:7.5pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--inquiry-label);margin-bottom:5pt;}
+.inquiries .line{font-family:'Archivo',sans-serif;font-size:8.6pt;color:var(--paper);}
+.inquiries .line a{color:var(--paper);text-decoration:underline;text-decoration-color:rgba(250,249,246,.45);}
+
+.doc-note{
+  margin-top:18pt;padding-top:10pt;border-top:1pt dashed var(--line);
+  font-size:7.6pt;color:var(--footer-muted);font-style:italic;
+}
+</style></head><body>
+<div class="pdf-header">
+<h1>Joanne L. Smikle, PhD</h1>
+<div class="role">Principal Consultant &middot; Speaker &middot; Faculty</div>
+<div class="contact-line">joanne@joannelsmikle.com &nbsp;&middot;&nbsp; 410-730-4867 &nbsp;&middot;&nbsp; linkedin.smiklespeaks.com &nbsp;&middot;&nbsp; joannelsmikle.com</div>
+</div>
+<h2>Professional Experience</h2>
+<p>I bring significant and sustained experience providing consulting to executives and leaders in many industry sectors. I partner with executives to implement sound initiatives that positively impact a range of business issues. I deliver advice and counsel to executives concerned with reaching the organization&rsquo;s most positive, powerful potential. Areas of expertise follow:</p>
+<ul class="prof-list">
+<li>Strategy Formulation, Implementation and Evaluation</li>
+<li>Human Capital Utilization, Succession Planning, Workforce Best Practices</li>
+<li>Executive &amp; Leadership Development</li>
+<li>Organizational Effectiveness, Organizational Development, Organizational Change &amp; Organizational Culture</li>
+</ul>
+<ul class="detail-list">
+<li>I design an array of customized interactive learning experiences curated to meet each client&rsquo;s individual needs.</li>
+<li>I am instrumental in developing and implementing organizational change initiatives. I devise programmatic interventions to change corporate culture while enhancing performance and productivity. I help clients develop and refine the competencies required to meet current and anticipated business demands, with particular emphasis on strategically improving stakeholder relations.</li>
+<li>I develop quantitative and qualitative assessments to measure organizational climate, skillfully using a variety of approaches including focus groups, surveys, and mixed-method measurement strategies. I provide comprehensive analysis of assessment results.</li>
+<li>I develop leadership and management development interventions aimed at cultivating the competencies required to meet the organization&rsquo;s strategic objectives.</li>
+<li>I assist leaders in analyzing innovations and ensuring that the range of viable options are well-aligned with organizational strategy.</li>
+<li>I create comprehensive approaches to succession planning and pipeline development so that key positions have available talent to advance the organization&rsquo;s strategic intentions.</li>
+<li>I partner with executives to design innovative, successful approaches for addressing human capital utilization issues that impact performance, productivity, and profit &mdash; partnerships that contribute to the long-term success of client organizations.</li>
+<li>I utilize the SmikleSpeaks podcast, with over 30,000 listeners globally, and the SmikleSpeaks YouTube channel to provide virtual leadership learning.</li>
+<li>I facilitate strategic planning, retreats, seminars, workshops, and educational experiences for leaders. I conduct needs analyses to plot long-term courses for organizational development, providing systematic approaches to effectively position the organization for results aligned with strategic objectives.</li>
+</ul>
+<h2>Clients</h2>
+<div class="section-note">Representative public sector, private sector, and nonprofit clients served over three decades of consulting.</div>
+<div class="client-grid">
+<div>General Services Administration</div>
+<div>USDA Graduate School</div>
+<div>EPA ARMSS</div>
+<div>EPA Multimedia Division</div>
+<div>EPA Office of General Counsel</div>
+<div>Maryland Aviation Administration</div>
+<div>MDOT Motor Vehicle Administration</div>
+<div>National Institutes of Health</div>
+<div>National Science Foundation</div>
+<div>Richland School District #2 (Columbia, SC)</div>
+<div>US Marine Corps</div>
+<div>Federal Aviation Administration</div>
+<div>Essex Community College</div>
+<div>Cerro Coso Community College</div>
+<div>Maryland Transportation Administration</div>
+<div>Maryland Department of Corrections</div>
+<div>Baltimore City Community College</div>
+<div>Iowa Department of Personnel</div>
+<div>Empower Baltimore Management Committee</div>
+<div>Miami Dade Community College</div>
+<div>Maryland Police and Corrections Training Commission</div>
+<div>Maryland Department of Human Resources</div>
+<div>African American Roundtable of Howard County</div>
+<div>American Headache Society</div>
+<div>Elizabeth Seton Pediatric Center</div>
+<div>All Medical Staffing</div>
+<div>Hillsboro Association of Women Lawyers</div>
+<div>Oklahoma Leading Age</div>
+<div>LeadingAge</div>
+<div>Vectorworks</div>
+<div>American Academy of Neurology</div>
+<div>Nikkei Concerns</div>
+<div>Congressional Hispanic Caucus Institute</div>
+<div>Association of Fundraising Professionals</div>
+<div>Western New York Association of Fundraising Professionals</div>
+<div>California Society of Association Executives</div>
+<div>Professional Convention Management Association</div>
+<div>Essential FCU (formerly Dow Louisiana FCU)</div>
+<div>American Honda Motor Co.</div>
+<div>Fannie Mae</div>
+<div>American Health Care Association</div>
+<div>American College of Health Care Administrators</div>
+<div>Texas Health Care Association</div>
+<div>Opis Senior Services</div>
+<div>Alpha Physician Services</div>
+<div>Hollywood Hills Rehabilitation Center</div>
+<div>WJZ TV (CBS Affiliate)</div>
+<div>Securityplus FCU</div>
+<div>Sandy Spring Bank</div>
+<div>Rich Products Corporation</div>
+<div>Virginia Credit Union League</div>
+<div>American Psychiatric Association</div>
+<div>Mercy Healthcare System</div>
+<div>Maryland Bankers Association</div>
+<div>California Bankers Association</div>
+<div>Baltimore Gas & Electric</div>
+<div>Northrup Grumman</div>
+<div>Genesis Eldercare</div>
+<div>Tennessee Credit Union League</div>
+</div>
+<h2>Faculty Appointments</h2>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Visiting Faculty</div><div class="role-org">The Dr. Nancy Grasmick Leadership Institute, Professional Leadership Program for Women &mdash; Towson University</div></div>
+<div class="role-years">Spring 2022</div></div>
+<div class="role-desc">Selected to serve as facilitator for this four-month, cohort-based program that empowers women to be strong influencers and capable leaders. Responsible for course design that is immersive, challenging, rooted in theory, and transferrable to the practice of leadership.</div>
+<div class="course-list"><div class="lbl">Courses Taught</div><span>Discovering Leadership Core Values &nbsp;&middot;&nbsp; Leadership &amp; Communication &nbsp;&middot;&nbsp; Leadership, Strategy &amp; Innovation &nbsp;&middot;&nbsp; Leadership Capacity Building</span></div>
+</div>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Core Faculty</div><div class="role-org">Department of Leadership &amp; Management &mdash; Saybrook University</div></div>
+<div class="role-years">2017 &ndash; 2019</div></div>
+<div class="role-desc">Appointed as faculty in the Department of Leadership &amp; Management. Responsible for course design, instruction, advising, and individualized work with masters and doctoral students. This cohort-based, hybrid environment with annual residencies provides post-graduate education. Responsible for assessing qualifying essays for PhD candidates and capstone projects for MA students. Served on dissertation committees. Served as Interim Chair of the department for six months.</div>
+<div class="course-list"><div class="lbl">Courses Taught</div><span>Leading Global Business Organizations &nbsp;&middot;&nbsp; Designing &amp; Managing Collaborative Workplaces &nbsp;&middot;&nbsp; Strategically Leading People, Projects &amp; Innovation &nbsp;&middot;&nbsp; Envisioning &amp; Managing Contemporary Organizations &nbsp;&middot;&nbsp; Managing Distributed Organizations &nbsp;&middot;&nbsp; Qualitative Research Methods &nbsp;&middot;&nbsp; Strategic Management</span></div>
+</div>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Associate Professor</div><div class="role-org">Department of Management &amp; Decision Sciences &mdash; Capitol Technology University</div></div>
+<div class="role-years">2015 &ndash; 2016</div></div>
+<div class="role-desc">Appointed as full-time faculty in the Management &amp; Decision Sciences Doctoral Program. Responsible for course design, instruction, advising, and individualized work with doctoral students. Served on dissertation committees.</div>
+<div class="course-list"><div class="lbl">Courses Taught</div><span>Special Topics in Management &nbsp;&middot;&nbsp; Special Topics in Leadership &nbsp;&middot;&nbsp; International Perspectives on Leadership &nbsp;&middot;&nbsp; Dissertation Readiness &nbsp;&middot;&nbsp; Organization Theory &nbsp;&middot;&nbsp; Qualitative Research Methods</span></div>
+</div>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Affiliate Instructor</div><div class="role-org">Sellinger School of Business &amp; Management &mdash; Loyola University Maryland, Baltimore, MD</div></div>
+<div class="role-years">Fall 2015</div></div>
+<div class="role-desc">Taught Strategic Management, the capstone course, in the MBA Program; responsible for course design and delivery, student assessments, final project assessment, and related activities required to provide engaging instruction to graduate students.</div>
+<div class="course-list"><div class="lbl">Courses Taught</div><span>Masters Capstone</span></div>
+</div>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Faculty</div><div class="role-org">Institute for Organization Management &mdash; U.S. Chamber of Commerce, Villanova University, Philadelphia, PA</div></div>
+<div class="role-years">2012, 2013, 2016</div></div>
+<div class="role-desc">Selected to serve as faculty in this three-year executive development program that culminates in IOM certification. Teaches courses in leadership, nonprofit issues and general management topics.</div>
+</div>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Faculty</div><div class="role-org">Banker&rsquo;s School &mdash; Maryland Bankers Association, Annapolis, Maryland</div></div>
+<div class="role-years">2002 &ndash; 2006</div></div>
+<div class="role-desc">Served as faculty in a statewide leadership development program designed for mid-career managers from financial institutions of all sizes.</div>
+</div>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Lead Instructor</div><div class="role-org">Leadership Institute &mdash; Maryland Police and Correctional Training Commission, Baltimore, Maryland</div></div>
+<div class="role-years">1995 &ndash; 2001</div></div>
+<div class="role-desc">Provided course design and delivery for executive education institutes. In addition to teaching the principles and practices of management, also instructed on strategy and other leadership topics.</div>
+</div>
+<h2>Memberships, Community Service &amp; Civic Engagement</h2>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member, Board of Directors</div><div class="civic-years">2024 &ndash; Present</div>
+</div>
+<div class="civic-desc">Serves on the Board of Directors of the American Brain Foundation. A member of the Governance Committee of this organization devoted to providing funding to researchers focused on finding cures to brain diseases.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member, Board of Directors</div><div class="civic-years">2022 &ndash; 2024</div>
+</div>
+<div class="civic-desc">Served on the Board of Directors of Heritage Ministry Charitable Care Network. The company provides post-acute care, rehabilitation, independent living, and memory care. They own and operate facilities in New York, Pennsylvania, Illinois, and Washington.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member, Board of Trustees</div><div class="civic-years">2020 &ndash; Present</div>
+</div>
+<div class="civic-desc">Serves on the Board of Trustees of Saybrook University, a post-graduate institution rooted in the humanistic traditions of learning. A member of the Governance and Institutional Advancement Committees.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member, Advisory Board</div><div class="civic-years">2020 &ndash; Present</div>
+</div>
+<div class="civic-desc">Serves on the Advisory Board of ElevateMeD, an organization created to carve pathways to ensure that the nation&rsquo;s physician workforce represents the communities served throughout the country. The ElevateMeD Scholars Program provides significant financial assistance to medical students while supporting them through mentorship, leadership development, and financial management education.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member, Oversight Committee</div><div class="civic-years">2017 &ndash; Present</div>
+</div>
+<div class="civic-desc">Oversight Committee on Quality of Care in Nursing Homes and Assisted Living Facilities &mdash; serves by way of a gubernatorial appointment on this committee that evaluates progress in improving the quality of nursing home and assisted living facility care in the State of Maryland.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member, Board of Directors</div><div class="civic-years">2009 &ndash; 2019</div>
+</div>
+<div class="civic-desc">Bridges to Housing Stability (formerly Congregations Concerned for the Homeless). This 40-year-old Howard County, Maryland nonprofit organization works to end homelessness and provide housing stability. In addition to providing transitional housing and housing for low-wage workers, the organization also provides case management services to economically at-risk families. Secretary of the Board of Directors for two terms: 2013 &ndash; 2017, working collaboratively with other members of the Executive Committee to ensure organizational effectiveness.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Lobbyist</div><div class="civic-years">2008 &ndash; 2012</div>
+</div>
+<div class="civic-desc">League of Women Voters&rsquo; US Lobby Corps. This select group of twenty lobbyists presents the League&rsquo;s positions to elected officials in the Senate and House of Representatives.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Member</div><div class="civic-years">2014 &ndash; 2021</div>
+</div>
+<div class="civic-desc">Executive Alliance (formerly Network 2000), a regional organization that advances the aims of women executives by preparing them for greater levels of responsibility in corporations, nonprofits, and communities. Serves on the Mentoring Committee, which readies mid-career women for advancement.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Volunteer</div><div class="civic-years">2020 &ndash; Present</div>
+</div>
+<div class="civic-desc">Food on the 15th. This nonprofit provides nutritious food to low-income seniors. Coordinates nationwide food drives to positively impact food insecurity. Manages local and national outreach and volunteer engagement.</div></div>
+<div class="civic-row"><div class="civic-head">
+<div class="civic-role">Volunteer</div><div class="civic-years">2012 &ndash; Present</div>
+</div>
+<div class="civic-desc">Day Resource Center. This nonprofit organization serves the needs of the chronically homeless in Howard County, Maryland. Provides ad hoc resource development by soliciting donations from businesses, faith-based organizations, and individuals.</div></div>
+<h2>Education</h2>
+<div class="edu-row"><strong>Doctor of Philosophy, Human and Organizational Systems</strong> &mdash; Fielding Graduate University<span class="note">Dissertation research on employee retention and commitment</span></div>
+<div class="edu-row"><strong>Master of Arts, Human and Organizational Systems</strong> &mdash; Fielding Graduate University</div>
+<div class="edu-row"><strong>Bachelor of Arts, Political Science</strong> &mdash; University of Maryland, Baltimore County</div>
+<h2>Selected Peer-Reviewed Publications</h2>
+<ul class="pub-list">
+<li>Smikle, J.L. (2019). Connecting values to leader and leadership development. <em>Journal of Values-Based Leadership, 12</em>(1), 73&ndash;80.</li>
+<li>Smikle, J.L. (2016). Strategic planning. In Grachek, M. (Ed.), <em>Essential Business Skills for the Nurse Leader</em> (Ch. 1). Denver, CO: American Association of Directors Nursing Services.</li>
+<li>Smikle, J.L. (1994). Practical guide to developing and implementing cultural awareness training for faculty and staff development. <em>The Journal of Staff, Program, &amp; Organization Development, 12</em>(2), 69&ndash;80.</li>
+<li>Ovbiagele, B., Lewis, S., Correa, D., Thomas, R., Charleston, L. (Eds.) (2024). <em>Achieving Equity in Neurological Practice: Principles and Pathways</em>, accepted for publication by Springer Publishing. (Contributing author)</li>
+</ul>
+<div class="section-note" style="margin-top:8pt;">Upcoming:</div>
+<ul class="pub-list">
+<li>Smikle, J.L. (2025). Why they stay: Retention in long-term care (working title); accepted for publication in <em>Management and Organization Studies Journal</em>.</li>
+</ul>
+<h2>Selected Practitioner Publications</h2>
+<div class="section-note">Author of over ninety articles for practitioner publications. Published works are listed below by year.</div>
+<div class="pub-year-group"><div class="pub-year">2022</div><ul class="pub-year-items">
+<li>&ldquo;Succession Planning: Investing in Your Organization&rsquo;s Future,&rdquo; Canadian Society of Nutrition Management News, Fall 2023</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2021</div><ul class="pub-year-items">
+<li>&ldquo;Self-Advocacy and Promotion,&rdquo; Office Technology Magazine, November 2021</li>
+<li>&ldquo;Cultivating Your Leadership Brand,&rdquo; Virginia Human Resources Today, Winter/Spring 2021</li>
+<li>&ldquo;A Leadership Conundrum: Bringing Your Core Values to the Fore,&rdquo; Office Technology Magazine, March 2021</li>
+<li>&ldquo;Leadership Development: A Deep Dive into Retooling for a Changing World,&rdquo; Office Technology Magazine, January 2021</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2020</div><ul class="pub-year-items">
+<li>&ldquo;The Future of HR,&rdquo; Virginia Human Resources Today, Summer/Fall 2020</li>
+<li>&ldquo;Healing the Heart of the Organization,&rdquo; Kentucky SHRM Magazine, 2020 Annual Edition</li>
+<li>&ldquo;Leadership Messaging Skills,&rdquo; Office Technology Magazine, July 2020</li>
+<li>&ldquo;Cultivating Organizational Resilience,&rdquo; HR Florida Review, July 2020</li>
+<li>&ldquo;Resilient Leadership,&rdquo; Office Technology Magazine, June 2020</li>
+<li>&ldquo;Reimagine, Renew, Rebound: The Path Forward for Association Leadership,&rdquo; Association Adviser, April 2020</li>
+<li>&ldquo;Be a Voice of Optimism in Uncertain Times,&rdquo; Association Leadership Magazine, May/June 2020</li>
+<li>&ldquo;Reconnecting with Members and Staff After a Major Disruption,&rdquo; The Executive, May/June 2020</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2019</div><ul class="pub-year-items">
+<li>&ldquo;Stop with the Millennials: Create an Intergenerational Workforce that Eliminates Ageism,&rdquo; HR Florida Review, Summer 2019</li>
+<li>&ldquo;Integrated Strategies for Developing Future Leaders,&rdquo; HR Florida Review, Winter 2019</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2018</div><ul class="pub-year-items">
+<li>&ldquo;Building a Collaborative Performance Management System,&rdquo; LeadingAge Magazine, November-December 2018</li>
+<li>&ldquo;Cultivating Next-Generation Association Leaders,&rdquo; The Executive, May/June 2018</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2017</div><ul class="pub-year-items">
+<li>&ldquo;Action Planning for Successful Retention,&rdquo; Provider Magazine, July 2017</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2016</div><ul class="pub-year-items">
+<li>&ldquo;Retention Secrets: Creating Legions of Loyal Employees,&rdquo; Kentucky SHRM Magazine, Summer 2016</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2015</div><ul class="pub-year-items">
+<li>&ldquo;Cultivating Commitment: Keys to Retaining Human Capital,&rdquo; HR Florida Review, Fall 2015</li>
+<li>&ldquo;Why They Stay: Retention Strategies for Long Term Care,&rdquo; Provider Magazine, November 2015</li>
+<li>&ldquo;Building Healthy Board/Staff Relationships,&rdquo; The Executive, November/December 2015</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2014</div><ul class="pub-year-items">
+<li>&ldquo;Transformational Leadership: The Key to Employee Engagement and Commitment,&rdquo; Kentucky SHRM Magazine, Fall 2014</li>
+<li>&ldquo;Commitment for the HR Professional,&rdquo; HR Florida Review, Summer 2014</li>
+<li>&ldquo;Coaching Catastrophes,&rdquo; Kentucky SHRM Magazine, Spring 2014</li>
+<li>&ldquo;The Pivotal Role of the Nursing Home Administrator,&rdquo; Provider Magazine, August 2014</li>
+<li>&ldquo;Employee Engagement: Three Strategies for Building Deep Commitment,&rdquo; Office Technology Magazine, August 2014</li>
+<li>&ldquo;Three Key Leadership Duties: Care, Loyalty and Obedience,&rdquo; Source, July 2014</li>
+<li>&ldquo;Move Over and Make Room,&rdquo; HR Florida Review, Fall 2014</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2013</div><ul class="pub-year-items">
+<li>&ldquo;Capturing Talent,&rdquo; HR News Magazine, June 2013</li>
+<li>&ldquo;A Quality Employer,&rdquo; Office Technology Magazine, July 2013</li>
+<li>&ldquo;Appreciative Inquiry: A Powerful Strategic Planning Tool,&rdquo; Kentucky SHRM Magazine, Spring 2013</li>
+<li>&ldquo;Can They All Be Coached?,&rdquo; Kentucky SHRM Magazine, Fall 2013</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2012</div><ul class="pub-year-items">
+<li>&ldquo;Customized Learning and Culture Change,&rdquo; Long Term Living Magazine, January 2012</li>
+<li>&ldquo;Appreciative Inquiry: A Leadership Tool for Invigorating the Association,&rdquo; The Executive, January/February 2012</li>
+<li>&ldquo;Appreciative Inquiry 101: A Primer for HR Practitioners,&rdquo; Virginia Human Resources Today, Winter/Spring 2012</li>
+<li>&ldquo;Leadership Strategies that Stick,&rdquo; Provider Magazine, June 2012</li>
+<li>&ldquo;Relinquishing the Reigns: Five Strategies for Succession Planning,&rdquo; HR News Magazine, September 2012</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2011</div><ul class="pub-year-items">
+<li>&ldquo;Appreciative Inquiry: The Practitioner is as Important as the Process,&rdquo; HR Matters, July 2011</li>
+<li>&ldquo;Collective Competence,&rdquo; Office Technology Magazine, September 2011</li>
+<li>&ldquo;Ahead of the Curve: Leadership Competencies Required to Sustain Change,&rdquo; Office Technology Magazine, November 2011</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2010</div><ul class="pub-year-items">
+<li>&ldquo;Creating Excellence in Employee Relations,&rdquo; Kentucky SHRM Magazine, Spring 2010</li>
+<li>&ldquo;Appreciative Inquiry: Models for Transforming the Enterprise,&rdquo; HR Keystones, Summer 2010</li>
+<li>&ldquo;Appreciative Inquiry: An Important Tool for Transforming Your Business,&rdquo; Office Technology Magazine, May 2010</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2009</div><ul class="pub-year-items">
+<li>&ldquo;Moving to Compliance to Commitment: The Executive Challenge,&rdquo; Source, April 2009</li>
+<li>&ldquo;Making Strategy Stick,&rdquo; Office Technology Magazine, May 2009</li>
+<li>&ldquo;Teamwork Starts at the Top,&rdquo; Long Term Living Magazine, July 2009</li>
+<li>&ldquo;Collaborative Leadership,&rdquo; Office Technology Magazine, September 2009</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2008</div><ul class="pub-year-items">
+<li>&ldquo;Strategic Planning: A Primer for HR Practitioners,&rdquo; HR Florida Review, Winter/Spring 2008</li>
+<li>&ldquo;The Role of the Coach,&rdquo; Support World, March/April 2008</li>
+<li>&ldquo;The Labor Shortage,&rdquo; PIHRAScope, Spring 2008</li>
+<li>&ldquo;Leadership Competencies,&rdquo; Office Technology Magazine, May 2008</li>
+<li>&ldquo;Make the Most of Who You Have,&rdquo; Support World, November/December 2008</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2007</div><ul class="pub-year-items">
+<li>&ldquo;Strategic Planning: A Powerful Process that Produces Results,&rdquo; Support World, January/February 2007</li>
+<li>&ldquo;The Path to Great Leadership,&rdquo; Office Technology Magazine, June 2007</li>
+<li>&ldquo;Learning Transfer: Why and How,&rdquo; HR Success Magazine, Summer 2007</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2006</div><ul class="pub-year-items">
+<li>&ldquo;The Welcome Workplace,&rdquo; HR Success Magazine, Spring 2006</li>
+<li>&ldquo;Teaching the Art of Coaching,&rdquo; PIHRAScope, March/April 2006</li>
+<li>&ldquo;The Trouble with Troublesome Employees,&rdquo; NC HR Review, Spring/Summer 2006</li>
+<li><em>Inspiring Customer Loyalty: Energy, Enthusiasm and Commitment</em>, ISBN 1-57125-007-7, a monograph published by Help Desk Institute, 2005</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2005</div><ul class="pub-year-items">
+<li><em>Value Driven Leadership: Emotional Intelligence in Practice</em>, ISBN 1-57125-075-1, a monograph published by Help Desk Institute, 2005</li>
+<li>&ldquo;Accountable Leadership,&rdquo; PIHRAScope, May/June 2005</li>
+<li>&ldquo;Accountable Leadership: Raising the Bar on Service Management,&rdquo; Support World, January/February 2005</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2004</div><ul class="pub-year-items">
+<li>&ldquo;Change: It&rsquo;s Always Changing,&rdquo; FHCA Pulse, February 2004</li>
+<li>&ldquo;People + Process = Maximum Productivity,&rdquo; Source, January 2004</li>
+<li>&ldquo;Time for a Tune-Up: Evaluating Service Processes,&rdquo; Support World, January/February 2004</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2003</div><ul class="pub-year-items">
+<li>&ldquo;Diagnosing an Allergy to Innovation,&rdquo; Source, January 2003</li>
+<li>&ldquo;Aligning Training with Business Unit Strategy,&rdquo; HR Florida Review, Summer 2003</li>
+<li>&ldquo;Strategic Intent Reinforced Through Training,&rdquo; Forum Magazine, October 2003</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2002</div><ul class="pub-year-items">
+<li>&ldquo;Creating Organizational Alignment,&rdquo; HR Florida Review, Winter 2002</li>
+<li>&ldquo;Growing Leaders,&rdquo; Office Technology Magazine, July 2002</li>
+<li>&ldquo;The Gifts of Leadership,&rdquo; Source, April 2002</li>
+<li>&ldquo;The Change Factor: Strategic Positioning in Trying Times,&rdquo; Office Technology Magazine, January 2002</li>
+</ul></div>
+<div class="pub-year-group"><div class="pub-year">2001</div><ul class="pub-year-items">
+<li>&ldquo;Honoring the Human Element,&rdquo; Source, April 2001</li>
+<li>&ldquo;Lessons for Leadership,&rdquo; At Your Service, Spring 2001</li>
+</ul></div>
+<h2>Selected Presentations</h2>
+<div class="section-note">Keynote presentations, concurrent and virtual sessions at national and regional conferences.</div>
+<div class="pres-row">
+<div class="pres-year">2026</div>
+<div class="pres-body"><span class="venue">NeuroNet Convention, Austin, TX</span><br><span class="titles"><em>&ldquo;Hassles to Hope&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2025</div>
+<div class="pres-body"><span class="venue">American Health Care Association Convention, October 2025, Las Vegas, NV</span><br><span class="titles"><em>&ldquo;Resilient Leadership&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2024</div>
+<div class="pres-body"><span class="venue">AAN Practice Management Conference, April 2024, Denver, CO</span><br><span class="titles"><em>&ldquo;The Journey to Leadership Excellence&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2024</div>
+<div class="pres-body"><span class="venue">LeadingAge, Next Level Leadership Virtual Series, January 2024</span><br><span class="titles"><em>&ldquo;Practicing Mindfulness &amp; Empathy&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2023</div>
+<div class="pres-body"><span class="venue">LeadingAge, Next Level Leadership Virtual Series, December 2023</span><br><span class="titles"><em>&ldquo;Adaptive &amp; Resilient Leadership&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2021</div>
+<div class="pres-body"><span class="venue">American Health Care Association, Annual Conference, October 2021, Washington, DC</span><br><span class="titles"><em>&ldquo;Bridge Building: Intentional Strategies for Building an Inclusive Organization&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2021</div>
+<div class="pres-body"><span class="venue">American Academy of Neurology, Leadership Programs Annual Meeting Webinar, April 2021</span><br><span class="titles"><em>&ldquo;Emotional Intelligence in Action&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2020</div>
+<div class="pres-body"><span class="venue">University of Kansas Medical Center, Department of Neurology, Grand Rounds, November 2020</span><br><span class="titles"><em>&ldquo;Bridge Building: Practical Strategies for Inclusion&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2020</div>
+<div class="pres-body"><span class="venue">LeadingAge Oklahoma, Statewide Webinar Series, October 2020</span><br><span class="titles"><em>&ldquo;Connecting in a Disconnected World&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2020</div>
+<div class="pres-body"><span class="venue">American Health Care Association, Annual Convention, October 2020</span><br><span class="titles"><em>&ldquo;Pipeline Planning&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2020</div>
+<div class="pres-body"><span class="venue">Hillsborough Association of Women Lawyers, Monthly Meeting, September 2020</span><br><span class="titles"><em>&ldquo;Connecting in a Disconnected World&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2020</div>
+<div class="pres-body"><span class="venue">LeadingAge, National Webinar Series, June 2020</span><br><span class="titles"><em>&ldquo;Leadership Resilience&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2019</div>
+<div class="pres-body"><span class="venue">LeadingAge, Annual Meeting 2019, San Diego, CA</span><br><span class="titles"><em>&ldquo;Stop with the Millennials! Create Truly Intergenerational Workplaces&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Leading in Aging Services Organizations: Developing a Reflexive Approach&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2019</div>
+<div class="pres-body"><span class="venue">American Society of Healthcare Human Resources Association, National Conference 2019, Chicago, IL</span><br><span class="titles"><em>&ldquo;Pipeline Planning: Smart Talent Development Strategies&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2019</div>
+<div class="pres-body"><span class="venue">National Apartment Association, NAA Association Executives&rsquo; Brainstorming Conference, September 2019, Minneapolis, MN</span><br><span class="titles"><em>&ldquo;Pipeline Planning: Smart Talent Development Strategies&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2019</div>
+<div class="pres-body"><span class="venue">Southeast Chapter PCMA, Monthly Meeting, Atlanta, GA</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: A Powerful Strategic Planning Tool&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2019</div>
+<div class="pres-body"><span class="venue">New Mexico Society of Human Resource Management, Monthly Meeting, May 2019, Albuquerque, NM</span><br><span class="titles"><em>&ldquo;Integrated Strategies for Developing Future Leaders&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2019</div>
+<div class="pres-body"><span class="venue">American Academy of Neurology, Annual Meeting 2019, Philadelphia, PA</span><br><span class="titles"><em>&ldquo;Adaptive Leadership&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2018</div>
+<div class="pres-body"><span class="venue">New York State Health Facilities Association, Fall Conference 2018, Albany, NY</span><br><span class="titles"><em>&ldquo;Lead Forward: Focus on What Matters Now&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Why They Stay&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2018</div>
+<div class="pres-body"><span class="venue">LeadingAge North Carolina, Spring Conference 2018, Asheville, NC</span><br><span class="titles"><em>&ldquo;From Intention to Action: Practical Strategies for Addressing Diversity &amp; Inclusion in the C-Suite&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2018</div>
+<div class="pres-body"><span class="venue">American Academy of Neurology, Annual Meeting 2018 Leadership University, Los Angeles, CA</span><br><span class="titles"><em>&ldquo;Mentoring: Growing the Next Generation of Neurologists&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2018</div>
+<div class="pres-body"><span class="venue">Meeting Professionals International, MACE 2018, Washington, DC</span><br><span class="titles"><em>&ldquo;Pipeline Planning: Smart Talent Development Strategies&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2018</div>
+<div class="pres-body"><span class="venue">Professional Convention Management Association, Convening Leaders 2018, Nashville, TN</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: A Strategic Planning Tool&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2017</div>
+<div class="pres-body"><span class="venue">LeadingAge, Peak Leadership Summit, 2017, Washington, DC</span><br><span class="titles"><em>&ldquo;The Path to C-Suite Inclusion: Strategies to Promote Leadership Diversity&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2017</div>
+<div class="pres-body"><span class="venue">American Academy of Neurology, Leadership University, 2017, Boston, MA</span><br><span class="titles"><em>&ldquo;Lead Forward: Focus on What Matters Now&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Mentoring: Growing the Next Generation of Neurologists&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2017</div>
+<div class="pres-body"><span class="venue">Virginia Credit Union League&rsquo;s Annual Meeting, 2017, Roanoke, VA</span><br><span class="titles"><em>&ldquo;HR Management as a Competitive Advantage&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2016</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s Annual Conference, 2016, Nashville, TN</span><br><span class="titles"><em>&ldquo;Engaging the Front Line in Customer Satisfaction&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2016</div>
+<div class="pres-body"><span class="venue">LeadingAge Annual Convention, 2016, Indianapolis, IN</span><br><span class="titles"><em>&ldquo;Enhancing Leadership Diversity in Aging Services&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2016</div>
+<div class="pres-body"><span class="venue">Oklahoma LeadingAge&rsquo;s Workforce Solutions Conference, 2016, Oklahoma City, OK</span><br><span class="titles"><em>&ldquo;Workforce Solutions: Creative Approaches to Retention &amp; Commitment&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2016</div>
+<div class="pres-body"><span class="venue">Maryland Bankers Association&rsquo;s Women in Banking, 2016, Baltimore, MD</span><br><span class="titles"><em>&ldquo;Connectivity: Gadgets Won&rsquo;t Get It&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2016</div>
+<div class="pres-body"><span class="venue">PCMA&rsquo;s Convening Leaders, 2016, Vancouver, British Columbia</span><br><span class="titles"><em>&ldquo;Intentional Leadership&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2015</div>
+<div class="pres-body"><span class="venue">LeadingAge&rsquo;s Peak Leadership Summit, Washington, DC</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: Tools for Sustainable Change in Aging Services&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2015</div>
+<div class="pres-body"><span class="venue">LeadingAge&rsquo;s Annual Meeting, 2015, Boston, MA</span><br><span class="titles"><em>&ldquo;Why They Stay: Commitment and Retention in Aging Services&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2015</div>
+<div class="pres-body"><span class="venue">New York State Health Facilities Association&rsquo;s Annual Nurse Leadership Conference, 2015, Syracuse, NY</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: Tools for Transforming Long Term Care&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Lead with Your Strengths&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2015</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s 7th Annual Quality Symposium, 2015, Austin, TX</span><br><span class="titles"><em>&ldquo;Why They Stay: Commitment and Retention in Long Term Care&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2014</div>
+<div class="pres-body"><span class="venue">LeadingAge&rsquo;s Annual Meeting, 2014, Nashville, TN</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: A Tool for Transforming Long Term Care&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2014</div>
+<div class="pres-body"><span class="venue">Utah Health Care Association&rsquo;s Annual Conference, 2014, Salt Lake City, UT</span><br><span class="titles"><em>&ldquo;Lead with Your Strengths&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Coaching: The Lost Leadership Art&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2014</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s Quality Symposium, 2014, New Orleans, LA</span><br><span class="titles"><em>&ldquo;Lead Forward&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2014</div>
+<div class="pres-body"><span class="venue">New Mexico State Human Resource Conference, 2014, Albuquerque, NM</span><br><span class="titles"><em>&ldquo;Lead Forward&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Lead with Your Strengths&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2014</div>
+<div class="pres-body"><span class="venue">California Society of Association Executives&rsquo; Elevate State Conference, 2014, Palm Springs, CA</span><br><span class="titles"><em>&ldquo;Lead Forward&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Connectivity: Gadgets Won&rsquo;t Get It&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2013</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s Annual Convention, 2013, Phoenix, AZ</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: Tools for Transforming Long Term Care&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2013</div>
+<div class="pres-body"><span class="venue">Independent Nursing Home Association Summer Conference, 2013, Choctaw, MS</span><br><span class="titles"><em>&ldquo;Lead Forward&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2013</div>
+<div class="pres-body"><span class="venue">PCMA Leadership Effectiveness Symposium, 2013, Dallas, TX</span><br><span class="titles"><em>&ldquo;Leadership Effectiveness&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2013</div>
+<div class="pres-body"><span class="venue">PCMA Convening Leaders Convention, 2013, Orlando, FL</span><br><span class="titles"><em>&ldquo;Lead Forward&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">Association of Fundraising Professional&rsquo;s Chapter Leader&rsquo;s Conference, 2012, Houston, TX</span><br><span class="titles"><em>&ldquo;The Gifts of Leadership&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">Florida Health Care Association&rsquo;s Annual Conference, 2012, Orlando, FL</span><br><span class="titles"><em>&ldquo;Leadership in Turbulent Times&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s Annual Convention, 2012, Tampa, FL</span><br><span class="titles"><em>&ldquo;The Gifts of Leadership&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">Midwest Energy Association&rsquo;s Energetic Women Conference, 2012, St. Louis, MO</span><br><span class="titles"><em>&ldquo;Coaching: The Lost Leadership Art&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">Institute of Real Estate Management&rsquo;s Legal and Legislative Summit, 2012, Washington, DC</span><br><span class="titles"><em>&ldquo;Discovering the Coach in You&rdquo;</em> &nbsp;&middot;&nbsp; <em>&ldquo;Lead Forward&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">American College of Health Care Administrator&rsquo;s Annual Convocation, 2012, Nashville, TN</span><br><span class="titles"><em>&ldquo;Coaching: The Lost Leadership Art&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">Texas Health Care Association&rsquo;s Nurses Conference, 2012, San Antonio, TX</span><br><span class="titles"><em>&ldquo;Lead Forward&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s Quality Symposium, 2012, Houston, TX</span><br><span class="titles"><em>&ldquo;Appreciative Inquiry: Tools for Transforming LTC&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">North Dakota Banker&rsquo;s Association Winter Conference, 2012, Bismarck, ND</span><br><span class="titles"><em>&ldquo;Coaching: The Lost Leadership Art&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">American Health Care Association&rsquo;s Independent Owners Conference, 2012, New Orleans, LA</span><br><span class="titles"><em>&ldquo;Building a Mission-Driven Organization&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">California Society of Association Executives&rsquo; Elevate State Conference, 2012, Newport Beach, CA</span><br><span class="titles"><em>&ldquo;Improvement, Innovation &amp; Ingenuity: Jump-Starting Spectacular Performance&rdquo;</em></span></div>
+</div>
+<div class="pres-row">
+<div class="pres-year">2012</div>
+<div class="pres-body"><span class="venue">New Mexico State Human Resource Conference, 2012, Albuquerque, NM</span><br><span class="titles"><em>&ldquo;Making Strategy Stick&rdquo;</em></span></div>
+</div>
+<h2>Selected Academic Presentations</h2>
+<div class="pres-row"><div class="pres-body">Academy of Management Meeting, Organization Development &amp; Change Division Panel Discussion, Topic: Professional Joy and Thought Leadership, August 2020</div></div>
+<h2>Early Work Experience</h2>
+<div class="role-block"><div class="role-head">
+<div><div class="role-main">Manager, Leadership Development Program</div><div class="role-org">State of Maryland, Department of Transportation</div></div>
+</div>
+<div class="role-desc">Managed statewide Leadership Development Program, which was an essential component of the agency&rsquo;s succession planning strategy.</div></div>
+<div class="inquiries"><div class="label">Contact</div><div class="line">
+<a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> &nbsp;&middot;&nbsp; 
+<a href="tel:+14107304867">410-730-4867</a> &nbsp;&middot;&nbsp; 
+<a href="https://linkedin.smiklespeaks.com" target="_blank" rel="noopener">linkedin.smiklespeaks.com</a> &nbsp;&middot;&nbsp; 
+<a href="https://joannelsmikle.com" target="_blank" rel="noopener">joannelsmikle.com</a>
+</div></div>
+<div class="doc-note">This is the complete, unabridged version of Dr. Smikle's CV, for internal comparison against the condensed 3-page resume. Not yet linked from the live site.</div>
+</body></html>
