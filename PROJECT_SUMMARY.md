@@ -70,6 +70,11 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
   - **Email plan clarified:** Pablo told the client on July 13 he'd add an email alias so mail to `joanne@joannelsmikle.com` arrives in her existing inbox and replies show correctly — that's still an outstanding action item for Pablo (not a code/content change), not generic "add MX records" as previously phrased.
   - **smiklespeaks.com back-link:** the client's own email names a specific colleague who'll likely handle this on her other site (see original email, not repeated here). Still needs someone with access there; not something to build in this repo.
   - Built the encyclopedic full CV (see deliverables table) per the client's explicit follow-up request that a CV should be complete, not summarized.
+- [x] Eleventh round (July 16) — client feedback, direct from her (not a GitHub Issue this time, straight email as usual):
+  - **Phone number changed** to her mobile, dot-separated format, on all three PDF documents (board resume, full resume, complete CV) — she confirmed she never answers the landline that was live before. Closes GitHub issue #1. (Actual number intentionally not written in this file or in the issue comments — see the privacy note at the top of this file.)
+  - **Full resume's client list reorganized** into Corporate / Nonprofit / Government (in that order), plus 11 new client names added (7 Corporate, 4 Nonprofit, each listed first in their category per her request). Page 1/2 split rebalanced since the longer list no longer fit.
+  - **Site's "Download Full Resume" button** changed from outline to solid red, matching the other two hero buttons.
+  - **LinkedIn — client asked again for the direct profile URL** on "everything," the same change Pablo asked to have reverted in round nine ("she just doesn't realize she sees the admin side"). Flagged this conflict back to Pablo rather than silently picking a side; not changed yet, pending his call.
 
 ## Design tokens (if edits are needed)
 
