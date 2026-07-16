@@ -75,6 +75,13 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
   - **Full resume's client list reorganized** into Corporate / Nonprofit / Government (in that order), plus 11 new client names added (7 Corporate, 4 Nonprofit, each listed first in their category per her request). Page 1/2 split rebalanced since the longer list no longer fit.
   - **Site's "Download Full Resume" button** changed from outline to solid red, matching the other two hero buttons.
   - **LinkedIn — client asked again for the direct profile URL** on "everything," the same change Pablo asked to have reverted in round nine ("she just doesn't realize she sees the admin side"). Flagged this conflict back to Pablo rather than silently picking a side; not changed yet, pending his call.
+- [x] Twelfth round (July 16) — two more emails, resolving several open GitHub Issues at once:
+  - **LinkedIn decided:** Pablo said "go with her linkedin link" — switched from the `linkedin.smiklespeaks.com` redirect to the direct profile URL everywhere (site, board resume, condensed full resume, complete CV).
+  - **Podcast count → 33,000** (her current figure) on the site, board resume, and complete CV. Closes issue #4.
+  - **Board logos declined** by the client ("they strike me as messy when I see them"). Closes issue #3, won't build.
+  - **Condensed vs. complete CV resolved:** she wants both, for different purposes. `Smikle_Full_Resume_2026.pdf` (condensed) stays as the site's "Download Full Resume" — her words: "I love the condensed version and will be using that from now on." `Smikle_Full_CV_Complete_2026.pdf` (unabridged) is kept separately, not linked from the site, for her own use applying to academic/faculty positions. Closes issue #7.
+  - **Complete CV gets its own email:** `joanne@smiklespeaks.com` instead of `joanne@joannelsmikle.com` — her explicit request, specific to this one document only, since that's the address she uses for academic-context correspondence. The board resume and condensed full resume are unchanged (`joanne@joannelsmikle.com`).
+  - **Sector-focus statement (issue #5):** she asked what it even means rather than approving/declining it. Answered on the issue with a concrete example drawn from her actual board seats, rather than guessing and implementing — issue stays open pending her call on wording, or skipping it.
 
 ## Design tokens (if edits are needed)
 
