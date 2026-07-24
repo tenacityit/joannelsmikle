@@ -117,7 +117,7 @@ html.append('</div>')
 
 # Professional experience
 html.append('<h2>Professional Experience</h2>')
-html.append('<p>I bring significant and sustained experience providing consulting to executives and leaders in many industry sectors. I partner with executives to implement sound initiatives that positively impact a range of business issues. I deliver advice and counsel to executives concerned with reaching the organization&rsquo;s most positive, powerful potential. Areas of expertise follow:</p>')
+html.append('<p>I bring significant and sustained experience providing consulting to executives in many industry sectors. I partner with leaders to implement sound initiatives that positively impact a range of business issues related to organizational effectiveness, bridging the gap between strategy and operations, succession planning, and skillful talent management. I deliver advice and counsel focused on thoughtful approaches to reaching the organization&rsquo;s long and short-range objectives. Areas of expertise follow:</p>')
 html.append('<ul class="prof-list">')
 for item in ["Strategy Formulation, Implementation and Evaluation",
              "Human Capital Utilization, Succession Planning, Workforce Best Practices",
@@ -128,7 +128,7 @@ html.append('</ul>')
 
 detail_bullets = [
  "I design an array of customized interactive learning experiences curated to meet each client&rsquo;s individual needs.",
- "I am instrumental in developing and implementing organizational change initiatives. I devise programmatic interventions to change corporate culture while enhancing performance and productivity. I help clients develop and refine the competencies required to meet current and anticipated business demands, with particular emphasis on strategically improving stakeholder relations.",
+ "I am instrumental in developing and implementing organizational change initiatives. I devise programmatic interventions to transform corporate culture while enhancing performance and productivity. I help clients develop and refine the leadership competencies required to meet current and anticipated business demands.",
  "I develop quantitative and qualitative assessments to measure organizational climate, skillfully using a variety of approaches including focus groups, surveys, and mixed-method measurement strategies. I provide comprehensive analysis of assessment results.",
  "I develop leadership and management development interventions aimed at cultivating the competencies required to meet the organization&rsquo;s strategic objectives.",
  "I assist leaders in analyzing innovations and ensuring that the range of viable options are well-aligned with organizational strategy.",
