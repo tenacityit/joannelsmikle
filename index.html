@@ -46,9 +46,9 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
 /* ---------- hero ---------- */
 .hero{padding:72px 0 64px;}
 .hero-grid{
-  display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:center;
+  display:grid;grid-template-columns:340px 1fr;gap:64px;
 }
-.portrait-frame{position:relative;}
+.portrait-frame{position:relative;margin-top:78px;}
 .portrait-frame img{
   display:block;width:100%;height:auto;
   border-radius:2px;
@@ -175,7 +175,7 @@ footer .wrap{
 /* ---------- responsive ---------- */
 @media (max-width:860px){
   .hero-grid{grid-template-columns:1fr;gap:44px;}
-  .portrait-frame{max-width:320px;}
+  .portrait-frame{max-width:320px;margin-top:0;}
   .strip{grid-template-columns:1fr;gap:32px;}
   .ledger-row{grid-template-columns:1fr;gap:10px;}
 }
@@ -213,6 +213,25 @@ footer .wrap{
     <div class="ledger">
       <div class="ledger-row">
         <div>
+          <div class="ledger-org">Heritage Ministry Charitable Care Network</div>
+          <div class="ledger-role">Board of Directors</div>
+        </div>
+        <div>
+          <p class="ledger-desc">Company provides post-acute care, senior independent living, memory care, and rehabilitation services. Owns and operates facilities in Pennsylvania, New York, Washington, and Illinois.</p>
+          <div class="tags"><span class="tag">Ad Hoc Executive Development Committee</span></div>
+        </div>
+      </div>
+      <div class="ledger-row">
+        <div>
+          <div class="ledger-org">State of Maryland — Oversight Committee on Quality of Care in Nursing Homes &amp; Assisted Living Facilities</div>
+          <div class="ledger-role">Gubernatorial Appointment</div>
+        </div>
+        <div>
+          <p class="ledger-desc">Evaluates statewide progress in improving the quality of nursing home and assisted living care.</p>
+        </div>
+      </div>
+      <div class="ledger-row">
+        <div>
           <div class="ledger-org">Saybrook University</div>
           <div class="ledger-role">Board of Trustees</div>
         </div>
@@ -233,30 +252,12 @@ footer .wrap{
       </div>
       <div class="ledger-row">
         <div>
-          <div class="ledger-org">Heritage Ministry Charitable Care Network</div>
-          <div class="ledger-role">Board of Directors</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Post-acute care, rehabilitation, independent living, and memory care operator with facilities in New York, Pennsylvania, Illinois, and Washington.</p>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">State of Maryland — Oversight Committee on Quality of Care in Nursing Homes &amp; Assisted Living Facilities</div>
-          <div class="ledger-role">Gubernatorial Appointment</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Evaluates statewide progress in improving the quality of nursing home and assisted living care.</p>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
           <div class="ledger-org">ElevateMeD</div>
           <div class="ledger-role">National Advisory Board</div>
         </div>
         <div>
           <p class="ledger-desc">Works to ensure the nation's physician workforce racially and ethnically represents the population it serves.</p>
-          <div class="tags"><span class="tag">Scholar Mentoring</span></div>
+          <div class="tags"><span class="tag">Scholar Mentoring Committee</span><span class="tag">Program Committee</span></div>
         </div>
       </div>
       <div class="ledger-row">
