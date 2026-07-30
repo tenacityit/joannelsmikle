@@ -46,8 +46,9 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
 /* ---------- hero ---------- */
 .hero{padding:72px 0 64px;}
 .hero-grid{
-  display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:center;
+  display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:start;
 }
+.hero-left{margin-top:150px;}
 .portrait-frame{position:relative;}
 .portrait-frame img{
   display:block;width:100%;height:auto;
@@ -87,7 +88,11 @@ h1{
   font-size:1.13rem;line-height:1.7;color:var(--ink-soft);
   max-width:34em;margin-bottom:18px;
 }
-.hero-lede:last-of-type{margin-bottom:34px;}
+.hero-lede:last-of-type{margin-bottom:0;}
+.hero-actions{
+  margin-top:24px;
+  display:flex;flex-direction:column;gap:12px;
+}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px;}
 .btn{
   font-family:'Archivo',sans-serif;font-size:.82rem;font-weight:600;
@@ -95,6 +100,7 @@ h1{
   padding:13px 24px;border-radius:2px;display:inline-block;
   transition:background .15s ease,color .15s ease;
 }
+.hero-actions .btn{display:block;text-align:center;}
 .btn-primary{background:var(--garnet);color:#fff;}
 .btn-primary:hover{background:var(--garnet-soft);}
 .btn-ghost{border:1px solid var(--ink);color:var(--ink);}
@@ -175,8 +181,10 @@ footer .wrap{
 
 /* ---------- responsive ---------- */
 @media (max-width:860px){
-  .hero-grid{grid-template-columns:1fr;gap:44px;}
-  .portrait-frame{max-width:320px;}
+  .hero-grid{grid-template-columns:1fr;gap:0;}
+  .hero-left{max-width:320px;margin-top:0;}
+  .hero-copy{margin-top:44px;}
+  .hero-actions{max-width:320px;}
   .strip{grid-template-columns:1fr;gap:32px;}
   .ledger-row{grid-template-columns:1fr;gap:10px;}
 }
@@ -187,22 +195,24 @@ footer .wrap{
 <main>
 <section class="hero">
   <div class="wrap hero-grid">
-    <div class="portrait-frame">
-      <div class="portrait-rule" aria-hidden="true"></div>
-      <img src="img/headshot.jpg" alt="Portrait of Joanne L. Smikle, PhD" width="400" height="500">
+    <div class="hero-left">
+      <div class="portrait-frame">
+        <div class="portrait-rule" aria-hidden="true"></div>
+        <img src="img/headshot.jpg" alt="Portrait of Joanne L. Smikle, PhD" width="400" height="500">
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="Smikle_Board_Resume_2026.pdf" download>Download Board Resume</a>
+        <a class="btn btn-primary" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
-    <div>
+    <div class="hero-copy">
       <h1>Joanne L. Smikle, PhD</h1>
       <p class="hero-role">Independent Director</p>
       <p class="hero-domains">Governance <span>·</span> Strategy <span>·</span> Human Capital Utilization</p>
       <p class="hero-lede">As a nationally recognized business consultant and leadership educator, I bring keen analytical abilities and agile thinking to board service. I have in-depth knowledge of human capital utilization, employment best practices, organizational effectiveness, strategy formulation, execution, and evaluation. This knowledge gives me a clear understanding of the complexities organizations face and paths forward that align strategy and operations.</p>
       <p class="hero-lede">My consulting experience gives me the capacity to analyze challenges from the perspectives of varied stakeholders. Being actively engaged in leadership development at the C-suite gives me strong insights into the dilemmas that executives face, as well as the competencies required for their individual success. The coaching, advice, and counsel that I provide translates into a strong ability to help boards maintain healthy relationships with the company's leaders.</p>
       <p class="hero-lede">Because I believe that open dialogue is vital, I am comfortable posing difficult questions that spark consideration of several approaches to reach the enterprise's strategic objectives. My natural disposition as a collaborator enhances my effectiveness when engaged in decision making with my board colleagues.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="Smikle_Board_Resume_2026.pdf" download>Download Board Resume</a>
-        <a class="btn btn-primary" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
     </div>
   </div>
 </section>
