@@ -1,0 +1,1002 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smikle -- Year in Review (Private)</title>
+<style>
+  body { font-family: -apple-system, Helvetica, Arial, sans-serif; background:#0f172a; color:#e2e8f0; margin:0; padding:24px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:#94a3b8; margin-bottom:20px; font-size:13px; }
+  .tabs { display:flex; gap:8px; margin-bottom:20px; }
+  .tab { padding:8px 16px; border-radius:6px; cursor:pointer; background:#1e293b; font-size:14px; border:none; color:#e2e8f0; font-family:inherit; }
+  .tab.active { background:#2563eb; }
+  .section { display:none; }
+  .section.active { display:block; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px; }
+  .card { background:#1e293b; border-radius:8px; overflow:hidden; border:1px solid #334155; }
+  .thumb { width:100%; height:150px; background:#000; display:flex; align-items:center; justify-content:center; }
+  .thumb img, .thumb video { width:100%; height:100%; object-fit:cover; }
+  .meta { padding:8px 10px; font-size:12px; }
+  .week { font-weight:600; color:#f1f5f9; }
+  .date { color:#94a3b8; margin-bottom:4px; }
+  .type { display:inline-block; color:white; padding:2px 6px; border-radius:4px; font-size:10px; font-weight:600; margin-right:4px; }
+  .id { display:inline-block; color:#cbd5e1; font-size:11px; }
+  .repeat { display:block; margin-top:4px; color:#fbbf24; font-size:10px; }
+  .summary { background:#1e293b; border-radius:8px; padding:12px 16px; margin-bottom:20px; font-size:13px; }
+  #gate { position:fixed; inset:0; background:#0f172a; display:flex; align-items:center; justify-content:center; flex-direction:column; z-index:100; }
+  #gate input { padding:10px 14px; border-radius:6px; border:1px solid #334155; background:#1e293b; color:#e2e8f0; font-size:15px; width:220px; }
+  #gate button { padding:10px 18px; border-radius:6px; border:none; background:#2563eb; color:white; font-size:15px; margin-left:8px; cursor:pointer; }
+  #gate .note { color:#64748b; font-size:12px; margin-top:16px; max-width:340px; text-align:center; }
+  #gate .wrong { color:#f87171; font-size:13px; margin-top:10px; height:16px; }
+  #content { display:none; }
+</style></head>
+<body>
+
+<div id="gate">
+  <h1 style="margin-bottom:20px;">Private review link</h1>
+  <div>
+    <input type="password" id="pw" placeholder="Password" autofocus>
+    <button onclick="checkPw()">View</button>
+  </div>
+  <div class="wrong" id="wrongMsg"></div>
+  <div class="note">This isn't real security -- just a signal that this page is for your review only, not for sharing. Anyone with the page source could bypass it. Don't put anything here you wouldn't want a technically curious person to see.</div>
+</div>
+
+<div id="content">
+
+<h1>Smikle -- Year in Review</h1>
+<div class="sub">Everything actually published to date.</div>
+<div class="tabs">
+  <button class="tab active" onclick="show('ig')">Instagram (86 posts)</button>
+  <button class="tab" onclick="show('li')">LinkedIn (143 posts)</button>
+</div>
+<div id="ig" class="section active">
+  <div class="summary">80/86 matched to library content &middot; 6 own content</div>
+  <div class="grid"><div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c8872f84142ded8802c72d/14d713c1aa1c242a2898a12702ff0283.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1757972287257/2ec84eff-b5f9-4554-9c75-11eaa6d61dd9.png"></video></div><div class="meta">
+      <div class="date">09/16/2025 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c964c49458c429030d8f19/a810b85390d753c4373d8d7e1b953c97.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1758028950872/bae1f832-0d9b-48ae-afed-c341579c4922.jpeg"></video></div><div class="meta">
+      <div class="date">09/17/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c967a5692e343f070e6a14/f7f35861fe39b64d6857b449b353dd2a.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1758029731412/6a27bc4e-610c-414d-9317-4114cc78e63b.jpeg"></video></div><div class="meta">
+      <div class="date">09/24/2025 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c968e19a6e67ccaf0fa225/a74ec5fb8b182f94ba4c18e212f1f1dd.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c968e19a6e67ccaf0fa225/a74ec5fb8b182f94ba4c18e212f1f1dd.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">09/25/2025 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96af8a1eac4d75a0a7d52/59ced58c57c874459bdcd63a976db3cd.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1758030578460/3ec71764-faa5-4a6f-ad47-2e0503f66642.jpeg"></video></div><div class="meta">
+      <div class="date">09/29/2025 (Mon) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68c96b3e4e2c177044067e4d/b72ad0b418f480ebd404f2d1115579fa7c288805_270e30e3ef04bf79644a69a7073808f28c90d056_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">10/01/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #36</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96bc4ed9e5ea82906d181/c429759963046e5c3f2854b4a63a7909.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96bc4ed9e5ea82906d181/c429759963046e5c3f2854b4a63a7909.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/08/2025 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68c96c6820a30ccd2007cdf2/2c0edee705ef2493de18e3140e6a66c11b0782a9_32dedd3804817a68ed081df3d3fabff549f107d2_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">10/10/2025 (Fri) &middot; 12:00 PM</div>
+      <div class="type" style="background:#059669">Team #35</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96cb686eccd4dda01dea3/103958f3afbe61190266a924b958d809.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96cb686eccd4dda01dea3/103958f3afbe61190266a924b958d809.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/14/2025 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96d757e171df493026370/c27cf9021cb1a45cdaa469ca4e81b478.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96d757e171df493026370/c27cf9021cb1a45cdaa469ca4e81b478.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/15/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effffc7f2192c9f20602f0/488b0409ee61102bcb8661d8760f3587.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effffc7f2192c9f20602f0/488b0409ee61102bcb8661d8760f3587.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/21/2025 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68f000bc35d15c52e507cf08/c873254421efc5589a25d3cf6f6ad336.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68f000bc35d15c52e507cf08/c873254421efc5589a25d3cf6f6ad336.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/23/2025 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68f000f036db4f5b7d0fcac3/182d2b5a67497f2a794341eb528725e2.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1760559335842/0a8384fc-4a81-4449-8b24-9de41bd92751.jpeg"></video></div><div class="meta">
+      <div class="date">10/28/2025 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68f0035b6d61a4d250015fb5/3de05f4789bc6f713494c206e4ca42e7cf85afb2_1658058e24bed421600eba660bf8b4c23f45079c_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">10/30/2025 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #34</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691c7b2a6a573cb0f30f46f4/67b14739e5b7e225e62fde3418d40c12.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1763474217314/81947c1e-72b5-466e-9305-5b9153a8e700.jpeg"></video></div><div class="meta">
+      <div class="date">11/18/2025 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691c7b77ef58ba1a8d00410c/a8ac5254439a6fe392ddf942e5ccb57d6f1dc896_050fc8541c94da2610881ae4c44ddbcd5e4047f6_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">11/19/2025 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #2</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69248ead6f47667c720f6545/e66afb89afc976df1b2ba674bfc8f622.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1764003499624/ba03c4d6-2ef8-4753-8b60-481c44b6db59.jpeg"></video></div><div class="meta">
+      <div class="date">11/25/2025 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69248ec60a5852820602db7c/30159d1fdbba1a43ba7440adcb19211d06b7476e_ce0b777db9b96825317065c07d2c984005438347_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">11/26/2025 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #6</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/692db5cc9dbbdf90ba080a03/e2d0603d12011d3dfbed394d10ab00a3.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1764603337949/a00838bc-cb07-427c-b25d-53eb8bee8647.jpeg"></video></div><div class="meta">
+      <div class="date">12/01/2025 (Mon) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/692db6259dbbdf90ba080a13/6a61fbf0f6e2ea171e6e1b772981468c86c47631_44026af9f934a36a7448c07e2bd7ab272ef56022_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/03/2025 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #36</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6936ff0f09f6b505db03d763/0235e6970c4fd629751e4d5305d012ca.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1765211916969/de13ae9b-845c-4d0f-9a35-594620bbd101.jpeg"></video></div><div class="meta">
+      <div class="date">12/10/2025 (Wed) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6936ff59be83cc0ba60e3289/8d39342b8cc45895d826c70de5c68754f2b97ba8_37d11d742596749bbf6f379270134855e091168e_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/12/2025 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #35</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/693faee4a8429e4c8c0eb706/2a35e466edc7913a6290ef4a9ccda27277ae9cfa_c89279633023b3390b1e8d9a4304b8a2b5c41ca9_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">12/16/2025 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #20</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/693faf2921728ffde90253ae/ef861e8863b3b22ea90a7c3e8e5d9ef2103fcbb9_13c430d3a58b79992b254e99b52547b520e9b64a_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/17/2025 (Wed) &middot; 01:00 PM</div>
+      <div class="type" style="background:#059669">Team #3</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/693fafb0bb345c345505fd7d/592a32ebdc70c17997ee96c6e5de5a31.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1765781421220/82aed303-c47f-4964-b2f9-cec6dbf8d29f.jpeg"></video></div><div class="meta">
+      <div class="date">12/23/2025 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/693fb0039b13dbd4430df953/12eb8d9c2fdc1dae1964e36ff7d257122c70a961_d6818766f570c6072647d37b30e357384f5a9893_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">12/24/2025 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #21</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6949a2587f481ebd6301ac20/a93c391cecf6bb1930f4cdea16b0916f56431fe6_a91b69ac008033f2c801787b6f92cb563715af87_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">12/29/2025 (Mon) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #22</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6949a2a77a358460430dc252/5db3694d4dd7b16c4d70b182796eada42ad7911d_a02a089de9c37e14fa50898a5d07490383e18ca5_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">01/02/2026 (Fri) &middot; 01:00 PM</div>
+      <div class="type" style="background:#059669">Team #34</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/695c83508a076499ed0ae174/ba91c5fd4f4ddcb8697bcc1a14e53b79a2251c22_7f58c8289d5ae24f49f2c4083b0a49349ed47b31_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">01/06/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #23</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/695c83b5174c0236840d3704/0dc8ff5a2f56714e5cc10485b76f7fa13632f0fb_88f7cb408ed6c240f3f43c4eef604a4744e26edd_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">01/08/2026 (Thu) &middot; 01:00 PM</div>
+      <div class="type" style="background:#059669">Team #33</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/695c83c4e5e52c6e2f0101f4/af4d3af8025bf1a7743cb0632807046237f6333c_d433e39d48f00f3ed2ac97e1d64db2b8479eea6e_instagram" loading="lazy" alt="OWN CONTENT"></div><div class="meta">
+      <div class="date">01/09/2026 (Fri) &middot; 01:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/696502d19fe1775aea04e90d/a7bc3bc9e3a1c4c6e3e6f1d5490f0ae2502f62f5_86018194eb0461f0fade4a124c37ec132b9a8956_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">01/13/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #80</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6965033aed3298da260e2486/7de561c1a277a766df0a394a8d4d55ed3feb446d_91d83c04a306230861fa139ee97abfcda969a532_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">01/14/2026 (Wed) &middot; 01:00 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #24</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/696fa6fcaead9a2eed05b9a6/6b5b1b9640fc4f6040f0dd951a378706.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1768924923394/a6e70391-7370-45ff-a7b4-c098ec74ca50.jpeg"></video></div><div class="meta">
+      <div class="date">01/20/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/696fa7f29c2f06022b072c25/8006edc265d62efb885374e324ae5418b29b3f51_5776fd620491f2d88fd8dd0b2d1a5ae1b633361b_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">01/21/2026 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #24</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/696fa8182f483818400b2162/f973bde2094f43ce4e4e4f005e147f6acc1bd945_45aa8846f733c9a1b661f596890a4f13b33a8b91_instagram" loading="lazy" alt="Podcast"></div><div class="meta">
+      <div class="date">01/22/2026 (Thu) &middot; 12:00 PM</div>
+      <div class="type" style="background:#d97706">Podcast #A</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6977979d370b2549480c1fed/487ac845c3680e1f10918c6ba83105c9665e75e8_248105d608ce17485be9e88b6e2b1e7a8f1fd9d6_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">01/27/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #6</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/697797b4986b56acb70ef109/2730b1f6ebc1eb5adfe6395244dd5fc16c3165b5_920f99ec662162f093198d209f493e2a777ea4b3_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">01/29/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #43</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/697798ee08898cf13c032f49/519ea510927e3f6fb7035e61fa3ed1248e79bab9_0eb42985f1a3f7eda7be34cbea514a67bed4d2aa_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">02/03/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #65</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69779935ab41ae8aca075d29/1bb70850da42bb1c978e32c2ef3c3ba5869695e3_772d237fe054af93707d192ec7464561abb54254_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">02/04/2026 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #32</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/698b9afc795696658f0e50d9/e737d3cbac020f226952ccfc05d4c389.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/698b9afc795696658f0e50d9/e737d3cbac020f226952ccfc05d4c389.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/11/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/698b9b3448f754272b0bbc9f/eab27e459934994e7d644bc8cfb0c7a251c71eb2_8c525afa167fc118c26c02ecc2fe61e7ce19ad35_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">02/13/2026 (Fri) &middot; 01:00 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #7</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/699320257329f04a4305565d/53babe21bcd319a1e287c645554d1e3435e637fd_c459abfa38483d0cf3eab78c757b87ca06ea31ed_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">02/16/2026 (Mon) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #39</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69932087ee62b8eb8203e763/50da71f582126db9d4ccf14451e26efc2809f7da_5e0aa198291136536e5e2589672a637a48de0ab4_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">02/18/2026 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #31</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/699320f17329f04a4305566d/a3ec34d3e191ce0423a98c3ea0ac9c16.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1771249903891/85a8c941-a8ea-4a98-a42b-686fc7d161ed.jpeg"></video></div><div class="meta">
+      <div class="date">02/24/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69932173c6fccd33c40f2f60/2f30e924f9c2dc5fcfed90cb9262e0ef1f5eccc6_aa31b7702616dacc518459f1ef3cdfb5f9e55903_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">02/25/2026 (Wed) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #34</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69a48a491e145714700f3b58/fc3962788cc9afbd95ee5fec99717a2f.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1772390984384/8d660920-f96c-4f96-b322-19f9ed956c5a.jpeg"></video></div><div class="meta">
+      <div class="date">03/03/2026 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48a826bccaa16c504ab6a/8bd1bd6600140f91ab329b49bcb7e789376e97a6_3d9ae1419cf673864c6ab54b68f2781dcc3257d8_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">03/05/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #33</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69a48ac1b65450330e0d11be/2d459364e49a39d4d066e6bbe5b583a4.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1772391103532/247b7306-6fe9-41e5-ac4c-2f0ca017ff43.jpeg"></video></div><div class="meta">
+      <div class="date">03/10/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48af1aa6ec7285d0b22df/fab01817f18c28ee46d6ab0ea5ef4d46719080fb_50f3d69145ea2f617a6d2e858219bd8ef2d8d39f_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">03/11/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #32</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48b3773bb1e62330238f5/d641e27318a2c61dd9db3677f5a03bb2395e3cfd_84acd051e303624de11aba23e2e3fd368d79c8eb_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">03/18/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #44</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48b47da3551007c0b75ef/4608a9a57aaf5eaab4507f51d3456627b6546b56_e8a670234698cfe022e0bc1e315bd7efd19955aa_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">03/20/2026 (Fri) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #50</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48be9f1dcc58d4304fb75/07f7440724d87c4ae68c12a75ff902a686f960c9_c527bf86c2c909daff7406eef9c852274763a5e0_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">03/25/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #51</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48c6f23cfcefd0808361b/51df466f8581581e3fd78d71c0eab979b9e4ea6c_e629d8990cc4a6aa23c96868a004c39a6b4ccd03_instagram" loading="lazy" alt="OWN CONTENT"></div><div class="meta">
+      <div class="date">03/26/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69a48c52db27e3a2610a9075/183c2f46b04fd1190697cf44e158edd740c419c9_1f3388ee88ee789955a23e20c41ae863a99f0d61_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">03/27/2026 (Fri) &middot; 12:00 PM</div>
+      <div class="type" style="background:#059669">Team #3</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69ceba58aa390ed21509ec28/3d4ac1a5cf73e18e90706b27217241f1.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69ceba58aa390ed21509ec28/3d4ac1a5cf73e18e90706b27217241f1.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">04/02/2026 (Thu) &middot; 03:00 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69ceba107aa86430ab0ddb7c/1ea827be628ed872d6a463384a76fb4dfc463c71_9e847680e2a6b34caa606c011d69a0a6d2aba81e_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">04/03/2026 (Fri) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #29</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69cef6fa10d9b06f93093cef/d2200adccf1dad1880b7200f4dbe851ea55583be_152034d95c494e5073fd608339b0bdce81009b1c_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">04/08/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #8</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69cef78bd67bdb9e4d005ee6/6607657f3d4c36e3dafd7734cfe99e055c2324e9_7a63f4fe08cc7f4f6533bd7ff5c027a7add3572f_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/09/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #31</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69cef7a86398c1e58c04af94/3b0876ebcaedabf0074959bd7a08bd9b.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1775171494793/eacd21b4-7ec7-4dcd-b931-9db54b0856e6.jpeg"></video></div><div class="meta">
+      <div class="date">04/14/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69cef80339e6cf7219006c11/e635a70383deac87c408ddb485d5691fb91f732f_6541a37b14d128491a97fb1eae79e697fac47976_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/16/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #30</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69cef81e9ae81bf73908cdac/21e0bd6222f413010d0365ba539efad9.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1775171613349/49c5c787-cb8a-42bd-86c9-3a0a632b8789.jpeg"></video></div><div class="meta">
+      <div class="date">04/20/2026 (Mon) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69cef8a3694571c4120980e9/d4574f787f107ffeeb818927bf86009a560ef9a9_7f12ff2e990a481146a570303dbf220cfd8e4b44_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">04/22/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #91</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a10666e2ca8773cf40e8657/384e12461031bb7a7e3d25897cc3a83c09377a3e_efffa8d096af56da2d9c5e8a80493e43e7879ccb_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">05/22/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #28</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6a1066ebab0b2ac9860405e8/153ad10b2e541c34b9b656cd9171c040.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1779459817295/593d9fa2-a007-4604-acd0-acd8a7cad0c3.jpeg"></video></div><div class="meta">
+      <div class="date">05/26/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a10670f27e7ecf3340912e6/81dfa246ccd5036480f97b2526cdd1f03bcf0a63_3e648b46e889161cb8138e6c817ce08abdd63e4b_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">05/27/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #27</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a1068cbfe3445c84e0a0e97/c5351f8ebf6c18abefc3211871cf6bdb65365200_7e91eed346f66b58ea51d5cc734fa5957e98a9fb_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">06/03/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #9</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a1068f0a46b4d610901034b/e8ec3956d82e26c563657f2d702a86ae179f3bb5_34957988791120b1387f77786018a01be8d37896_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">06/04/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #26</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106913aba487d6410c74c4/f959f22f768b03c86620632c234573597da5aab3_0960c06b8d1688c62bfeb49fc8713975d2660c0c_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">06/09/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #20</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a1069352d8a28c7710d1f44/838727abf454098775cab6e869c55e7b4ba848eb_29381a904aaa6c7d92366f32a239347c5934f5fd_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">06/11/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #29</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106959f2e5989c9f0d11a9/917c06028c781184398ebad3d35630e943fad890_aa85de017eb0dc6576ac28ee7a03261e6e119d00_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">06/15/2026 (Mon) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #40</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a10697a7f080f96e00f1f58/28c87694a586903169007e700e1e36900995d7a1_e10e37d9c98a57f5a6bda6752e9ed083bce4a49a_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">06/19/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #28</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6a1069885d324f0fcf047fc9/549ed6e978f49782c6759798160b6c80.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1779460487020/26f4831b-d825-4cc6-bb38-942714b619bc.jpeg"></video></div><div class="meta">
+      <div class="date">06/23/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a1069c2caa305f1a8018043/b348f933cd825260296eb8fd1592a88554473e90_7cd6fb31a71d7d60ebc9c6ebdeb55b0b7295c452_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">06/24/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #27</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a1069e8607ba763fa0db6f2/c0d35f4b4c7a00cfe7fb026487ef7525d14e70fb_42e3b8e7dd1677d3015319a276bebbc5e692e4c5_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">07/01/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #25</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106a0c32bfaa06af001638/fb956f4dd7343f998dad5e62022dca2d80204101_e85b894b5345eb10842344bb3c42dfc0443aa739_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">07/02/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #26</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106a2c423357b5cd0bc828/880362aa150eade8dd920e7ef54b9798a76e59f2_d617e371016a9bfd4bd5ce5ff581088a9544a839_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">07/08/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #53</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106a4d36ee2b4d260c75d9/a06f2fd07d74355474fc4ca6df7e8d8bdc71c3a3_0f779199c38871242630d0122729c1cf8603fb40_instagram" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">07/09/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #24</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106a6fec5377939f08135e/043f6afeedb77d40e45cb1434a0e44860dbe6921_ee3f2ea91aa8c5b483db5591cd92b311c051f6b6_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">07/14/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">JPEG #55</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106a9406b26d1a94059153/ca00c7c7bdaf7f84dd08d34a6bc0d4e0c65c84ee_3ba321e88cb0a65e67624cfc238ba5291202bc6e_instagram" loading="lazy" alt="Podcast"></div><div class="meta">
+      <div class="date">07/22/2026 (Wed) &middot; 09:26 AM</div>
+      <div class="type" style="background:#d97706">Podcast #A</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6a106aa283ffa006ec0de333/dc45838c83625b098faef92cb1e6abf1.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1779460769404/dbcdb0c7-7f41-4fec-8c03-0cbd61299bbe.jpeg"></video></div><div class="meta">
+      <div class="date">07/22/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6a106ac5b6ec96990a06fc66/457799738459a6faf639616634fe2a66.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1779460803718/4e8b4192-f3cc-4555-829d-178ff3e37f3c.jpeg"></video></div><div class="meta">
+      <div class="date">07/23/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106af5abe7d2364000f074/ee2828213c1f301749f67f757b65a01ea504b043_c8469f393ad8ff88d1ad3f0eed273c5dc94fca55_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">07/28/2026 (Tue) &middot; 01:00 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #48</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106b13de667b8d2c00f62c/19f4a7ce98bad2f2f323dcfa78220f963dfbcb21_2e1fedeee22dbb8783271f8cf149b800210c3d05_instagram" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">07/29/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #27</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6a106b21be3551f4130969c6/aac4766f51fb354ce6c393da78e424e7.original.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1779460895924/b626c771-ab95-4318-8a4d-6ec1c99db0f3.jpeg"></video></div><div class="meta">
+      <div class="date">08/04/2026 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">IG Only mp4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6a106b62b2a274295a03ad0a/40a28874e990a3d13ef5b86ddbf987b245d35e87_a701ecc5d9515999073aea934b15be31ca707bbc_instagram" loading="lazy" alt="JPEG"></div><div class="meta">
+      <div class="date">08/06/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">JPEG #21</div>
+      </div></div></div>
+</div>
+<div id="li" class="section">
+  <div class="summary">101/143 matched to library content &middot; 42 own content</div>
+  <div class="grid"><div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68c966459e39a3cd540e7de4/01dcd8a0cbab98e25b4163a12361f3f22c053c02_59d3c56f4146019f48cef8239ceb3976976b512d_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">09/16/2025 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#7c3aed">Coach #1</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c966bec9d39f2dc50903fa/0da4e5e190385437ca72061496be2329.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1758029427232/9ef480eb-d089-4175-aa5e-e80f831113cc.jpeg"></video></div><div class="meta">
+      <div class="date">09/17/2025 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68c96723d1865c6fc5021162/a9b3c8b8ea54496ebba216716fd5b0a46e40c0c0_d1df40cdefdd554148255f819f80b43f192e6328_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">09/18/2025 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #1</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c969c7b89caaba910c3d74/c7a3a1f6adfb6cb8af7c59a840cf290b.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c969c7b89caaba910c3d74/c7a3a1f6adfb6cb8af7c59a840cf290b.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">09/24/2025 (Wed) &middot; 11:00 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68c96a1456cc97ef2404f545/67f94168c23050c2a99b9cfbc87bc427625e3b68_1b1ea4d8f56ae4c21e971cd3529fb045f7aea894_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">09/25/2025 (Thu) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #2</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96a327acaed47520200b9/465f727f98710385eff767800276156b.original.png" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">09/26/2025 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #1</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96e599bfb06a86804f132/0fea5bc793746d5c7900879a562eb28d.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96e599bfb06a86804f132/0fea5bc793746d5c7900879a562eb28d.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">09/29/2025 (Mon) &middot; 11:00 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96e935d7c8f5b5e009662/f125fa3b5f4ec9438becec92bfaf895b.original.png" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">09/30/2025 (Tue) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #3</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68c96ebceac1dc4f820e4266/a450c4d2d74a391e95d7faab4c01efb7.original.png" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">10/01/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #2</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68efe077e1ca67f46f01b8c1/9ddb9c91c70690382716d9412de1f0f5.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1760550913171/938d3bb9-f7c8-4115-8727-6d39d5e2d3ed.jpeg"></video></div><div class="meta">
+      <div class="date">10/15/2025 (Wed) &middot; 02:15 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68efe1f0e855a77efd071fa1/6a4f8ae37e571384a514d30382e361d7.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1760551299987/b64c11df-7840-49c3-90f5-b6ab6240ba68.jpeg"></video></div><div class="meta">
+      <div class="date">10/16/2025 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effb4d3c58be5ccf088d38/61f1ca06ca85d68eb83b459a3066373f.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1760557897636/49b33a6d-9c05-4b4d-b64d-e2c82f41c66b.jpeg"></video></div><div class="meta">
+      <div class="date">10/16/2025 (Thu) &middot; 03:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68efe3ce60807fb8f104c245/af4feb94a4855f32ffe18b5e549d472eb55db8da_46ab3068ac907f1cd8a2f5428f3fd74fafc1402a_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">10/17/2025 (Fri) &middot; 11:30 AM</div>
+      <div class="type" style="background:#7c3aed">Coach #3</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effc5bae165e25ec0531e3/73aca64ed06bc8e61f59231ebddc6673.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effc5bae165e25ec0531e3/73aca64ed06bc8e61f59231ebddc6673.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/17/2025 (Fri) &middot; 01:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effc9031e352534702c2f4/e4ce47754e9fd1e766b0cdc6f3697dce.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effc9031e352534702c2f4/e4ce47754e9fd1e766b0cdc6f3697dce.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/20/2025 (Mon) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68efe6f5cc5b599f3e06040e/41c9044d62caea6a5e75c2dff1ad639b.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1760552607227/bd5f2b67-ef6c-4813-b6d3-005cd3719705.jpeg"></video></div><div class="meta">
+      <div class="date">10/21/2025 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68efeebe1ad0cdbb3f0b0829/446a9ea2c6836cec857c1c8f2d86a39bf50c2527_1b6c57c16f2774a08e91d8e67b67cd45f3729603_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">10/22/2025 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #4</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effce117cbacb4810b0e7b/aacf3ceb611e8f8b3f1ca7f7815b88de.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effce117cbacb4810b0e7b/aacf3ceb611e8f8b3f1ca7f7815b88de.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/23/2025 (Thu) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68eff177529be678dd043c32/aed89182ed28793b2867df9326ba0dc2.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68eff177529be678dd043c32/aed89182ed28793b2867df9326ba0dc2.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/24/2025 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effd2b42d693fb770c919a/de2f75922c9239b03a955a22259c1a13.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effd2b42d693fb770c919a/de2f75922c9239b03a955a22259c1a13.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/28/2025 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effda60b4977a3f30372d0/c5bfa9b19c1bf32f6eafb39987363533.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/68effda60b4977a3f30372d0/c5bfa9b19c1bf32f6eafb39987363533.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">10/30/2025 (Thu) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/68effdc475d46a5bbf0fc7e4/5cec9711ba0b4208d72271a952af9c338a46285c_2b9f5e3b382d57bc4a311a3a23cdc6580266420b_linkedin" loading="lazy" alt="OWN CONTENT"></div><div class="meta">
+      <div class="date">10/31/2025 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6908b5ce9ecfc3af4d07bc33/435d09afdec76dc0761d87f6413b62a8.original.png" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">11/03/2025 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#059669">Team #5</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f25cc4b68745bf0973ea/f660dca1181ce37e2cdc4780b8b3217a.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f25cc4b68745bf0973ea/f660dca1181ce37e2cdc4780b8b3217a.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">11/10/2025 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f4ac2bd4b554c80c0571/d729f11dd0ab20066b4a7fcbcca8f1f6.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f4ac2bd4b554c80c0571/d729f11dd0ab20066b4a7fcbcca8f1f6.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">11/10/2025 (Mon) &middot; 02:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f4f042d6ea4a20014de8/9845987422e1c7d47c7dd106e0cb6d6d.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1762784492672/27ca197d-a1d9-417f-9d83-0eed15e7849e.jpeg"></video></div><div class="meta">
+      <div class="date">11/11/2025 (Tue) &middot; 12:11 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f540b21c8ced4c04096b/8f83b9c4e3324fd6cde34f67fe072ad5.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f540b21c8ced4c04096b/8f83b9c4e3324fd6cde34f67fe072ad5.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">11/12/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f59dcec170ee6603eb39/e7b2d76ca8cd609f45dc0399b6a12e60d5b5f7b1_943fb905deb77d021577a32d8e45cf9b7183a1e7_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">11/13/2025 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #4</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f56e74121f71bc0c4080/c8e2c3a929e3569479b64634dfdb144f52793374_e59b5c251ca24c248bc06525d300ba679585007b_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">11/13/2025 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #6</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f5bce162f06388018e66/dd45784d0fdf340d863267e18e7f972cc1c4738e_a9ed165a3a4c97557101b5bd6daa5d173be973f9_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">11/14/2025 (Fri) &middot; 01:00 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #5</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f61cb3b9f7825e01673e/d948a24aec6e2d373ceb24d684f1937a.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f61cb3b9f7825e01673e/d948a24aec6e2d373ceb24d684f1937a.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">11/18/2025 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f668e52aae6cbc037ff5/8f52f46ea2647a6ed8c3faa33ecf979a.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f668e52aae6cbc037ff5/8f52f46ea2647a6ed8c3faa33ecf979a.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">11/19/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f69692d2ed519b017122/f86ef44823a1ea31dc71d4441031465718311bb3_c1f600420f07c6d304d19ef46bd15fbf6269fa72_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">11/20/2025 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #6</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f6bcf6b632a57009cf29/58d73a2051a15ed4397b212bd1bf0c78.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f6bcf6b632a57009cf29/58d73a2051a15ed4397b212bd1bf0c78.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">11/25/2025 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f71c52b4e883c60b0749/15afc6b977b97a51de2fad24055bd82d6babb630_d38138b34c9478cfb440ed4c496b6180e54ea402_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">11/26/2025 (Wed) &middot; 01:00 PM</div>
+      <div class="type" style="background:#059669">Team #7</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f7345c755aa75501eaa6/5bea182aa18207c6434695c6aa2b453e34729aec_9c9f89eb6fa472929e31d109fd75e0cd787f140f_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">11/28/2025 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #7</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f7a13fff683bfd081872/5b2fb1925c282dc273be78feb376c217.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f7a13fff683bfd081872/5b2fb1925c282dc273be78feb376c217.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">12/02/2025 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f7be83b97238a4080e80/34521472d64244cea83085cd5d542b0d908a1ce2_ba46ffd8d146783095f87b1f02c9119ff735c297_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/03/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #8</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f7d4c92f2c6330093246/45807cbc738da310084e21640bff21b56eb44762_4e3477a8e20fa8cfd6c5818c36239bb946ad6406_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">12/05/2025 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #8</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f83f6ec44a6913000f72/043d84d6337d3a50508ea1599a9a1d15.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f83f6ec44a6913000f72/043d84d6337d3a50508ea1599a9a1d15.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">12/09/2025 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f8781f543b49b2046967/772385f0d1cd4e5bb1a984c2592f831e613262b6_a28c66903a239c795c040a09f3e86dd82fa43ab9_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/10/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #9</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f8882e8e82204701eeeb/c70f826670400f8722a95b8d3c85b879e0a322aa_365433fb3c57d4059881ecdc5ae81566c9c98a5f_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">12/12/2025 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #9</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f95c0bf1eaeac0013253/f31416101e076e5fe27f826ea78d9d85231162d0_a155b5aa9fa5f88a61d510667fbb8265f4a94a50_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">12/16/2025 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel #39</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f99316481aa6d109b97a/c294ea87a0213e49ea9b091f63be3750.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911f99316481aa6d109b97a/c294ea87a0213e49ea9b091f63be3750.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">12/17/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911f9ae39561c128e09e00c/e852473f5d6beddf3a9da35dcd2218334b96577b_7f10920062a023c3e8e06ded5fca6ff5480f6aa0_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/18/2025 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #10</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fa07746df3065a07b391/65e32818777045b73a11d20c2128e652.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fa07746df3065a07b391/65e32818777045b73a11d20c2128e652.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">12/23/2025 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fa35d7a6b690830c44a6/5c0fbe65c89577cdd27dacca792295c7ba8cb68e_4b022d216d6ec31730b7ab7ba6d7ae4a4730b3b3_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">12/24/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #11</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fa4674a7a4fd3a046c96/64650990909a65e08a0df8a0c64ee47513fc4bad_8a69ce45c829f86b2559baefd1bb4c19f20ab561_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">12/25/2025 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #10</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fa705b376d6f5a0b7532/4c7cf20d7075facaa450fa8fad2e7968.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fa705b376d6f5a0b7532/4c7cf20d7075facaa450fa8fad2e7968.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">12/29/2025 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fac2445a65ebef04897a/0f9582c2ea900993dcfd26198857545e.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fac2445a65ebef04897a/0f9582c2ea900993dcfd26198857545e.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">12/30/2025 (Tue) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fb2d0575a3271d0b84f3/ae15c9392a116693dbe42ca9dca81d0878977f69_5ef1bf480ee27d28d6f69a756a6cd29999878e2a_linkedin" loading="lazy" alt="OWN CONTENT"></div><div class="meta">
+      <div class="date">12/31/2025 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fd0604a57f7205005cec/c98d152d6c947267d0af99050d9ec4b2.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fd0604a57f7205005cec/c98d152d6c947267d0af99050d9ec4b2.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">01/07/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fd4d0dd0c215c30dad44/d37ad4f86a7eb33f413d7da06ae790e1.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fd4d0dd0c215c30dad44/d37ad4f86a7eb33f413d7da06ae790e1.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">01/08/2026 (Thu) &middot; 01:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fd6c641d0578c400de0f/f01f00b87688ba607a55e7dd5081f13433298f80_cf92fddf2ca6f50042ebfee9b8dbfd2cbeb2f330_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">01/09/2026 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #12</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fd92f957510e72029b7f/aafe23ab267ec99cc0844c186683afc8.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fd92f957510e72029b7f/aafe23ab267ec99cc0844c186683afc8.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">01/13/2026 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fda8b4d559bd0007701b/5e78af95ef384d137268f95476df27eff5248923_969cbe7c496161eae7f4c91508494ef30bd0347d_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">01/14/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #13</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fdb89f609c31920f7704/57605dff07c4b3da92e44739753c399b5c8c7c26_d06a8e46575137bbecb1150637b942d39c643134_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">01/16/2026 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #12</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fdda9f7ab5915d0b6a01/6c4a91825f1a9df98880022a1c8391c9103a3fc3_d308d5f2ecab44596fd3fabf0eb4d58a974da172_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">01/20/2026 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel #11</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/696fa82480a260e43c0c041e/a2b5f05712b00392de11fd57851ef3ba.original.png" loading="lazy" alt="Podcast"></div><div class="meta">
+      <div class="date">01/20/2026 (Tue) &middot; 01:00 PM</div>
+      <div class="type" style="background:#d97706">Podcast #B</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fdeb65966da2d20db287/2df4fe64083ab278840ea92182646ab61eeb6268_1d962997f7c1956d6a5c0a37e92e382fe6624527_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">01/21/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #14</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fe09371effbfd80cc5e9/e91a7d29f02c00161730f8849690f43e322ec610_9b0b06a8b5950361cf024b2babcc044da0612d4f_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">01/22/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #13</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911fe3abc9d25562f037380/b43d70fe450e685605ce5268be8f6388.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1762786867143/ae25852d-22ba-4974-b47b-1578d7094863.jpeg"></video></div><div class="meta">
+      <div class="date">01/26/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911feb934415164820b96f2/4e70e72288d5444c1569ea52549a6c3d.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911feb934415164820b96f2/4e70e72288d5444c1569ea52549a6c3d.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">01/28/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911fee96cf71ff6400d6ef7/2f00165259044bbd5f4bd43e7aeb3de749afd266_f639b3d105530ec56a70aa414e5cb014005c98ba_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">01/29/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #14</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ff128196e5ebeb0421b9/8df25cceb233c24c6b3aef1e214a0940.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ff128196e5ebeb0421b9/8df25cceb233c24c6b3aef1e214a0940.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/03/2026 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ff256f1176c4b5091446/fc211bdb33378b79a933a7b91c30d870.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ff256f1176c4b5091446/fc211bdb33378b79a933a7b91c30d870.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/04/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911ff36fc47d895960463df/9641a06fab20944fbb8af9ef6aac8e86bb44e704_280874d31841db1688a8e07638fed1f797343291_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">02/05/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #15</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ff97daa1ef7c340405b5/43041e22c7684f1a72be95cc80953b18.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ff97daa1ef7c340405b5/43041e22c7684f1a72be95cc80953b18.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/10/2026 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911ffabcafe7a53630775a4/7b079349005caf32551f459382616781fdb9826d_fce9bd703faa12ec29745320b32f140213ee1b78_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">02/11/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #16</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6911ffb72c6bcaeea50f1429/e3b5dc8820d4f424deb8156f012619f8998e5055_403f36eeb19cfb8797fe4dba65463c2ffdb78997_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">02/12/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #15</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ffd5aaf3e9677f04cc62/a0d5b9aff3fefe16c5f500cea2dffe45.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6911ffd5aaf3e9677f04cc62/a0d5b9aff3fefe16c5f500cea2dffe45.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/16/2026 (Mon) &middot; 12:15 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912002a0979a9010608a6be/d92f2b723035d41754cfb9d90e727e8cd237c415_b2fa74e45926dfe0dd0173b26bcca2767224a3fb_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">02/18/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #16</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912004bbbf0834878085997/0e1bc84f79b6c54c4111c9716b46ce21.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912004bbbf0834878085997/0e1bc84f79b6c54c4111c9716b46ce21.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/24/2026 (Tue) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120077017733aea00b18fd/e8033e8c9bc6a25687b499152412ece2.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120077017733aea00b18fd/e8033e8c9bc6a25687b499152412ece2.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">02/25/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912010b3cb587646b0f9127/f1df54ccdba006b5ce529b8e378e85ca5f1ce571_135f2cd98956f21e3d02d4321cb24a02920eab63_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">02/26/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #17</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120133617afd7d82024616/d1dc7847cd5179e0be4c841730e552e2.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120133617afd7d82024616/d1dc7847cd5179e0be4c841730e552e2.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/04/2026 (Wed) &middot; 12:30 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120172b20fa2d55b05201c/587bb666b67dbd904707118c16e97715.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120172b20fa2d55b05201c/587bb666b67dbd904707118c16e97715.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/05/2026 (Thu) &middot; 01:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912018d779f0d1b8101b67d/598bbfe682c0225d1f551dec809c8d2b52ae20b9_f6534fba6e00451a2e6f9dfc8bbc5c02417400c2_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">03/06/2026 (Fri) &middot; 01:30 PM</div>
+      <div class="type" style="background:#059669">Team #18</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691201c1b0d90f572d0091c3/ea373d176014b656a09bbe70406ee3503755431d_ab92cf374d8d37be48aa4c766730ee390051d574_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">03/10/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel #40</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691201f0bd169a9c6f052c65/8722b4076e5504f14bd5a72bff50557b.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691201f0bd169a9c6f052c65/8722b4076e5504f14bd5a72bff50557b.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/11/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691202214a6990ea940dc137/7bdc39d4c9ae2a0aa160f2d01059a3a63d465d22_2cf61ee4a39bdb4e6952c0ed9405e652db75af74_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">03/12/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #19</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691202490417410615033bd9/15e7fb07159d5761fa123b51fa6ba65e.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691202490417410615033bd9/15e7fb07159d5761fa123b51fa6ba65e.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/17/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120280a1a54fb60704bf3d/a7adc385111cf835e7292d960409acdf.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120280a1a54fb60704bf3d/a7adc385111cf835e7292d960409acdf.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/18/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691202971596c330ee018dfe/b77e3e8592af7bbca31f2d1b2225a826b0c71727_e34f309f02ded9d644fa15d29b0da36cdee63bef_linkedin" loading="lazy" alt="OWN CONTENT"></div><div class="meta">
+      <div class="date">03/19/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691202b833e6fae6fa0f52ec/ec7597da7e1f91f516aae89940f92357.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691202b833e6fae6fa0f52ec/ec7597da7e1f91f516aae89940f92357.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/23/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691202d99da75bc2ea00ae91/fb80237cff60a2a6b01d77775df8552d.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691202d99da75bc2ea00ae91/fb80237cff60a2a6b01d77775df8552d.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">03/25/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691202ea57eff511020eef02/a7f54ba233c1664c58e8413d2271acd2ac58d40c_aeb32594f13d86176e07a32680fdb99ffbe459a6_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">03/26/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #20</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120323cff5a9c0ae05ddb8/a489723c7566640f8dbbdbb0e8505c6435fae1f8_d0085c040f016f09bc890958f77412e2af9b6139_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">03/31/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#059669">Team #21</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691203405a853a4b570e03cb/468b59aa366d6096e44d86449f5f90f764e71fd3_3d5c368b0fd8c5215d362c32f75e965f21020e30_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/01/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#7c3aed">Coach #18</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912038a17ee48e0350f08ed/0929ca36c169666e5ee45d712c316e05.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912038a17ee48e0350f08ed/0929ca36c169666e5ee45d712c316e05.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">04/08/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912039fbc9c564769084582/9c533f2c1532841d8ec51d97ad1e2292db17d09b_f2ef793b275cbaf1424c96ea1209cb9c13cb3889_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">04/09/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #22</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691203ab01d00013c40df573/a91e380621dda451c41f168e0196a5cd6062d299_022173fc099390b21b7519be99414f5bcb04f37e_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/10/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #19</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691203cb6fe14a2b530627b8/ca299d1a7f77c835f1d1d0272d99429f.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691203cb6fe14a2b530627b8/ca299d1a7f77c835f1d1d0272d99429f.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">04/13/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912042d5c024588310e98f5/85616e37b825cedf68fe58e0dd0190fd.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912042d5c024588310e98f5/85616e37b825cedf68fe58e0dd0190fd.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">04/15/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912044963e20d37c20f7da9/bc8cbbedb23a568fde915af1e9cd2300bfc1961f_5cca3e74cbd49031e1b4dad1a3f40fd67ba13ce2_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/16/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #20</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691204870d0f6d082b0b4715/4c1f063bb2ec7919269923f29dcbe7ff.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691204870d0f6d082b0b4715/4c1f063bb2ec7919269923f29dcbe7ff.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">04/20/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912049f5a591192ae0a840f/690e22d4bc57840703b3a05a368e904f72c8b694_e20f84883b1dd367b8699e46d1841036a0516e62_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">04/21/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#059669">Team #23</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691204b187a71d43de0c41ca/559d18c87c5b5b8640f1b4a43b2e582cdc9f5c5d_dd39a7423b4c37ea808e25863645d0c42eb4810f_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/22/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#7c3aed">Coach #21</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691204cf145c27db670bc612/d6a6cf3f36a393c95305ca99421afb01.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691204cf145c27db670bc612/d6a6cf3f36a393c95305ca99421afb01.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">04/28/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691204dc52aa86753905113b/989e57dc068b6b0aad9b8f70683cf739b5154041_86de1720c0ad9618857f7a5c3f0add1671904d55_linkedin" loading="lazy" alt="OWN CONTENT"></div><div class="meta">
+      <div class="date">04/29/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691204ec8048d29a9a006315/606b7f7d9a2cf9b9be00732802dc50f85bdb6466_c1ee7452f4aecab67f7d6664e000e70f7de69a71_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">04/30/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #22</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912050fd564d4f0d90f89e1/6c006cf1b50893db7df6b78be01258fe.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912050fd564d4f0d90f89e1/6c006cf1b50893db7df6b78be01258fe.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">05/05/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120541c20a37da6a03bf54/3d4df8cf5578d573abe6ef7a40bdb0f4.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b7b38e32cf8badeb10/uploads/1762788638400/abd9b694-84fd-4a45-9067-da4b9b79aee7.jpeg"></video></div><div class="meta">
+      <div class="date">05/06/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691205bd50f43d9daf0676b5/a0e09dac8dd9108b20d4dba54f21678f2707daac_999f24b49824165b728512bec00346d6e7f2d50e_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">05/07/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #25</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691205d75f97d56e8702f0b6/20c4865bbc821b1e8d79f59781942477.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691205d75f97d56e8702f0b6/20c4865bbc821b1e8d79f59781942477.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">05/11/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912060e822f33e8fc037f77/b37f7e9614ff1ec44ed87129de18c898.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912060e822f33e8fc037f77/b37f7e9614ff1ec44ed87129de18c898.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">05/13/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912062bc0b2f8c63c0c18a6/1d8d3060df1f4879495ee3ec70a330d285616a31_c32fe3d456d072f78387776ce8c5abf8003e4289_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">05/15/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #23</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912064e208604ee6b046d20/81e7936b69df75380c40dc698967e69761c8dd16_603949bc66f90fce0bb9c11cb7efc74b9c88d04e_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">05/20/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel #40</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120659d54dff367a00eeea/ec43b143c163f92535f7a082bcef8cadf6e5a09a_99b7b9b2c2b76168fad0c95dcccb873ce78f4870_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">05/21/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #26</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912066a97352d2e8d07cd81/dc157c59aa140bc574ec0c60c9f57329643c3b95_d59b927724751c6e395a9165a5c57d09a947bd5d_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">05/22/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #24</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120685cbb4ae16c5024f79/4ff8ca8335b228f85acbe5c3b343ff27.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120685cbb4ae16c5024f79/4ff8ca8335b228f85acbe5c3b343ff27.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">05/26/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120694bb4d87d5f50abdc2/6ab0303f250823e67779edcc790aaaee63d9833d_e226d287d03c3adc4bf51a7fffa0f621a86be472_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">05/27/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #27</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691206a0165fa298cc071fda/93c7cfc591130f17bcc2a3f2a846546db19adc97_19bee4467ba3fbe4ccf9038a9c0c27420c843950_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">05/28/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #25</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691206b93b884631730ed016/8661f38115c7531e9394531361e9f05087da3e73_124cd0df4d422e123bbcbe4c08cde1188c180b86_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">06/02/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel #26</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691206f5ae2d6c74ab0962ad/8ba5e33c905ca03fb7ab5796e4ed446f.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691206f5ae2d6c74ab0962ad/8ba5e33c905ca03fb7ab5796e4ed446f.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">06/03/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912072da2c410937d047295/4ec5e07a7acf584a203b2c9937ee8afe7f764cb9_3aff439fe4ca54728233d633a117888a0176d5d9_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">06/04/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #28</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912076e5add47ae19045b39/24e7b0bb83a03e02da74381cde98d6a3.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912076e5add47ae19045b39/24e7b0bb83a03e02da74381cde98d6a3.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">06/08/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691207a8145c27db670bc665/27ef289d69e487a2bd4c4f9b679e25f99cbad260_e2b07b2045c7c7869c8ecf748331b1d445e72c34_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">06/09/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#059669">Team #29</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691207d0957a852ec500b43b/793d20587b0f4b74cb261889d7a8bfe7e000ab0f_db10c060be5ed9afd088df5b630957722cf2e67a_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">06/11/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #26</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120840cd02fbb239004231/c3511e84f0b323bd7bface2cd007c54c.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120840cd02fbb239004231/c3511e84f0b323bd7bface2cd007c54c.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">06/16/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120870427db48f410eb02a/aa15af7571b89ed793dcc4514fabd483.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120870427db48f410eb02a/aa15af7571b89ed793dcc4514fabd483.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">06/17/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120886f5eeedf793079c47/145392b71f08d4ec9ba3d7535ef0e9aa2a77da25_e81c387e45c8435fbbf58efe26579b09117f4d07_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">06/18/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #27</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691208d8a288bf69c402f2d2/604fb9c3f8e98b8e3462dbffcbd3d326.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691208d8a288bf69c402f2d2/604fb9c3f8e98b8e3462dbffcbd3d326.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">06/23/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691208f5f9edbad60a09d08e/cbc97224e90b5999bb323b4e35e6e47904afa7db_fe4aa20cb594505e4d083c0f930c2671a8d34777_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">06/24/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #30</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691209045df5ce14e60d6482/8543bceaed528cba778c1d02d6bc22f291169bab_8eecb07d02f3c3a40d4daac905e2afd0e72f612d_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">06/25/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #28</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912095c123d031bf2087704/f79a14095870e11057dab486383a0493.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/6912095c123d031bf2087704/f79a14095870e11057dab486383a0493.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">06/29/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912098f85a699021a02d5b3/02a0afa48e7dafde2e7c50c3bafeb4466f476975_16c5b904d5d440698a70a4693fbb327a7d52bb3a_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">07/01/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #31</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/6912099d42cf9b35430825c8/4a5b217b69238d59d1a89ce98268b097e7d9d64c_b1502a9bdd1cab3d1e8ae3dd461f705980aad9da_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">07/03/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #29</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/691209c209d637ae84014094/429ad56bd2758bd3b7976fbfeace16b32b807a76_8e0b9f727def959dd0976884e03fa7fa9b7a906e_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">07/07/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel #28</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691209e245cf6fa5500781e6/588ac8ffcb1cac6a8eb1d349f9c15ade.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691209e245cf6fa5500781e6/588ac8ffcb1cac6a8eb1d349f9c15ade.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">07/08/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120bade34749d4880482bc/0ac1492921e6e17d8159b07f1fd82bd72b1947ea_f289a99a5a3debedab224e967a4db78643ff4bf8_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">07/10/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #30</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120bce83c494cb69008eb1/8d97e97da72a14f223e983fffbecae36393ab62b_0ed8e43ebdb442a901fd2edd6b9a2f88622640be_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">07/14/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#2563eb">GR Reel #29</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120c2247bb197ddc0aa7bb/ff6f714197415aafacd8275096be82be.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120c2247bb197ddc0aa7bb/ff6f714197415aafacd8275096be82be.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">07/16/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120c5072c99989aa07c6a2/07a5a5ead2a679977b59c8133ed7869c7d4a657e_977dae56b6113ae56193ca21a2ef7a322965144d_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">07/17/2026 (Fri) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #31</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691200142bb18dd5a0034d84/72581f3e1958300fa1701af284059ba4.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/691200142bb18dd5a0034d84/72581f3e1958300fa1701af284059ba4.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">07/21/2026 (Tue) &middot; 11:58 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120cc0af236e02a20de4f2/69e8350959faa86f784b32a68d8aac834a821262_757753114e0184f15b1a90fe76b8ae1c8719ceb9_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">07/22/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #32</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120cd621996036ba0d4f56/e360884f5a58c540efb63cdb1e8c222ce030bfc1_c0eefe67482ce2b887ec86e5bbd985f707067780_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">07/23/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #32</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120cf7f2fc56f4660cad82/c0ce2d884a31679ecd924b8be54c8061f129930e_0bf4b82b12fdeeee22466d8c5c3945547a6bec24_linkedin" loading="lazy" alt="GR Reel"></div><div class="meta">
+      <div class="date">07/27/2026 (Mon) &middot; 12:00 PM</div>
+      <div class="type" style="background:#2563eb">GR Reel #31</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120d4a4c27871da8028b73/63a01d41d0de43e7c4a6c595477b12ee.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120d4a4c27871da8028b73/63a01d41d0de43e7c4a6c595477b12ee.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">07/28/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120d905d5ad2e4c202e9a8/87386d34cf87c8944b33be00adda08982f8c20f5_fd043406c481aef78cf91942af18ed1dbe4c0900_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">07/30/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#059669">Team #33</div>
+      </div></div>
+<div class="card"><div class="thumb"><video src="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120ddc84205641160bff23/5855d113404ab8511e138229d1053957.original_transcoded.mp4" preload="metadata" muted controls poster="https://buffer-media-uploads.s3.amazonaws.com/687400b73da66450ae029b02/69120ddc84205641160bff23/5855d113404ab8511e138229d1053957.original_thumbnail.0000000.jpg"></video></div><div class="meta">
+      <div class="date">08/04/2026 (Tue) &middot; 11:00 AM</div>
+      <div class="type" style="background:#64748b">Own Content</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120df3a71cfc6382043a41/8f5c370cc548579eb560f528bbcc32bd9bc06900_3ae9dee5b4c020cb724039745bbc1b21187cee39_linkedin" loading="lazy" alt="Team"></div><div class="meta">
+      <div class="date">08/05/2026 (Wed) &middot; 11:30 AM</div>
+      <div class="type" style="background:#059669">Team #34</div>
+      </div></div>
+<div class="card"><div class="thumb"><img src="https://buffer-media-uploads.s3.amazonaws.com/69120e005b530ec76f0ddaf7/0be4f76774ebdcdac52bfcf8c5c4a80d360469af_6871471e8ef5c7d1d3145f1bb136987ef169e8f5_linkedin" loading="lazy" alt="Coach"></div><div class="meta">
+      <div class="date">08/06/2026 (Thu) &middot; 12:30 PM</div>
+      <div class="type" style="background:#7c3aed">Coach #33</div>
+      </div></div></div>
+</div>
+
+</div>
+<script>
+
+function checkPw() {
+  const val = document.getElementById('pw').value;
+  if (val === 'joannelsmikle') {
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  } else {
+    document.getElementById('wrongMsg').textContent = 'Not quite -- try again.';
+  }
+}
+document.getElementById('pw').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') checkPw();
+});
+
+
+function show(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+
+</script>
+</body></html>
