@@ -47,8 +47,8 @@
 <h1>Smikle -- Year in Review</h1>
 <div class="sub">Everything actually published to date.</div>
 <div class="tabs">
-  <button class="tab active" onclick="show('ig')">Instagram (86 posts)</button>
-  <button class="tab" onclick="show('li')">LinkedIn (143 posts)</button>
+  <button class="tab active" onclick="show('ig', this)">Instagram (86 posts)</button>
+  <button class="tab" onclick="show('li', this)">LinkedIn (143 posts)</button>
 </div>
 <div id="ig" class="section active">
   <div class="summary">80/86 matched to library content &middot; 6 own content</div>
@@ -990,11 +990,11 @@ document.getElementById('pw').addEventListener('keydown', function(e) {
 });
 
 
-function show(id) {
+function show(id, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.getElementById(id).classList.add('active');
-  event.target.classList.add('active');
+  btn.classList.add('active');
 }
 
 
