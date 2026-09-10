@@ -54,13 +54,13 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
   align-items:center;padding-top:38px;padding-bottom:40px;
 }
 .hero-photo{
-  width:162px;height:162px;border-radius:50%;object-fit:cover;
+  width:186px;height:186px;border-radius:50%;object-fit:cover;
   border:5px solid var(--paper);justify-self:start;
-  position:relative;top:50px;z-index:3;
+  position:relative;top:44px;z-index:3;
 }
 .hero-name{
-  font-family:'Archivo',sans-serif;font-weight:700;line-height:1.08;
-  font-size:clamp(2rem, 4.4vw, 2.8rem);letter-spacing:-.015em;color:#fff;
+  font-family:'Archivo',sans-serif;font-weight:700;line-height:1.1;
+  font-size:clamp(1.8rem, 3.8vw, 2.4rem);letter-spacing:-.015em;color:#fff;
 }
 .hero-role{
   font-family:'Archivo',sans-serif;font-weight:600;font-size:.88rem;
@@ -79,7 +79,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
   grid-template-areas:"rail lede" "rail main";
   column-gap:var(--railgap);
   align-items:start;
-  padding-top:86px;padding-bottom:80px;
+  padding-top:86px;padding-bottom:52px;
 }
 .pg-lede{grid-area:lede;min-width:0;}
 .pg-rail{grid-area:rail;min-width:0;}
@@ -96,13 +96,14 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
   background:var(--garnet);color:#fff;transition:background .15s ease,color .15s ease;
 }
 .btn:hover{background:var(--garnet-soft);}
-.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);}
-.btn-ghost:hover{background:var(--ink);color:var(--paper);}
 
 .kicker{
-  font-family:'Archivo',sans-serif;font-weight:600;font-size:.8rem;
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:.84rem;
   letter-spacing:.15em;text-transform:uppercase;color:var(--garnet);
   margin-bottom:22px;
+}
+.kicker--lg{
+  font-size:1.12rem;letter-spacing:.06em;margin-bottom:20px;
 }
 .subkicker{
   font-family:'Archivo',sans-serif;font-weight:600;font-size:.72rem;
@@ -137,6 +138,25 @@ ul.dot li::before{content:"\2022";position:absolute;left:2px;color:var(--garnet)
 .pg-main ul.dot + p{margin-top:16px;}
 .pg-main ul.dot li{max-width:38em;}
 
+/* ---------- thought leadership band ---------- */
+.tl-band{padding:14px 0 4px;}
+.tl-band .wrap{padding-left:calc(32px + var(--rail) + var(--railgap));}
+.tl-band ul.dot li{max-width:44em;}
+.tl-band ul.dot li{font-size:1.02rem;color:var(--ink);line-height:1.55;}
+
+/* ---------- stat strip ---------- */
+.stats{border-top:1px solid var(--line);margin-top:44px;padding:46px 0 42px;}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:54px;}
+.stat .num{
+  font-family:'Archivo',sans-serif;font-weight:700;font-size:2.7rem;
+  color:var(--garnet);line-height:1;letter-spacing:-.015em;
+}
+.stat .label{
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:.76rem;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);margin-top:11px;
+}
+.stat p{font-size:.98rem;color:var(--ink-soft);line-height:1.55;margin-top:11px;}
+
 /* ---------- contact ---------- */
 .contact{background:var(--ink);color:var(--paper);padding:64px 0;}
 .contact .kicker{color:var(--rose);}
@@ -160,7 +180,7 @@ footer .wrap{
 @media (max-width:880px){
   :root{--rail:1fr;--railgap:0px;}
   .hero-grid{grid-template-columns:1fr;align-items:start;padding-top:44px;padding-bottom:38px;}
-  .hero-photo{width:128px;height:128px;top:0;order:-1;margin-bottom:22px;}
+  .hero-photo{width:142px;height:142px;top:0;order:-1;margin-bottom:22px;}
   .page-grid{
     grid-template-columns:1fr;
     grid-template-areas:"lede" "rail" "main";
@@ -172,6 +192,12 @@ footer .wrap{
   .pg-main p,.pg-main ul.dot li{max-width:none;}
   .pg-rail > section + section{margin-top:40px;}
   .pg-main > section + section{margin-top:40px;}
+  .kicker--lg{font-size:1.05rem;}
+  .tl-band{padding-top:0;margin-top:44px;}
+  .tl-band .wrap{padding-left:32px;}
+  .tl-band ul.dot li{max-width:none;}
+  .stats{margin-top:38px;padding:40px 0 36px;}
+  .stats .wrap{grid-template-columns:1fr;gap:30px;}
 }
 </style>
 </head>
@@ -196,7 +222,7 @@ footer .wrap{
     <div class="actions">
       <a class="btn" href="Smikle_Board_Bio_2026.pdf" download>Download Board Bio</a>
       <a class="btn" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 
@@ -262,10 +288,10 @@ footer .wrap{
 
   <div class="pg-main">
     <section>
-      <p class="kicker">Professional Experience</p>
+      <p class="kicker kicker--lg">Professional Experience</p>
       <p>For more than 20 years, executives have relied on me for coaching, advice, and counsel to navigate challenges that impede strategy execution. I develop frameworks, share insights and expertise that result in improved organizational performance.</p>
       <ul class="dot">
-        <li>Delivering leadership development at the C-suite gives me strong insight into business dilemmas and the competencies required for success.</li>
+        <li>Delivering leadership development in the C-suite gives me strong insight into business dilemmas and the competencies required for success.</li>
         <li>I provide organizational assessments and other forms of analysis.</li>
         <li>My consulting experience shapes how I help enterprises position for the future amid shifting markets and stakeholder demands.</li>
       </ul>
@@ -277,20 +303,42 @@ footer .wrap{
       </ul>
       <p>Two decades of consulting to private, public, and nonprofit organizations, combined with board service, make me adept at weighing ESG objectives without losing sight of profit and growth. I also bring public policy experience from four years as a lobbyist for the League of Women Voters, having served among a group of twenty lobbyists presenting the League&rsquo;s nonpartisan positions to elected officials in the U.S. Senate and House of Representatives.</p>
     </section>
-
-    <section>
-      <p class="kicker">Thought Leadership</p>
-      <ul class="dot">
-        <li>I have authored more than 100 articles that are featured in practitioner oriented and peer reviewed publications. I am committed to contributing to the body of usable knowledge available for leaders.</li>
-        <li>The <em>SmikleSpeaks</em> podcast ranked the #1 Organization Development podcast in 2025 and 2026 by FeedSpot &mdash; reaching more than 30,000 listeners in 24 countries.</li>
-        <li>I am a frequent speaker at industry events, conventions, and conferences. I am called upon to share my insights and expertise related to various aspects of organizational effectiveness.</li>
-        <li>I teach leadership and organizational development in doctoral programs as time permits.</li>
-      </ul>
-    </section>
   </div>
 
 </div>
 </main>
+
+<section class="tl-band">
+  <div class="wrap">
+    <p class="kicker kicker--lg">Thought Leadership</p>
+    <ul class="dot">
+      <li>I have authored more than 100 articles that are featured in practitioner oriented and peer reviewed publications. I am committed to contributing to the body of usable knowledge available for leaders.</li>
+      <li>The <em>SmikleSpeaks</em> podcast is ranked the #1 Organization Development podcast in 2025 and 2026 by FeedSpot &mdash; reaching more than 30,000 listeners in 24 countries.</li>
+      <li>I am a frequent speaker at industry events, conventions, and conferences. I am called upon to share my insights and expertise related to various aspects of organizational effectiveness.</li>
+      <li>I teach leadership and organizational development in doctoral programs as time permits.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stat">
+      <div class="num">100+</div>
+      <div class="label">Published Articles</div>
+      <p>Featured in practitioner-oriented and peer-reviewed publications.</p>
+    </div>
+    <div class="stat">
+      <div class="num">30,000+</div>
+      <div class="label">Podcast Listeners</div>
+      <p>The <em>SmikleSpeaks</em> podcast reaches leaders and learners in 24 countries.</p>
+    </div>
+    <div class="stat">
+      <div class="num">20+</div>
+      <div class="label">Years Consulting</div>
+      <p>Advising private, public, and nonprofit organizations nationwide.</p>
+    </div>
+  </div>
+</section>
 
 <section class="contact">
   <div class="wrap">
