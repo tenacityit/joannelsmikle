@@ -15,17 +15,21 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23a6121f'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23faf9f6' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#232326;
   --ink-soft:#4c4c52;
   --paper:#faf9f6;
   --paper-deep:#f1efe9;
-  --garnet:#f50603;
-  --garnet-soft:#f73835;
+  --garnet:#a6121f;
+  --garnet-soft:#c41a28;
   --line:#dcd8cf;
+  --rose:#e5959e;
+  --muted:#8a8781;
   --max:1080px;
+  --rail:290px;
+  --railgap:60px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -34,145 +38,118 @@ body{
   font-family:'Source Serif 4', Georgia, serif;
   background:var(--paper);
   color:var(--ink);
-  line-height:1.65;
+  line-height:1.68;
   font-size:17px;
   -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
 }
-.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
 a{color:var(--garnet);}
 a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-offset:3px;}
 
-
 /* ---------- hero ---------- */
-.hero{padding:72px 0 64px;}
+.hero{background:var(--ink);border-bottom:3px solid var(--garnet);}
 .hero-grid{
-  display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:start;
+  display:grid;grid-template-columns:var(--rail) 1fr;column-gap:var(--railgap);
+  align-items:center;padding-top:38px;padding-bottom:40px;
 }
-.hero-left{margin-top:150px;}
-.portrait-frame{position:relative;}
-.portrait-frame img{
-  display:block;width:100%;height:auto;
-  border-radius:2px;
+.hero-photo{
+  width:162px;height:162px;border-radius:50%;object-fit:cover;
+  border:5px solid var(--paper);justify-self:start;
+  position:relative;top:50px;z-index:3;
 }
-.portrait-frame::after{
-  content:"";position:absolute;inset:0;
-  border:1px solid rgba(35,35,38,.12);border-radius:2px;
-  pointer-events:none;
-}
-.portrait-rule{
-  position:absolute;left:-14px;top:0;bottom:0;width:3px;
-  background:var(--garnet);border-radius:2px;
+.hero-name{
+  font-family:'Archivo',sans-serif;font-weight:700;line-height:1.08;
+  font-size:clamp(2rem, 4.4vw, 2.8rem);letter-spacing:-.015em;color:#fff;
 }
 .hero-role{
-  font-family:'Archivo',sans-serif;font-size:.95rem;font-weight:600;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--garnet);
-  margin-bottom:10px;
-}
-.eyebrow{
-  font-family:'Archivo',sans-serif;font-size:.74rem;font-weight:600;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--garnet);
-  margin-bottom:18px;
-}
-h1{
-  font-family:'Archivo',sans-serif;font-weight:700;
-  font-size:clamp(1.9rem, 3.6vw, 2.6rem);
-  line-height:1.15;letter-spacing:-.01em;margin-bottom:20px;
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:.88rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-top:15px;
 }
 .hero-domains{
-  font-family:'Archivo',sans-serif;font-size:.82rem;font-weight:500;
-  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
-  margin-bottom:26px;
+  font-family:'Archivo',sans-serif;font-weight:500;font-size:.78rem;
+  letter-spacing:.12em;text-transform:uppercase;color:rgba(250,249,246,.8);margin-top:10px;
 }
-.hero-domains span{color:var(--garnet);padding:0 .45em;}
-.hero-lede{
-  font-size:1.13rem;line-height:1.7;color:var(--ink-soft);
-  max-width:34em;margin-bottom:18px;
+.hero-domains span{color:var(--rose);padding:0 .35em;}
+
+/* ---------- 2-column body ---------- */
+.page-grid{
+  display:grid;
+  grid-template-columns:var(--rail) 1fr;
+  grid-template-areas:"rail lede" "rail main";
+  column-gap:var(--railgap);
+  align-items:start;
+  padding-top:86px;padding-bottom:80px;
 }
-.hero-lede:last-of-type{margin-bottom:0;}
-.hero-actions{
-  margin-top:24px;
-  display:flex;flex-direction:column;gap:12px;
-}
-.btn-row{display:flex;flex-wrap:wrap;gap:14px;}
+.pg-lede{grid-area:lede;min-width:0;}
+.pg-rail{grid-area:rail;min-width:0;}
+.pg-main{grid-area:main;min-width:0;padding-top:52px;}
+.pg-rail > section + section{margin-top:46px;}
+.pg-main > section + section{margin-top:48px;}
+
+.lede{font-size:1.17rem;line-height:1.72;color:var(--ink);max-width:35em;}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}
 .btn{
-  font-family:'Archivo',sans-serif;font-size:.82rem;font-weight:600;
-  letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
-  padding:13px 24px;border-radius:2px;display:inline-block;
-  transition:background .15s ease,color .15s ease;
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:.78rem;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
+  padding:13px 22px;border-radius:3px;display:inline-block;
+  background:var(--garnet);color:#fff;transition:background .15s ease,color .15s ease;
 }
-.hero-actions .btn{display:block;text-align:center;}
-.btn-primary{background:var(--garnet);color:#fff;}
-.btn-primary:hover{background:var(--garnet-soft);}
-.btn-ghost{border:1px solid var(--ink);color:var(--ink);}
+.btn:hover{background:var(--garnet-soft);}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);}
 .btn-ghost:hover{background:var(--ink);color:var(--paper);}
 
-/* ---------- section scaffolding ---------- */
-section{padding:64px 0;}
-.section-rule{border-top:1px solid var(--line);}
-h2{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:1.55rem;
-  letter-spacing:-.005em;margin-bottom:8px;
+.kicker{
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:.8rem;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--garnet);
+  margin-bottom:22px;
 }
-.section-head{margin-bottom:40px;max-width:44em;}
-.section-head p{color:var(--ink-soft);}
-
-/* ---------- board ledger ---------- */
-.ledger{border-top:1px solid var(--line);}
-.ledger-row{
-  display:grid;grid-template-columns:1fr 1.4fr;gap:32px;
-  padding:26px 0;border-bottom:1px solid var(--line);
-}
-.ledger-org{font-family:'Archivo',sans-serif;font-weight:600;font-size:1.05rem;line-height:1.35;}
-.ledger-role{
-  font-family:'Archivo',sans-serif;font-size:.74rem;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--garnet);
-  margin-top:6px;
-}
-.ledger-desc{color:var(--ink-soft);font-size:.98rem;}
-.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;}
-.tag{
-  font-family:'Archivo',sans-serif;font-size:.7rem;font-weight:500;
-  letter-spacing:.05em;color:var(--ink-soft);
-  border:1px solid var(--line);background:var(--paper-deep);
-  padding:4px 10px;border-radius:20px;white-space:nowrap;
+.subkicker{
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:.72rem;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--muted);
+  margin:36px 0 22px;
 }
 
-/* ---------- expertise ---------- */
-.expertise{background:var(--paper-deep);}
-.prof-list{list-style:none;max-width:44em;}
-.prof-list li{
-  font-size:1.02rem;color:var(--ink);padding:16px 0 16px 26px;
-  position:relative;border-bottom:1px solid var(--line);
+/* board entries */
+.board + .board{margin-top:22px;}
+.board h3{font-family:'Archivo',sans-serif;font-weight:700;font-size:1.02rem;line-height:1.32;}
+.board .meta{
+  font-family:'Archivo',sans-serif;font-weight:500;font-size:.79rem;
+  color:var(--ink-soft);margin-top:5px;
 }
-.prof-list li:last-child{border-bottom:none;}
-.prof-list li::before{content:"—";color:var(--garnet);position:absolute;left:0;font-weight:600;}
-.prof-outro{color:var(--ink-soft);max-width:44em;margin-top:24px;}
+.board .meta span{color:var(--garnet);padding:0 .3em;}
 
-/* ---------- thought leadership strip ---------- */
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;}
-.strip-item .num{
-  font-family:'Archivo',sans-serif;font-weight:700;font-size:2.2rem;
-  color:var(--garnet);line-height:1;margin-bottom:8px;
+/* dot lists */
+ul.dot{list-style:none;}
+ul.dot li{
+  position:relative;padding-left:19px;margin-top:9px;
+  font-size:1.02rem;color:var(--ink);line-height:1.55;
 }
-.strip-item .label{
-  font-family:'Archivo',sans-serif;font-size:.76rem;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);
-}
-.strip-item p{margin-top:10px;font-size:.95rem;color:var(--ink-soft);}
+ul.dot li:first-child{margin-top:0;}
+ul.dot li::before{content:"\2022";position:absolute;left:2px;color:var(--garnet);font-weight:700;}
+.board ul.dot{margin-top:9px;}
+.board ul.dot li{font-size:.9rem;color:var(--ink-soft);margin-top:5px;padding-left:16px;}
+
+/* main column prose */
+.pg-main p{max-width:38em;color:var(--ink);}
+.pg-main p + p{margin-top:15px;}
+.pg-main p + ul.dot{margin-top:13px;}
+.pg-main ul.dot + p{margin-top:16px;}
+.pg-main ul.dot li{max-width:38em;}
 
 /* ---------- contact ---------- */
-.contact{background:var(--ink);color:var(--paper);}
-.contact h2{color:var(--paper);}
-.contact p{color:rgba(250,249,246,.75);max-width:36em;}
-.contact .btn-primary{margin-top:28px;}
+.contact{background:var(--ink);color:var(--paper);padding:64px 0;}
+.contact .kicker{color:var(--rose);}
+.contact-lede{color:rgba(250,249,246,.82);max-width:33em;font-size:1.08rem;line-height:1.7;}
+.contact .btn{margin-top:28px;}
 .contact-meta{
-  margin-top:34px;font-family:'Archivo',sans-serif;font-size:.85rem;
-  letter-spacing:.03em;color:rgba(250,249,246,.65);
+  margin-top:36px;font-family:'Archivo',sans-serif;font-size:.82rem;
+  letter-spacing:.04em;color:rgba(250,249,246,.6);line-height:2;
 }
-.contact-meta a{color:var(--paper);text-decoration:none;border-bottom:1px solid rgba(250,249,246,.35);}
-footer{
-  background:var(--ink);padding:26px 0;border-top:1px solid rgba(250,249,246,.12);
-}
+.contact-meta a{color:var(--paper);text-decoration:none;border-bottom:1px solid rgba(250,249,246,.3);}
+.contact-meta span{color:var(--rose);padding:0 .45em;}
+
+footer{background:var(--ink);border-top:1px solid rgba(250,249,246,.12);padding:22px 0;}
 footer .wrap{
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
   font-family:'Archivo',sans-serif;font-size:.72rem;letter-spacing:.05em;
@@ -180,173 +157,158 @@ footer .wrap{
 }
 
 /* ---------- responsive ---------- */
-@media (max-width:860px){
-  .hero-grid{grid-template-columns:1fr;gap:0;}
-  .hero-left{max-width:320px;margin-top:0;}
-  .hero-copy{margin-top:44px;}
-  .hero-actions{max-width:320px;}
-  .strip{grid-template-columns:1fr;gap:32px;}
-  .ledger-row{grid-template-columns:1fr;gap:10px;}
+@media (max-width:880px){
+  :root{--rail:1fr;--railgap:0px;}
+  .hero-grid{grid-template-columns:1fr;align-items:start;padding-top:44px;padding-bottom:38px;}
+  .hero-photo{width:128px;height:128px;top:0;order:-1;margin-bottom:22px;}
+  .page-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:"lede" "rail" "main";
+    padding-top:52px;padding-bottom:52px;
+  }
+  .pg-main{padding-top:0;margin-top:44px;}
+  .pg-rail{margin-top:44px;}
+  .lede{font-size:1.05rem;max-width:none;}
+  .pg-main p,.pg-main ul.dot li{max-width:none;}
+  .pg-rail > section + section{margin-top:40px;}
+  .pg-main > section + section{margin-top:40px;}
 }
 </style>
 </head>
 <body>
 
-<main>
-<section class="hero">
+<header class="hero">
   <div class="wrap hero-grid">
-    <div class="hero-left">
-      <div class="portrait-frame">
-        <div class="portrait-rule" aria-hidden="true"></div>
-        <img src="img/headshot.jpg" alt="Portrait of Joanne L. Smikle, PhD" width="400" height="500">
-      </div>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="Smikle_Board_Resume_2026.pdf" download>Download Board Resume</a>
-        <a class="btn btn-primary" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-    <div class="hero-copy">
-      <h1>Joanne L. Smikle, PhD</h1>
+    <img class="hero-photo" src="img/headshot.jpg" alt="Portrait of Joanne L. Smikle, PhD" width="400" height="500">
+    <div class="hero-text">
+      <h1 class="hero-name">Joanne L. Smikle, PhD</h1>
       <p class="hero-role">Independent Director</p>
       <p class="hero-domains">Governance <span>·</span> Strategy <span>·</span> Human Capital Utilization</p>
-      <p class="hero-lede">As a nationally recognized business consultant and leadership educator, I bring keen analytical abilities and agile thinking to board service. I have in-depth knowledge of human capital utilization, employment best practices, organizational effectiveness, strategy formulation, execution, and evaluation. This knowledge gives me a clear understanding of the complexities organizations face and paths forward that align strategy and operations.</p>
-      <p class="hero-lede">My consulting experience gives me the capacity to analyze challenges from the perspectives of varied stakeholders. Being actively engaged in leadership development at the C-suite gives me strong insights into the dilemmas that executives face, as well as the competencies required for their individual success. The coaching, advice, and counsel that I provide translates into a strong ability to help boards maintain healthy relationships with the company's leaders.</p>
-      <p class="hero-lede">Because I believe that open dialogue is vital, I am comfortable posing difficult questions that spark consideration of several approaches to reach the enterprise's strategic objectives. My natural disposition as a collaborator enhances my effectiveness when engaged in decision making with my board colleagues.</p>
     </div>
   </div>
-</section>
+</header>
 
-<section class="section-rule">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Board &amp; Governance Experience</h2>
-      <p>Current and recent board service, with committee leadership across nominating &amp; governance, institutional advancement, and strategic planning.</p>
-    </div>
-    <div class="ledger">
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">Heritage Ministry Charitable Care Network</div>
-          <div class="ledger-role">Board of Directors</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Company provides post-acute care, senior independent living, memory care, and rehabilitation services. Owns and operates facilities in Pennsylvania, New York, Washington, and Illinois.</p>
-          <div class="tags"><span class="tag">Ad Hoc Executive Development Committee</span></div>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">State of Maryland — Oversight Committee on Quality of Care in Nursing Homes &amp; Assisted Living Facilities</div>
-          <div class="ledger-role">Gubernatorial Appointment</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Evaluates statewide progress in improving the quality of nursing home and assisted living care.</p>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">Saybrook University</div>
-          <div class="ledger-role">Board of Trustees</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Post-graduate institution in the humanistic tradition. I chair the board's Institutional Advancement and Governance Committees.</p>
-          <div class="tags"><span class="tag">Chair, Institutional Advancement</span><span class="tag">Chair, Nominating &amp; Governance</span></div>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">American Brain Foundation</div>
-          <div class="ledger-role">Board of Directors</div>
-        </div>
-        <div>
-          <p class="ledger-desc">National foundation funding research into treatments and cures for brain disease.</p>
-          <div class="tags"><span class="tag">Governance Committee</span></div>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">ElevateMeD</div>
-          <div class="ledger-role">National Advisory Board</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Works to ensure the nation's physician workforce racially and ethnically represents the population it serves.</p>
-          <div class="tags"><span class="tag">Scholar Mentoring Committee</span><span class="tag">Program Committee</span></div>
-        </div>
-      </div>
-      <div class="ledger-row">
-        <div>
-          <div class="ledger-org">Bridges to Housing Stability</div>
-          <div class="ledger-role">Board of Directors</div>
-        </div>
-        <div>
-          <p class="ledger-desc">Maryland nonprofit providing housing for low-wage workers and those at risk of homelessness, in partnership with developers, corporations, and philanthropists.</p>
-          <div class="tags"><span class="tag">Secretary of the Board</span><span class="tag">Nominating &amp; Governance</span><span class="tag">Strategic Planning</span><span class="tag">Resource Development</span><span class="tag">Executive Director Search</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<main>
+<div class="wrap page-grid">
 
-<section class="expertise">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Professional Experience</h2>
-      <p>I bring significant and sustained experience providing consulting to executives in many industry sectors. I partner with leaders to implement sound initiatives that positively impact a range of business issues related to organizational effectiveness, bridging the gap between strategy and operations, succession planning, and skillful talent management. I deliver advice and counsel focused on thoughtful approaches to reaching the organization's long and short-range objectives. Areas of expertise follow:</p>
+  <div class="pg-lede">
+    <p class="lede">As a nationally recognized business consultant, leadership educator, and thought leader, I bring keen analytical abilities and agile thinking to board service. Additionally, I am equipped with in-depth knowledge of human capital utilization, strategy formulation, and organizational effectiveness. My board qualifications include mastery of the practices of sound governance, chair leadership on multiple committees, and the ability to surface questions that enhance decision-making processes.</p>
+    <div class="actions">
+      <a class="btn" href="Smikle_Board_Bio_2026.pdf" download>Download Board Bio</a>
+      <a class="btn" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <ul class="prof-list">
-      <li>Strategy Formulation, Implementation and Evaluation</li>
-      <li>Human Capital Utilization, Succession Planning, Workforce Best Practices</li>
-      <li>Executive &amp; Leadership Development</li>
-      <li>Organizational Effectiveness, Organizational Development, Organizational Change &amp; Organizational Culture</li>
-    </ul>
-    <p class="prof-outro">I am instrumental in developing and implementing organizational change initiatives. I devise programmatic interventions to transform corporate culture while enhancing performance and productivity. I help clients develop and refine the leadership competencies required to meet current and anticipated business demands.</p>
   </div>
-</section>
 
-<section class="section-rule">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Thought Leadership</h2>
-    </div>
-    <div class="strip">
-      <div class="strip-item">
-        <div class="num">100+</div>
-        <div class="label">Published Articles</div>
-        <p>Featured in business publications that focus on leadership, strategy, and organizational effectiveness.</p>
+  <div class="pg-rail">
+    <section>
+      <p class="kicker">Board &amp; Governance Experience</p>
+      <div class="board">
+        <h3>American Brain Foundation</h3>
+        <p class="meta">Board of Directors <span>·</span> 2024&ndash;Present</p>
+        <ul class="dot"><li>Governance Committee</li></ul>
       </div>
-      <div class="strip-item">
-        <div class="num">33,000</div>
-        <div class="label">Podcast Listeners</div>
-        <p>The <em>SmikleSpeaks</em> podcast reaches leaders and learners in 24 countries across the globe.</p>
+      <div class="board">
+        <h3>Saybrook University</h3>
+        <p class="meta">Board of Trustees <span>·</span> 2020&ndash;Present</p>
+        <ul class="dot">
+          <li>Chair, Institutional Advancement</li>
+          <li>Chair, Nominating &amp; Governance</li>
+        </ul>
       </div>
-      <div class="strip-item">
-        <div class="num">20+</div>
-        <div class="label">Years Consulting</div>
-        <p>Serving private and public sector organizations as well as nonprofits nationwide.</p>
+      <div class="board">
+        <h3>ElevateMeD</h3>
+        <p class="meta">National Advisory Board <span>·</span> 2020&ndash;Present</p>
+        <ul class="dot">
+          <li>Scholar Mentoring</li>
+          <li>Program Committee</li>
+        </ul>
       </div>
-    </div>
+      <div class="board">
+        <h3>State of Maryland &mdash; Oversight Committee on Quality of Care in Nursing Homes &amp; Assisted Living Facilities</h3>
+        <p class="meta">Gubernatorial Appointment <span>·</span> 2017&ndash;Present</p>
+      </div>
+
+      <p class="subkicker">Prior Board Service</p>
+      <div class="board">
+        <h3>Heritage Ministry Charitable Care Network</h3>
+        <p class="meta">Board of Directors <span>·</span> 2022&ndash;2024</p>
+        <ul class="dot"><li>Ad Hoc Executive Development Committee</li></ul>
+      </div>
+      <div class="board">
+        <h3>Bridges to Housing Stability</h3>
+        <p class="meta">Board of Directors <span>·</span> 2009&ndash;2019</p>
+        <ul class="dot">
+          <li>Secretary of the Board</li>
+          <li>Nominating &amp; Governance</li>
+          <li>Strategic Planning</li>
+          <li>Resource Development</li>
+          <li>Executive Director Search</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <p class="kicker">Areas of Expertise</p>
+      <ul class="dot">
+        <li>Strategy Formulation, Implementation &amp; Evaluation</li>
+        <li>Human Capital Utilization &amp; Succession Planning</li>
+        <li>Executive &amp; Leadership Development</li>
+        <li>Organizational Effectiveness &amp; Culture</li>
+        <li>ESG Strategy</li>
+      </ul>
+    </section>
   </div>
-</section>
+
+  <div class="pg-main">
+    <section>
+      <p class="kicker">Professional Experience</p>
+      <p>For more than 20 years, executives have relied on me for coaching, advice, and counsel to navigate challenges that impede strategy execution. I develop frameworks, share insights and expertise that result in improved organizational performance.</p>
+      <ul class="dot">
+        <li>Delivering leadership development at the C-suite gives me strong insight into business dilemmas and the competencies required for success.</li>
+        <li>I provide organizational assessments and other forms of analysis.</li>
+        <li>My consulting experience shapes how I help enterprises position for the future amid shifting markets and stakeholder demands.</li>
+      </ul>
+      <p>My sustained success as an entrepreneur provides the ability to deeply understand questions of viable innovation, scale, and emerging strategy. I lead organizations through transformational change. Outcomes include:</p>
+      <ul class="dot">
+        <li>Enterprise-wide impact that aligns strategy and operations.</li>
+        <li>Creation of pipelines for key positions through succession planning, talent management, executive development, and related organizational effectiveness interventions.</li>
+        <li>Performance and productivity improvements driven by the fostering of a healthy culture that supports strategy, mission, vision, and values.</li>
+      </ul>
+      <p>Two decades of consulting to private, public, and nonprofit organizations, combined with board service, make me adept at weighing ESG objectives without losing sight of profit and growth. I also bring public policy experience from four years as a lobbyist for the League of Women Voters, having served among a group of twenty lobbyists presenting the League&rsquo;s nonpartisan positions to elected officials in the U.S. Senate and House of Representatives.</p>
+    </section>
+
+    <section>
+      <p class="kicker">Thought Leadership</p>
+      <ul class="dot">
+        <li>I have authored more than 100 articles that are featured in practitioner oriented and peer reviewed publications. I am committed to contributing to the body of usable knowledge available for leaders.</li>
+        <li>The <em>SmikleSpeaks</em> podcast ranked the #1 Organization Development podcast in 2025 and 2026 by FeedSpot &mdash; reaching more than 30,000 listeners in 24 countries.</li>
+        <li>I am a frequent speaker at industry events, conventions, and conferences. I am called upon to share my insights and expertise related to various aspects of organizational effectiveness.</li>
+        <li>I teach leadership and organizational development in doctoral programs as time permits.</li>
+      </ul>
+    </section>
+  </div>
+
+</div>
+</main>
 
 <section class="contact">
   <div class="wrap">
-    <h2>Board Inquiries</h2>
-    <p>I welcome conversations with nominating committees and executive search firms regarding independent director and advisory board opportunities.</p>
-    <a class="btn btn-primary" href="mailto:joanne@joannelsmikle.com">Get in Touch</a>
+    <p class="kicker">Board Inquiries</p>
+    <p class="contact-lede">I welcome conversations with nominating committees and executive search firms regarding independent director and advisory board opportunities.</p>
+    <a class="btn" href="mailto:joanne@joannelsmikle.com">Get in Touch</a>
     <p class="contact-meta">
-      <a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> &nbsp;·&nbsp;
-      <a href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp;
-      <a href="https://podcast.smiklespeaks.com" target="_blank" rel="noopener">Podcast</a> &nbsp;·&nbsp;
-      <a href="https://youtube.smiklespeaks.com" target="_blank" rel="noopener">YouTube</a> &nbsp;·&nbsp;
+      <a href="mailto:joanne@joannelsmikle.com">joanne@joannelsmikle.com</a> <span>·</span>
+      <a href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">linkedin.com/in/joannesmikle</a> <span>·</span>
+      <a href="https://joannelsmikle.com">joannelsmikle.com</a> <span>·</span>
       <a href="https://smiklespeaks.com" target="_blank" rel="noopener">smiklespeaks.com</a>
     </p>
   </div>
 </section>
-</main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Joanne L. Smikle, Ph.D.</span>
+    <span>&copy; 2026 Joanne L. Smikle, Ph.D.</span>
     <span>joannelsmikle.com</span>
   </div>
 </footer>
