@@ -99,6 +99,15 @@ Project handoff for GitHub hosting. Client: Dr. Joanne L. Smikle (existing Tenac
   - **Old board resume removed** — `Smikle_Board_Resume_2026.pdf` and `pdf-source/board-resume.html` deleted from the repo.
   - **Full resume Professional Experience rephrased** to the Bio's wording: "For more than 20 years, executives have relied on me…" plus the Bio's two bullet groups and the "Two decades of consulting… ESG objectives…" close (the Bio's trailing lobbyist sentence was dropped here because Civic Engagement already carries it verbatim). Added a separate **Areas of Expertise** section (the Bio's 5-item list). Page structure rebalanced to keep it at 3 pages: p1 = header + Professional Experience + Areas of Expertise + Representative Clients; p2 = Faculty Appointments (all 7) + Board &amp; Governance + Civic Engagement; p3 = Education + Publications + Presentations + Contact.
   - After this round, `index.html`, `full-resume.html`, and `full-cv-complete.html` are all on the same design system. `pdf-source/board-resume.html` no longer exists.
+- [x] Sixteenth round (Sept 10) — Joanne likes the redesigned landing page; a handful of tweaks:
+  - **Stat strip restored.** The original site's "by the numbers" block (`100+` articles, `30,000+` podcast listeners, `20+` years) is back as a full-width band above Board Inquiries — she called it "a great summary." The bulleted Thought Leadership section is kept as well.
+  - **LinkedIn button** is now solid red like the other two (was an outline button).
+  - **Typo fix:** "Delivering leadership development **in** the C-suite" (was "at the"). Fixed on the site and in `full-resume.html` (PDF re-rendered).
+  - **"Professional Experience" and "Thought Leadership" headings enlarged** — new `.kicker--lg` (~1.12rem vs the .84rem sidebar kickers), so the two main sections read larger than the sidebar sections.
+  - **"The SmikleSpeaks podcast is ranked ..."** — present tense (was "podcast ranked").
+  - **Hero:** name a bit smaller (`clamp(1.8rem,3.8vw,2.4rem)`), headshot a bit larger (162→186px desktop, 128→142 mobile).
+  - **Two-column rebalance.** The left rail (board list + areas of expertise) was ending far above the right column. Moved "Thought Leadership" out of the right column into its own full-width band (grouped with the stat strip) via `.tl-band` — the columns now end within ~80px of each other. The `.tl-band` content is left-indented to line up with the main column.
+  - Still open (not styling): the CV's "over 33,000 listeners"/"over ninety articles" vs the Bio's "more than 30,000"/"more than 100"; the resume as a whole (Joanne said she needs to think about it).
 
 ## Design tokens (if edits are needed)
 
