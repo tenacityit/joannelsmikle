@@ -72,18 +72,25 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
 }
 .hero-domains span{color:var(--rose);padding:0 .35em;}
 
-/* ---------- 2-column body ---------- */
+/* ---------- 2-column body ----------
+   Plain flexbox, not CSS Grid: with grid-template-areas spanning
+   ("rail" covering two rows), the grid row-sizing algorithm spreads
+   part of the sidebar's extra height into the row above "Professional
+   Experience", inflating the gap above it. Flexbox siblings size
+   independently, so the sidebar's height never leaks into the right
+   column's internal spacing — any leftover only shows up after both
+   columns end. .pg-right unwraps via display:contents on mobile so
+   .pg-lede/.pg-rail/.pg-main can be reordered independently there. */
 .page-grid{
-  display:grid;
-  grid-template-columns:var(--rail) 1fr;
-  grid-template-areas:"rail lede" "rail main";
-  column-gap:var(--railgap);
-  align-items:start;
-  padding-top:64px;padding-bottom:36px;
+  display:flex;
+  gap:var(--railgap);
+  align-items:flex-start;
+  padding-top:64px;padding-bottom:22px;
 }
-.pg-lede{grid-area:lede;min-width:0;}
-.pg-rail{grid-area:rail;min-width:0;}
-.pg-main{grid-area:main;min-width:0;padding-top:28px;}
+.pg-rail{flex:0 1 var(--rail);min-width:0;}
+.pg-right{flex:1;min-width:0;}
+.pg-lede{min-width:0;}
+.pg-main{min-width:0;padding-top:28px;}
 .pg-rail > section + section{margin-top:34px;}
 .pg-main > section + section{margin-top:34px;}
 
@@ -178,15 +185,18 @@ footer .wrap{
 
 /* ---------- responsive ---------- */
 @media (max-width:880px){
-  :root{--rail:1fr;--railgap:0px;}
+  :root{--railgap:0px;}
   .hero-grid{grid-template-columns:1fr;align-items:start;padding-top:44px;padding-bottom:38px;}
   .hero-photo{width:142px;height:142px;top:0;order:-1;margin-bottom:22px;}
   .page-grid{
-    grid-template-columns:1fr;
-    grid-template-areas:"lede" "rail" "main";
+    flex-direction:column;align-items:stretch;
     padding-top:36px;padding-bottom:36px;
   }
-  .pg-main{padding-top:0;margin-top:32px;}
+  /* unwrap .pg-right so lede/rail/main reorder independently on mobile */
+  .pg-right{display:contents;}
+  .pg-lede{order:1;}
+  .pg-rail{order:2;flex:none;}
+  .pg-main{order:3;padding-top:0;margin-top:32px;}
   .pg-rail{margin-top:32px;}
   .lede{font-size:1.05rem;max-width:none;}
   .pg-main p,.pg-main ul.dot li{max-width:none;}
@@ -216,15 +226,6 @@ footer .wrap{
 
 <main>
 <div class="wrap page-grid">
-
-  <div class="pg-lede">
-    <p class="lede">As a nationally recognized business consultant, leadership educator, and thought leader, I bring keen analytical abilities and agile thinking to board service. Additionally, I am equipped with in-depth knowledge of human capital utilization, strategy formulation, and organizational effectiveness. My board qualifications include mastery of the practices of sound governance, chair leadership on multiple committees, and the ability to surface questions that enhance decision-making processes.</p>
-    <div class="actions">
-      <a class="btn" href="Smikle_Board_Bio_2026.pdf" download>Download Board Bio</a>
-      <a class="btn" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
-      <a class="btn" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
 
   <div class="pg-rail">
     <section>
@@ -286,23 +287,34 @@ footer .wrap{
     </section>
   </div>
 
-  <div class="pg-main">
-    <section>
-      <p class="kicker kicker--lg">Professional Experience</p>
-      <p>For more than 20 years, executives have relied on me for coaching, advice, and counsel to navigate challenges that impede strategy execution. I develop frameworks, share insights and expertise that result in improved organizational performance.</p>
-      <ul class="dot">
-        <li>Delivering leadership development in the C-suite gives me strong insight into business dilemmas and the competencies required for success.</li>
-        <li>I provide organizational assessments and other forms of analysis.</li>
-        <li>My consulting experience shapes how I help enterprises position for the future amid shifting markets and stakeholder demands.</li>
-      </ul>
-      <p>My sustained success as an entrepreneur provides the ability to deeply understand questions of viable innovation, scale, and emerging strategy. I lead organizations through transformational change. Outcomes include:</p>
-      <ul class="dot">
-        <li>Enterprise-wide impact that aligns strategy and operations.</li>
-        <li>Creation of pipelines for key positions through succession planning, talent management, executive development, and related organizational effectiveness interventions.</li>
-        <li>Performance and productivity improvements driven by the fostering of a healthy culture that supports strategy, mission, vision, and values.</li>
-      </ul>
-      <p>Two decades of consulting to private, public, and nonprofit organizations, combined with board service, make me adept at weighing ESG objectives without losing sight of profit and growth. I also bring public policy experience from four years as a lobbyist for the League of Women Voters, having served among a group of twenty lobbyists presenting the League&rsquo;s nonpartisan positions to elected officials in the U.S. Senate and House of Representatives.</p>
-    </section>
+  <div class="pg-right">
+    <div class="pg-lede">
+      <p class="lede">As a nationally recognized business consultant, leadership educator, and thought leader, I bring keen analytical abilities and agile thinking to board service. Additionally, I am equipped with in-depth knowledge of human capital utilization, strategy formulation, and organizational effectiveness. My board qualifications include mastery of the practices of sound governance, chair leadership on multiple committees, and the ability to surface questions that enhance decision-making processes.</p>
+      <div class="actions">
+        <a class="btn" href="Smikle_Board_Bio_2026.pdf" download>Download Board Bio</a>
+        <a class="btn" href="Smikle_Full_Resume_2026.pdf" download>Download Full Resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/joannesmikle/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="pg-main">
+      <section>
+        <p class="kicker kicker--lg">Professional Experience</p>
+        <p>For more than 20 years, executives have relied on me for coaching, advice, and counsel to navigate challenges that impede strategy execution. I develop frameworks, share insights and expertise that result in improved organizational performance.</p>
+        <ul class="dot">
+          <li>Delivering leadership development in the C-suite gives me strong insight into business dilemmas and the competencies required for success.</li>
+          <li>I provide organizational assessments and other forms of analysis.</li>
+          <li>My consulting experience shapes how I help enterprises position for the future amid shifting markets and stakeholder demands.</li>
+        </ul>
+        <p>My sustained success as an entrepreneur provides the ability to deeply understand questions of viable innovation, scale, and emerging strategy. I lead organizations through transformational change. Outcomes include:</p>
+        <ul class="dot">
+          <li>Enterprise-wide impact that aligns strategy and operations.</li>
+          <li>Creation of pipelines for key positions through succession planning, talent management, executive development, and related organizational effectiveness interventions.</li>
+          <li>Performance and productivity improvements driven by the fostering of a healthy culture that supports strategy, mission, vision, and values.</li>
+        </ul>
+        <p>Two decades of consulting to private, public, and nonprofit organizations, combined with board service, make me adept at weighing ESG objectives without losing sight of profit and growth. I also bring public policy experience from four years as a lobbyist for the League of Women Voters, having served among a group of twenty lobbyists presenting the League&rsquo;s nonpartisan positions to elected officials in the U.S. Senate and House of Representatives.</p>
+      </section>
+    </div>
   </div>
 
 </div>
