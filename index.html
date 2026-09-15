@@ -27,6 +27,7 @@
   --line:#dcd8cf;
   --rose:#e5959e;
   --muted:#8a8781;
+  --section-gap:28px;
   --max:1080px;
   --rail:290px;
   --railgap:60px;
@@ -90,9 +91,13 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
 .pg-rail{flex:0 1 var(--rail);min-width:0;}
 .pg-right{flex:1;min-width:0;}
 .pg-lede{min-width:0;}
-.pg-main{min-width:0;padding-top:28px;}
+.pg-main{min-width:0;padding-top:var(--section-gap);}
 .pg-rail > section + section{margin-top:34px;}
-.pg-main > section + section{margin-top:34px;}
+/* same custom property as .pg-main's own top padding, so the gap
+   above every heading inside the main column - Professional
+   Experience, Thought Leadership - is always identical by
+   construction, not by coincidentally-matching magic numbers. */
+.pg-main > section + section{margin-top:var(--section-gap);}
 
 .lede{font-size:1.17rem;line-height:1.72;color:var(--ink);max-width:35em;}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;}
@@ -110,7 +115,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--garnet);outline-of
   margin-bottom:18px;
 }
 .kicker--lg{
-  font-size:1.12rem;letter-spacing:.06em;margin-bottom:16px;
+  font-size:1.26rem;letter-spacing:.05em;margin-bottom:16px;
 }
 .subkicker{
   font-family:'Archivo',sans-serif;font-weight:600;font-size:.72rem;
@@ -144,12 +149,6 @@ ul.dot li::before{content:"\2022";position:absolute;left:2px;color:var(--garnet)
 .pg-main p + ul.dot{margin-top:11px;}
 .pg-main ul.dot + p{margin-top:13px;}
 .pg-main ul.dot li{max-width:38em;}
-
-/* ---------- thought leadership band ---------- */
-.tl-band{padding:0;}
-.tl-band .wrap{padding-left:calc(32px + var(--rail) + var(--railgap));}
-.tl-band ul.dot li{max-width:44em;}
-.tl-band ul.dot li{font-size:1.02rem;color:var(--ink);line-height:1.55;}
 
 /* ---------- stat strip ---------- */
 .stats{border-top:1px solid var(--line);margin-top:24px;padding:30px 0 26px;}
@@ -202,10 +201,7 @@ footer .wrap{
   .pg-main p,.pg-main ul.dot li{max-width:none;}
   .pg-rail > section + section{margin-top:30px;}
   .pg-main > section + section{margin-top:30px;}
-  .kicker--lg{font-size:1.05rem;}
-  .tl-band{padding-top:0;margin-top:32px;}
-  .tl-band .wrap{padding-left:32px;}
-  .tl-band ul.dot li{max-width:none;}
+  .kicker--lg{font-size:1.15rem;}
   .stats{margin-top:28px;padding:28px 0 24px;}
   .stats .wrap{grid-template-columns:1fr;gap:24px;}
 }
@@ -314,23 +310,21 @@ footer .wrap{
         </ul>
         <p>Two decades of consulting to private, public, and nonprofit organizations, combined with board service, make me adept at weighing ESG objectives without losing sight of profit and growth. I also bring public policy experience from four years as a lobbyist for the League of Women Voters, having served among a group of twenty lobbyists presenting the League&rsquo;s nonpartisan positions to elected officials in the U.S. Senate and House of Representatives.</p>
       </section>
+
+      <section>
+        <p class="kicker kicker--lg">Thought Leadership</p>
+        <ul class="dot">
+          <li>I have authored more than 100 articles that are featured in practitioner oriented and peer reviewed publications. I am committed to contributing to the body of usable knowledge available for leaders.</li>
+          <li>The <em>SmikleSpeaks</em> podcast is ranked the #1 Organization Development podcast in 2025 and 2026 by FeedSpot &mdash; reaching more than 30,000 listeners in 24 countries.</li>
+          <li>I am a frequent speaker at industry events, conventions, and conferences. I am called upon to share my insights and expertise related to various aspects of organizational effectiveness.</li>
+          <li>I teach leadership and organizational development in doctoral programs as time permits.</li>
+        </ul>
+      </section>
     </div>
   </div>
 
 </div>
 </main>
-
-<section class="tl-band">
-  <div class="wrap">
-    <p class="kicker kicker--lg">Thought Leadership</p>
-    <ul class="dot">
-      <li>I have authored more than 100 articles that are featured in practitioner oriented and peer reviewed publications. I am committed to contributing to the body of usable knowledge available for leaders.</li>
-      <li>The <em>SmikleSpeaks</em> podcast is ranked the #1 Organization Development podcast in 2025 and 2026 by FeedSpot &mdash; reaching more than 30,000 listeners in 24 countries.</li>
-      <li>I am a frequent speaker at industry events, conventions, and conferences. I am called upon to share my insights and expertise related to various aspects of organizational effectiveness.</li>
-      <li>I teach leadership and organizational development in doctoral programs as time permits.</li>
-    </ul>
-  </div>
-</section>
 
 <section class="stats">
   <div class="wrap">
